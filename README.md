@@ -16,6 +16,7 @@ Security hardening and build reliability for medical imaging software.
 - [HeuDiConv](https://github.com/nipy/heudiconv) — Cached-table parsing without expression execution.
 - [highdicom](https://github.com/ImagingDataCommons/highdicom) — Malformed pixel-fragment rejection.
 - [ITK](https://github.com/InsightSoftwareConsortium/ITK) — Target-aware FFTW SIMD defaults for macOS builds.
+- [ITK-SNAP](https://github.com/pyushkevich/itksnap) — Quoted macOS launcher paths for safer shell handling.
 - [MedPy](https://github.com/loli/medpy) — Version-aware Boost.Python linking on macOS.
 - [MRtrix3](https://github.com/MRtrix3/mrtrix3) — Shell-free build-error pager patch.
 - [NiBabel](https://github.com/nipy/nibabel) — Defensive NIfTI extension parsing.
