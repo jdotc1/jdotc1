@@ -1,8 +1,15 @@
 ### About me
 
-Physician-scientist and independent developer working on medical imaging and scientific software for Apple silicon and native macOS, with a focus on MR-based radiomics.
+Physician-scientist and independent developer building medical imaging, scientific, and security-focused software for Apple silicon and native macOS, with a research focus on MR-based radiomics.
 
-I modernize existing tools and build utilities for DICOM, data processing, and research automation, with particular attention to numerical consistency, reliable data handling, and compatibility. I also use binary analysis and reverse engineering to understand application behavior. I’m sharing these tools on GitHub as they become ready for release.
+I build local tools for DICOM processing, MRI metadata comparison, scientific automation, and application inspection, with particular attention to numerical consistency, reliable data handling, and security. My public projects include:
+
+- [dicom-anonymizer](https://github.com/jdotc1/dicom-anonymizer) — Local DICOM metadata pseudonymization with a Python engine and native macOS source.
+- [EntitlementDiff](https://github.com/jdotc1/EntitlementDiff) — Native macOS comparison of embedded app entitlements between builds, with explicit architecture selection.
+- [prism-native-mcp](https://github.com/jdotc1/prism-native-mcp) — Local MCP integration for native GraphPad Prism tables, analyses, graphs, and layouts.
+- [SidecarCompare](https://github.com/jdotc1/SidecarCompare) — Native macOS comparison of MRI JSON sidecars with exact decimal handling and read-only local snapshots.
+
+I also use binary analysis and reverse engineering to understand application behavior and contribute security hardening to open-source imaging software.
 
 ### 🛡️ Open-source contributions
 
