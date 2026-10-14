@@ -10,6 +10,7 @@ Security hardening and build reliability for medical imaging software.
 
 - [3D Slicer](https://github.com/Slicer/Slicer) — macOS packaging and dependency-boundary hardening.
 - [ANTsPy](https://github.com/ANTsX/ANTsPy) — Test-data cache protection against HTTP errors.
+- [BIDScoin](https://github.com/Donders-Institute/bidscoin) — Quoted image paths in SynthStrip shell commands.
 - [dcm2niix](https://github.com/rordenlab/dcm2niix) — Reproducible dependencies and reliable macOS builds.
 - [dicomweb-client](https://github.com/ImagingDataCommons/dicomweb-client) — DICOM output-path containment.
 - [DIPY](https://github.com/dipy/dipy) — Checksum compatibility in restricted Python runtimes.
