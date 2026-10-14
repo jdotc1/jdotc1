@@ -9,7 +9,7 @@ I build local tools for DICOM processing, MRI metadata comparison, scientific au
 - [prism-native-mcp](https://github.com/jdotc1/prism-native-mcp) — Local MCP integration for native GraphPad Prism tables, analyses, graphs, and layouts.
 - [SidecarCompare](https://github.com/jdotc1/SidecarCompare) — Native macOS comparison of MRI JSON sidecars with exact decimal handling and read-only local snapshots.
 
-I also use binary analysis and reverse engineering to understand application behavior and contribute security hardening to open-source imaging software.
+I also modernize and port existing applications to ARM64 and Apple silicon, improving native macOS compatibility, performance, and build reliability.
 
 ### 🛡️ Open-source contributions
 
