@@ -8,61 +8,61 @@ I modernize existing tools and build utilities for DICOM, data processing, and r
 
 Security hardening and build reliability for medical imaging software.
 
-- [3D Slicer](https://github.com/Slicer/Slicer) — macOS signing enforcement and dependency-boundary hardening.
-- [ANTsPy](https://github.com/ANTsX/ANTsPy) — Cache integrity through HTTP failure rejection.
-- [BIDScoin](https://github.com/Donders-Institute/bidscoin) — Shell interpretation prevention in SynthStrip arguments.
-- [BrainIAK](https://github.com/brainiak/brainiak) — Literal-only parsing to prevent expression execution.
-- [BrainStat](https://github.com/MICA-MNI/BrainStat) — Protection against caching incomplete downloads.
-- [Clinica](https://github.com/aramis-lab/clinica) — Shell interpretation prevention for atlas paths.
-- [dcm2niix](https://github.com/rordenlab/dcm2niix) — Dependency source pinning and controlled build configuration.
+- [3D Slicer](https://github.com/Slicer/Slicer) — Signing failure enforcement and macOS dependency escape prevention.
+- [ANTsPy](https://github.com/ANTsX/ANTsPy) — Reject HTTP error content before cache publication.
+- [BIDScoin](https://github.com/Donders-Institute/bidscoin) — Command-injection hardening through literal SynthStrip arguments.
+- [BrainIAK](https://github.com/brainiak/brainiak) — Remove expression execution from noise-dictionary parsing.
+- [BrainStat](https://github.com/MICA-MNI/BrainStat) — Prevent partial downloads from becoming trusted cache entries.
+- [Clinica](https://github.com/aramis-lab/clinica) — Command-injection hardening for FreeSurfer atlas paths.
+- [dcm2niix](https://github.com/rordenlab/dcm2niix) — Dependency source pinning and explicit toolchain controls.
 - [dcmqi](https://github.com/QIICR/dcmqi) — Reliable macOS SDK selection.
-- [dcmstack](https://github.com/moloney/dcmstack) — Isolation of shared metadata-filter defaults.
+- [dcmstack](https://github.com/moloney/dcmstack) — Prevent cross-call mutation of metadata-filter policy.
 - [deep-mr](https://github.com/INFN-MRI/deep-mr) — Defensive rejection of unsupported GPU devices.
-- [deid](https://github.com/pydicom/deid) — Owner-only permissions for pixel-cleaner outputs.
-- [dicom-numpy](https://github.com/innolitics/dicom-numpy) — Streamed DICOM extraction to reduce memory pressure.
-- [dicom-validator](https://github.com/pydicom/dicom-validator) — HTML injection prevention through filename escaping.
-- [dicomweb-client](https://github.com/ImagingDataCommons/dicomweb-client) — Path traversal prevention for DICOM output writes.
-- [DIPY](https://github.com/dipy/dipy) — Integrity-check compatibility in restricted Python runtimes.
-- [DLTK](https://github.com/DLTK/DLTK) — TAR path containment and unsafe-member rejection.
-- [FAE](https://github.com/salan668/FAE) — Shell interpretation prevention when opening folders.
-- [FastSurfer](https://github.com/Deep-MI/FastSurfer) — Shell interpretation prevention for link paths.
-- [FreeSurfer](https://github.com/freesurfer/freesurfer) — Shell-free execution of SynthStrip containers.
-- [HD-BET](https://github.com/MIC-DKFZ/HD-BET) — Isolated private staging for checkpoint downloads.
-- [HeuDiConv](https://github.com/nipy/heudiconv) — Expression execution prevention in cached-table parsing.
-- [highdicom](https://github.com/ImagingDataCommons/highdicom) — Malformed-fragment rejection before oversized reads.
+- [deid](https://github.com/pydicom/deid) — Restrict local access to pixel-cleaner outputs.
+- [dicom-numpy](https://github.com/innolitics/dicom-numpy) — Limit decompression memory use with streamed ZIP reads.
+- [dicom-validator](https://github.com/pydicom/dicom-validator) — Prevent filename-based HTML injection in reports.
+- [dicomweb-client](https://github.com/ImagingDataCommons/dicomweb-client) — Block path traversal in UID-derived output filenames.
+- [DIPY](https://github.com/dipy/dipy) — Retain dataset integrity checks in restricted runtimes.
+- [DLTK](https://github.com/DLTK/DLTK) — Block archive path escapes and unsafe TAR member types.
+- [FAE](https://github.com/salan668/FAE) — Remove shell execution from folder-opening commands.
+- [FastSurfer](https://github.com/Deep-MI/FastSurfer) — Command-injection hardening for filesystem link arguments.
+- [FreeSurfer](https://github.com/freesurfer/freesurfer) — Remove shell execution from SynthStrip Docker commands.
+- [HD-BET](https://github.com/MIC-DKFZ/HD-BET) — Isolate checkpoint downloads in private temporary directories.
+- [HeuDiConv](https://github.com/nipy/heudiconv) — Eliminate executable expression parsing from cached tables.
+- [highdicom](https://github.com/ImagingDataCommons/highdicom) — Reject malformed lengths before excessive payload reads.
 - [ITK](https://github.com/InsightSoftwareConsortium/ITK) — Architecture-aware FFTW build configuration.
-- [ITK-SNAP](https://github.com/pyushkevich/itksnap) — Shell interpretation prevention for launcher paths.
-- [medicaldetectiontoolkit](https://github.com/MIC-DKFZ/medicaldetectiontoolkit) — Shell interpretation prevention in checkpoint cleanup.
+- [ITK-SNAP](https://github.com/pyushkevich/itksnap) — Command-injection hardening for macOS launcher paths.
+- [medicaldetectiontoolkit](https://github.com/MIC-DKFZ/medicaldetectiontoolkit) — Prevent shell interpretation of checkpoint cleanup paths.
 - [MedPy](https://github.com/loli/medpy) — Python-compatible Boost library selection.
 - [MIRTK](https://github.com/BioMedIA/MIRTK) — Correct Apple Silicon MATLAB extension selection.
-- [MONAI Label](https://github.com/Project-MONAI/MONAILabel) — Rejection of failed authentication-discovery responses.
-- [MRIQC](https://github.com/nipreps/mriqc) — Credential-disclosure reporting for download diagnostics.
-- [MRtrix3](https://github.com/MRtrix3/mrtrix3) — Proposed shell-free build-error pager invocation.
-- [netneurotools](https://github.com/netneurolab/netneurotools) — Explicit safety filtering for TAR extraction.
-- [neuromaps](https://github.com/netneurolab/neuromaps) — Shell interpretation prevention in Workbench paths.
-- [NiBabel](https://github.com/nipy/nibabel) — Malformed-input rejection before NIfTI payload reads.
-- [NIFTI-Reader-JS](https://github.com/rii-mango/NIFTI-Reader-JS) — Negative extension-size rejection before payload access.
-- [NiftyNet](https://github.com/jdotc1/NiftyNet) — Fork-based TAR path and member-type hardening.
+- [MONAI Label](https://github.com/Project-MONAI/MONAILabel) — Reject failed identity-provider discovery before cache reuse.
+- [MRIQC](https://github.com/nipreps/mriqc) — Report authentication-credential leakage in error diagnostics.
+- [MRtrix3](https://github.com/MRtrix3/mrtrix3) — Proposed removal of shell execution from error-log paging.
+- [netneurotools](https://github.com/netneurolab/netneurotools) — Apply safe extraction filters to downloaded TAR archives.
+- [neuromaps](https://github.com/netneurolab/neuromaps) — Command-injection hardening for Workbench path arguments.
+- [NiBabel](https://github.com/nipy/nibabel) — Reject malformed NIfTI lengths before payload processing.
+- [NIFTI-Reader-JS](https://github.com/rii-mango/NIFTI-Reader-JS) — Reject negative NIfTI lengths before payload processing.
+- [NiftyNet](https://github.com/jdotc1/NiftyNet) — Fork patch blocking TAR path escapes, links, and special files.
 - [NiftyReg](https://github.com/KCL-BMEIS/niftyreg) — ARM64-compatible SIMD build selection.
 - [NiftySeg](https://github.com/KCL-BMEIS/NiftySeg) — Explicit target architectures in dependency builds.
-- [Nilearn](https://github.com/nilearn/nilearn) — Archive extraction containment against path traversal.
-- [Nipype](https://github.com/nipy/nipype) — Shell interpretation prevention in dependency inspection.
-- [NiReports](https://github.com/nipreps/nireports) — End-of-input guards against unbounded SVG scanning.
-- [NiWorkflows](https://github.com/nipreps/niworkflows) — Shell interpretation prevention in mri_info filenames.
-- [nnU-Net](https://github.com/MIC-DKFZ/nnUNet) — Isolated private staging for model downloads.
-- [PlatiPy](https://github.com/pyplati/platipy) — API credential protection, log access controls, and file containment.
-- [pydicom](https://github.com/pydicom/pydicom) — Download-cache protection against HTTP error content.
-- [PyMedPhys](https://github.com/pymedphys/pymedphys) — Checksum enforcement under optimized Python.
-- [pynetdicom](https://github.com/pydicom/pynetdicom) — Credential exposure prevention in association logs.
-- [pynrrd](https://github.com/mhe/pynrrd) — Malformed dimension rejection before NRRD data access.
-- [pyplastimatch](https://github.com/ImagingDataCommons/pyplastimatch) — Failure propagation for conversion and resampling commands.
-- [PyRadiomics](https://github.com/AIM-Harvard/pyradiomics) — Restricted notebook exposure and download-failure handling.
-- [PyXNAT](https://github.com/pyxnat/pyxnat) — Credential-file protection with owner-only permissions.
-- [RSNA Anonymizer](https://github.com/RSNA/anonymizer) — Per-process isolation of documentation helper caches.
-- [SimpleITK](https://github.com/SimpleITK/SimpleITK) — Private vulnerability reporting and proposed archive hardening.
-- [surfa](https://github.com/freesurfer/surfa) — Shell interpretation prevention in FreeView subtitles.
-- [TorchIO](https://github.com/TorchIO-project/torchio) — Prevention of HTTPS-to-HTTP download downgrades.
-- [TotalSegmentator](https://github.com/wasserth/TotalSegmentator) — Shell interpretation prevention in mask-tagging commands.
-- [TractSeg](https://github.com/MIC-DKFZ/TractSeg) — Shell interpretation prevention in cleanup filenames.
-- [XCP-D](https://github.com/PennLINC/xcp_d) — Bounded-buffer downloads to limit memory pressure.
-- [xnatutils](https://github.com/Australian-Imaging-Service/xnatutils) — Path containment for XNAT file downloads.
+- [Nilearn](https://github.com/nilearn/nilearn) — Block archive traversal using destination containment checks.
+- [Nipype](https://github.com/nipy/nipype) — Remove shell execution from executable dependency inspection.
+- [NiReports](https://github.com/nipreps/nireports) — Prevent unterminated SVG input from causing endless scanning.
+- [NiWorkflows](https://github.com/nipreps/niworkflows) — Remove shell execution from mri_info filename handling.
+- [nnU-Net](https://github.com/MIC-DKFZ/nnUNet) — Isolate model downloads in private staging directories.
+- [PlatiPy](https://github.com/pyplati/platipy) — Prevent credential leakage, unauthorized log access, and file path escapes.
+- [pydicom](https://github.com/pydicom/pydicom) — Reject HTTP error bodies before writing cached data.
+- [PyMedPhys](https://github.com/pymedphys/pymedphys) — Prevent optimized Python from disabling checksum enforcement.
+- [pynetdicom](https://github.com/pydicom/pynetdicom) — Prevent authentication-password leakage through logs.
+- [pynrrd](https://github.com/mhe/pynrrd) — Reject invalid NRRD dimensions before data processing.
+- [pyplastimatch](https://github.com/ImagingDataCommons/pyplastimatch) — Stop failed external processes from appearing successful.
+- [PyRadiomics](https://github.com/AIM-Harvard/pyradiomics) — Reduce notebook network exposure and reject failed downloads.
+- [PyXNAT](https://github.com/pyxnat/pyxnat) — Prevent other local users from reading credential files.
+- [RSNA Anonymizer](https://github.com/RSNA/anonymizer) — Isolate helper caches to reduce shared temporary-file risks.
+- [SimpleITK](https://github.com/SimpleITK/SimpleITK) — Private security disclosure and proposed safe archive extraction.
+- [surfa](https://github.com/freesurfer/surfa) — Command-injection hardening for FreeView subtitle arguments.
+- [TorchIO](https://github.com/TorchIO-project/torchio) — Block insecure HTTP fallback after HTTPS failures.
+- [TotalSegmentator](https://github.com/wasserth/TotalSegmentator) — Remove shell execution from NORA mask-tagging commands.
+- [TractSeg](https://github.com/MIC-DKFZ/TractSeg) — Prevent shell interpretation of cleanup filenames.
+- [XCP-D](https://github.com/PennLINC/xcp_d) — Bound download buffering to reduce memory-exhaustion risk.
+- [xnatutils](https://github.com/Australian-Imaging-Service/xnatutils) — Block download destinations outside the selected directory.
