@@ -25,3 +25,7 @@ Security hardening and build reliability for medical imaging software.
 - [SimpleITK](https://github.com/SimpleITK/SimpleITK) — Private security reporting and proposed hardening.
 - [NiftyReg](https://github.com/KCL-BMEIS/niftyreg) — ARM64-aware macOS build configuration.
 - [pynetdicom](https://github.com/pydicom/pynetdicom) — Password redaction in DICOM association logs.
+- [MedPy](https://github.com/loli/medpy) — Version-aware Boost.Python linking on macOS.
+- [PyXNAT](https://github.com/pyxnat/pyxnat) — Owner-only permissions for saved credentials.
+- [HeuDiConv](https://github.com/nipy/heudiconv) — Cached-table parsing without expression execution.
+- [ITK](https://github.com/InsightSoftwareConsortium/ITK) — Target-aware FFTW SIMD defaults for macOS builds.
