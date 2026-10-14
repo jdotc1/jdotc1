@@ -14,6 +14,7 @@ Security hardening and build reliability for medical imaging software.
 - [dcm2niix](https://github.com/rordenlab/dcm2niix) — Reproducible dependencies and reliable macOS builds.
 - [dicomweb-client](https://github.com/ImagingDataCommons/dicomweb-client) — DICOM output-path containment.
 - [DIPY](https://github.com/dipy/dipy) — Checksum compatibility in restricted Python runtimes.
+- [FastSurfer](https://github.com/Deep-MI/FastSurfer) — Quoted FreeSurfer stub paths in shell link commands.
 - [HeuDiConv](https://github.com/nipy/heudiconv) — Cached-table parsing without expression execution.
 - [highdicom](https://github.com/ImagingDataCommons/highdicom) — Malformed pixel-fragment rejection.
 - [ITK](https://github.com/InsightSoftwareConsortium/ITK) — Target-aware FFTW SIMD defaults for macOS builds.
@@ -35,3 +36,4 @@ Security hardening and build reliability for medical imaging software.
 - [PyXNAT](https://github.com/pyxnat/pyxnat) — Owner-only permissions for saved credentials.
 - [SimpleITK](https://github.com/SimpleITK/SimpleITK) — Private security reporting and proposed hardening.
 - [TorchIO](https://github.com/TorchIO-project/torchio) — HTTPS downgrade prevention.
+- [TotalSegmentator](https://github.com/wasserth/TotalSegmentator) — Shell-free argument handling for NORA mask tagging.
