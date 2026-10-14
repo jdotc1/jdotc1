@@ -19,6 +19,8 @@ Security hardening and build reliability for medical imaging software.
 - [ITK](https://github.com/InsightSoftwareConsortium/ITK) — Target-aware FFTW SIMD defaults for macOS builds.
 - [ITK-SNAP](https://github.com/pyushkevich/itksnap) — Quoted macOS launcher paths for safer shell handling.
 - [MedPy](https://github.com/loli/medpy) — Version-aware Boost.Python linking on macOS.
+- [MIRTK](https://github.com/BioMedIA/MIRTK) — Apple Silicon MATLAB MEX fallback correction.
+- [MRIQC](https://github.com/nipreps/mriqc) — Reported credential exposure in download failure diagnostics.
 - [MRtrix3](https://github.com/MRtrix3/mrtrix3) — Shell-free build-error pager patch.
 - [neuromaps](https://github.com/netneurolab/neuromaps) — Literal-path handling in Workbench resampling.
 - [NiBabel](https://github.com/nipy/nibabel) — Defensive NIfTI extension parsing.
