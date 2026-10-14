@@ -19,10 +19,12 @@ Security hardening and build reliability for medical imaging software.
 - [ITK-SNAP](https://github.com/pyushkevich/itksnap) — Quoted macOS launcher paths for safer shell handling.
 - [MedPy](https://github.com/loli/medpy) — Version-aware Boost.Python linking on macOS.
 - [MRtrix3](https://github.com/MRtrix3/mrtrix3) — Shell-free build-error pager patch.
+- [neuromaps](https://github.com/netneurolab/neuromaps) — Literal-path handling in Workbench resampling.
 - [NiBabel](https://github.com/nipy/nibabel) — Defensive NIfTI extension parsing.
 - [NiftyReg](https://github.com/KCL-BMEIS/niftyreg) — ARM64-aware macOS build configuration.
 - [Nilearn](https://github.com/nilearn/nilearn) — Archive extraction path containment.
 - [Nipype](https://github.com/nipy/nipype) — Shell-free executable dependency inspection.
+- [NiWorkflows](https://github.com/nipreps/niworkflows) — Shell-free filename handling in mri_info calls.
 - [PlatiPy](https://github.com/pyplati/platipy) — Credential protection and file-transfer hardening.
 - [pydicom](https://github.com/pydicom/pydicom) — Download integrity through HTTP error handling.
 - [pynetdicom](https://github.com/pydicom/pynetdicom) — Password redaction in DICOM association logs.
