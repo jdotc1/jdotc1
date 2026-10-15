@@ -57,6 +57,7 @@ Security hardening, analysis tooling, data integrity, and build reliability acro
 - [FAE](https://github.com/salan668/FAE) — Remove shell execution from folder-opening commands.
 - [FastSurfer](https://github.com/Deep-MI/FastSurfer) — Command-injection hardening for filesystem link arguments.
 - [FreeSurfer](https://github.com/freesurfer/freesurfer) — Remove shell execution from SynthStrip Docker commands.
+- [Gitleaks](https://github.com/gitleaks/gitleaks) — Report destructive report-file validation that can erase existing security reports.
 - [HD-BET](https://github.com/MIC-DKFZ/HD-BET) — Isolate checkpoint downloads in private temporary directories.
 - [HeuDiConv](https://github.com/nipy/heudiconv) — Eliminate executable expression parsing from cached tables.
 - [highdicom](https://github.com/ImagingDataCommons/highdicom) — Reject malformed lengths before excessive payload reads.
