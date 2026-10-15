@@ -10,7 +10,7 @@ I also build security and privacy tools: EntitlementDiff for comparing embedded 
 
 ### Selected security contributions
 
-Selected work in security analysis, credential protection, and safer medical-imaging software. Open pull requests are proposed changes, distinct from merged contributions and published tools. Statuses checked October 15, 2026.
+Selected work in security analysis, credential protection, and safer medical-imaging software. Open pull requests are proposed changes, distinct from merged contributions and published tools.
 
 **[Semgrep — authorization-rule precision](https://github.com/semgrep/semgrep-rules/pull/4085) · PR #4085 · Open**
 
