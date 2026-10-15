@@ -19,12 +19,14 @@ Security hardening and build reliability for medical imaging software.
 - [BrainStat](https://github.com/MICA-MNI/BrainStat) — Prevent partial downloads from becoming trusted cache entries.
 - [Clinica](https://github.com/aramis-lab/clinica) — Command-injection hardening for FreeSurfer atlas paths.
 - [dcm2niix](https://github.com/rordenlab/dcm2niix) — Dependency source pinning and explicit toolchain controls.
+- [dcmjs](https://github.com/dcmjs-org/dcmjs) — Validate byte counts before binary data reads.
 - [dcmqi](https://github.com/QIICR/dcmqi) — Reliable macOS SDK selection.
 - [dcmstack](https://github.com/moloney/dcmstack) — Prevent cross-call mutation of metadata-filter policy.
 - [deep-mr](https://github.com/INFN-MRI/deep-mr) — Defensive rejection of unsupported GPU devices.
 - [deid](https://github.com/pydicom/deid) — Restrict local access to pixel-cleaner outputs.
 - [dicom-numpy](https://github.com/innolitics/dicom-numpy) — Limit decompression memory use with streamed ZIP reads.
 - [dicom-validator](https://github.com/pydicom/dicom-validator) — Prevent filename-based HTML injection in reports.
+- [dicomParser](https://github.com/cornerstonejs/dicomParser) — Reject invalid and out-of-bounds binary stream seeks.
 - [dicomweb-client](https://github.com/ImagingDataCommons/dicomweb-client) — Block path traversal in UID-derived output filenames.
 - [DIPY](https://github.com/dipy/dipy) — Retain dataset integrity checks in restricted runtimes.
 - [DLTK](https://github.com/DLTK/DLTK) — Block archive path escapes and unsafe TAR member types.
@@ -34,11 +36,14 @@ Security hardening and build reliability for medical imaging software.
 - [HD-BET](https://github.com/MIC-DKFZ/HD-BET) — Isolate checkpoint downloads in private temporary directories.
 - [HeuDiConv](https://github.com/nipy/heudiconv) — Eliminate executable expression parsing from cached tables.
 - [highdicom](https://github.com/ImagingDataCommons/highdicom) — Reject malformed lengths before excessive payload reads.
+- [InVesalius](https://github.com/invesalius/invesalius3) — Restore TLS verification and bound update-discovery requests.
 - [ITK](https://github.com/InsightSoftwareConsortium/ITK) — Architecture-aware FFTW build configuration.
 - [ITK-SNAP](https://github.com/pyushkevich/itksnap) — Command-injection hardening for macOS launcher paths.
 - [medicaldetectiontoolkit](https://github.com/MIC-DKFZ/medicaldetectiontoolkit) — Prevent shell interpretation of checkpoint cleanup paths.
 - [MedPy](https://github.com/loli/medpy) — Python-compatible Boost library selection.
+- [minc-toolkit-v2](https://github.com/BIC-MNI/minc-toolkit-v2) — Preserve explicit macOS build settings in HDF5 dependencies.
 - [MIRTK](https://github.com/BioMedIA/MIRTK) — Correct Apple Silicon MATLAB extension selection.
+- [MONAI](https://github.com/Project-MONAI/MONAI) — Propagate download publication failures instead of masking errors.
 - [MONAI Label](https://github.com/Project-MONAI/MONAILabel) — Reject failed identity-provider discovery before cache reuse.
 - [MRIQC](https://github.com/nipreps/mriqc) — Report authentication-credential leakage in error diagnostics.
 - [MRtrix3](https://github.com/MRtrix3/mrtrix3) — Proposed removal of shell execution from error-log paging.
@@ -50,10 +55,13 @@ Security hardening and build reliability for medical imaging software.
 - [NiftyReg](https://github.com/KCL-BMEIS/niftyreg) — ARM64-compatible SIMD build selection.
 - [NiftySeg](https://github.com/KCL-BMEIS/NiftySeg) — Explicit target architectures in dependency builds.
 - [Nilearn](https://github.com/nilearn/nilearn) — Block archive traversal using destination containment checks.
+- [NiPy](https://github.com/nipy/nipy) — Remove intermediate shell execution from MATLAB launch.
 - [Nipype](https://github.com/nipy/nipype) — Remove shell execution from executable dependency inspection.
 - [NiReports](https://github.com/nipreps/nireports) — Prevent unterminated SVG input from causing endless scanning.
+- [nitrain](https://github.com/nitrain/nitrain) — Block OpenNeuro download paths outside the data root.
 - [NiWorkflows](https://github.com/nipreps/niworkflows) — Remove shell execution from mri_info filename handling.
 - [nnU-Net](https://github.com/MIC-DKFZ/nnUNet) — Isolate model downloads in private staging directories.
+- [Papaya](https://github.com/rii-mango/Papaya) — Prevent HTML interpretation of image title labels.
 - [PlatiPy](https://github.com/pyplati/platipy) — Prevent credential leakage, unauthorized log access, and file path escapes.
 - [pydicom](https://github.com/pydicom/pydicom) — Reject HTTP error bodies before writing cached data.
 - [PyMedPhys](https://github.com/pymedphys/pymedphys) — Prevent optimized Python from disabling checksum enforcement.
@@ -63,10 +71,13 @@ Security hardening and build reliability for medical imaging software.
 - [PyRadiomics](https://github.com/AIM-Harvard/pyradiomics) — Reduce notebook network exposure and reject failed downloads.
 - [PyXNAT](https://github.com/pyxnat/pyxnat) — Prevent other local users from reading credential files.
 - [RSNA Anonymizer](https://github.com/RSNA/anonymizer) — Isolate helper caches to reduce shared temporary-file risks.
+- [Semgrep Rules](https://github.com/semgrep/semgrep-rules) — Refine authorization detection for explicit authentication schemes.
 - [SimpleITK](https://github.com/SimpleITK/SimpleITK) — Private security disclosure and proposed safe archive extraction.
 - [surfa](https://github.com/freesurfer/surfa) — Command-injection hardening for FreeView subtitle arguments.
 - [TorchIO](https://github.com/TorchIO-project/torchio) — Block insecure HTTP fallback after HTTPS failures.
+- [TorchXRayVision](https://github.com/mlmed/torchxrayvision) — Protect existing downloads from failed transfer replacement.
 - [TotalSegmentator](https://github.com/wasserth/TotalSegmentator) — Remove shell execution from NORA mask-tagging commands.
 - [TractSeg](https://github.com/MIC-DKFZ/TractSeg) — Prevent shell interpretation of cleanup filenames.
+- [WORC](https://github.com/MStarmans91/WORC) — Remove expression execution from coordinate parsing.
 - [XCP-D](https://github.com/PennLINC/xcp_d) — Bound download buffering to reduce memory-exhaustion risk.
 - [xnatutils](https://github.com/Australian-Imaging-Service/xnatutils) — Block download destinations outside the selected directory.
