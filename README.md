@@ -10,25 +10,25 @@ I also build security and privacy tools: EntitlementDiff for comparing embedded 
 
 ### Selected security contributions
 
-Selected work in security analysis, credential protection, and safer medical-imaging software. Open pull requests are proposed changes, distinct from merged contributions and published tools.
+Selected work in security analysis, credential protection, and safer medical-imaging software.
 
-**[Semgrep — authorization-rule precision](https://github.com/semgrep/semgrep-rules/pull/4085) · PR #4085 · Open**
+**[Semgrep — authorization-rule precision](https://github.com/semgrep/semgrep-rules/pull/4085) · PR #4085**
 
 Proposed a targeted correction to a C# authorization rule that flags controllers with explicit authentication schemes. Added 14 regression and control cases while preserving the existing rule scope and positive detections. The PR documents before-and-after engine results and full local repository validation.
 
-**[pynetdicom — credential protection](https://github.com/pydicom/pynetdicom/pull/1099) · PR #1099 · Open**
+**[pynetdicom — credential protection](https://github.com/pydicom/pynetdicom/pull/1099) · PR #1099**
 
 Proposed password redaction in standard sent and received DICOM association logs, with regression tests checking both returned messages and captured logging output. The change is scoped to standard association logging.
 
-**[PlatiPy — API-key handling](https://github.com/pyplati/platipy/pull/322) · PR #322 · Open**
+**[PlatiPy — API-key handling](https://github.com/pyplati/platipy/pull/322) · PR #322**
 
 Proposed consistent protection for a custom API-key header across HTTP redirect authentication boundaries, covering all 12 authenticated client request sites. The PR documents synthetic checks for same-origin retention and removal across host, port, and HTTPS-downgrade boundaries.
 
-**[BIDScoin — command and path handling](https://github.com/Donders-Institute/bidscoin/pull/302) · PR #302 · Merged**
+**[BIDScoin — command and path handling](https://github.com/Donders-Institute/bidscoin/pull/302) · PR #302**
 
-Hardened local SynthStrip command construction so image paths containing spaces and shell metacharacters remain literal arguments. Added a focused regression test; the contribution was accepted and merged upstream.
+Hardened local SynthStrip command construction so image paths containing spaces and shell metacharacters remain literal arguments. Added a focused regression test.
 
-**[EntitlementDiff — original security-review tooling](https://github.com/jdotc1/EntitlementDiff/releases/tag/v0.1.2) · v0.1.2 · Published**
+**[EntitlementDiff — original security-review tooling](https://github.com/jdotc1/EntitlementDiff/releases/tag/v0.1.2) · v0.1.2**
 
 Built a native macOS tool for reviewing changes in embedded entitlement declarations between application builds without launching the inspected applications. Published source and an Apple-silicon application, with explicit distinctions between declared entitlements, effective permissions, and signature verification.
 
@@ -96,7 +96,7 @@ Security hardening, analysis tooling, data integrity, and build reliability acro
 - [PyRadiomics](https://github.com/AIM-Harvard/pyradiomics) — Reduce notebook network exposure and reject failed downloads.
 - [PyXNAT](https://github.com/pyxnat/pyxnat) — Prevent other local users from reading credential files.
 - [RSNA Anonymizer](https://github.com/RSNA/anonymizer) — Isolate helper caches to reduce shared temporary-file risks.
-- [Semgrep Rules (PR #4085)](https://github.com/semgrep/semgrep-rules/pull/4085) — Proposed authorization-rule precision fix for explicit authentication schemes (open).
+- [Semgrep Rules (PR #4085)](https://github.com/semgrep/semgrep-rules/pull/4085) — Proposed authorization-rule precision fix for explicit authentication schemes.
 - [SimpleITK](https://github.com/SimpleITK/SimpleITK) — Private security disclosure and proposed safe archive extraction.
 - [surfa](https://github.com/freesurfer/surfa) — Command-injection hardening for FreeView subtitle arguments.
 - [TorchIO](https://github.com/TorchIO-project/torchio) — Block insecure HTTP fallback after HTTPS failures.
