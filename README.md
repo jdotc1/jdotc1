@@ -1,8 +1,12 @@
 ### About me
 
-Physician-scientist and independent developer working on medical imaging and scientific software for Apple silicon and native macOS, with a focus on MR-based radiomics.
+Physician-scientist, radiation oncologist, and independent developer focused on defensive security and privacy in medical-imaging and scientific software.
 
-I modernize existing tools and build utilities for DICOM, data processing, and research automation, with particular attention to numerical consistency, reliable data handling, and compatibility. I also use binary analysis and reverse engineering to understand application behavior. I’m sharing these tools on GitHub as they become ready for release.
+My open-source contributions span more than 50 repositories, covering security hardening, data integrity, and build reliability. My security work addresses credential and API-key exposure, missing access controls, unsafe command execution and data parsing, path traversal, archive extraction, and malformed-input handling. I also strengthen download integrity, dependency controls, and native macOS packaging.
+
+I trace how software handles untrusted input and sensitive data, develop targeted fixes, and use synthetic regression tests to verify behavior. I document compatibility changes and validation limits, with particular attention to preserving scientific results and intended application behavior. My contributions include merged fixes, proposals under upstream review, and security reports.
+
+I also build security and privacy tools: EntitlementDiff for comparing embedded macOS app entitlements between builds; DICOM Anonymizer for local metadata pseudonymization; and MacScope, a private binary-analysis and reverse-engineering workbench. My clinical and MR-based radiomics research informs this focus on protecting sensitive imaging workflows while modernizing the software they depend on.
 
 ### 🛡️ Open-source contributions
 
