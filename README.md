@@ -8,9 +8,33 @@ I trace how software handles untrusted input and sensitive data, develop targete
 
 I also build security and privacy tools: EntitlementDiff for comparing embedded macOS app entitlements between builds; DICOM Anonymizer for local metadata pseudonymization; and MacScope, a private binary-analysis and reverse-engineering workbench. My clinical and MR-based radiomics research informs this focus on protecting sensitive imaging workflows while modernizing the software they depend on.
 
+### Selected security contributions
+
+Selected work in security analysis, credential protection, and safer medical-imaging software. Open pull requests are proposed changes, distinct from merged contributions and published tools. Statuses checked October 15, 2026.
+
+**[Semgrep — authorization-rule precision](https://github.com/semgrep/semgrep-rules/pull/4085) · PR #4085 · Open**
+
+Proposed a targeted correction to a C# authorization rule that flags controllers with explicit authentication schemes. Added 14 regression and control cases while preserving the existing rule scope and positive detections. The PR documents before-and-after engine results and full local repository validation.
+
+**[pynetdicom — credential protection](https://github.com/pydicom/pynetdicom/pull/1099) · PR #1099 · Open**
+
+Proposed password redaction in standard sent and received DICOM association logs, with regression tests checking both returned messages and captured logging output. The change is scoped to standard association logging.
+
+**[PlatiPy — API-key handling](https://github.com/pyplati/platipy/pull/322) · PR #322 · Open**
+
+Proposed consistent protection for a custom API-key header across HTTP redirect authentication boundaries, covering all 12 authenticated client request sites. The PR documents synthetic checks for same-origin retention and removal across host, port, and HTTPS-downgrade boundaries.
+
+**[BIDScoin — command and path handling](https://github.com/Donders-Institute/bidscoin/pull/302) · PR #302 · Merged**
+
+Hardened local SynthStrip command construction so image paths containing spaces and shell metacharacters remain literal arguments. Added a focused regression test; the contribution was accepted and merged upstream.
+
+**[EntitlementDiff — original security-review tooling](https://github.com/jdotc1/EntitlementDiff/releases/tag/v0.1.2) · v0.1.2 · Published**
+
+Built a native macOS tool for reviewing changes in embedded entitlement declarations between application builds without launching the inspected applications. Published source and an Apple-silicon application, with explicit distinctions between declared entitlements, effective permissions, and signature verification.
+
 ### 🛡️ Open-source contributions
 
-Security hardening and build reliability for medical imaging software.
+Security hardening, analysis tooling, data integrity, and build reliability across medical-imaging and scientific software.
 
 - [3D Slicer](https://github.com/Slicer/Slicer) — Signing failure enforcement and macOS dependency escape prevention.
 - [ANTsPy](https://github.com/ANTsX/ANTsPy) — Reject HTTP error content before cache publication.
@@ -71,7 +95,7 @@ Security hardening and build reliability for medical imaging software.
 - [PyRadiomics](https://github.com/AIM-Harvard/pyradiomics) — Reduce notebook network exposure and reject failed downloads.
 - [PyXNAT](https://github.com/pyxnat/pyxnat) — Prevent other local users from reading credential files.
 - [RSNA Anonymizer](https://github.com/RSNA/anonymizer) — Isolate helper caches to reduce shared temporary-file risks.
-- [Semgrep Rules](https://github.com/semgrep/semgrep-rules) — Refine authorization detection for explicit authentication schemes.
+- [Semgrep Rules (PR #4085)](https://github.com/semgrep/semgrep-rules/pull/4085) — Proposed authorization-rule precision fix for explicit authentication schemes (open).
 - [SimpleITK](https://github.com/SimpleITK/SimpleITK) — Private security disclosure and proposed safe archive extraction.
 - [surfa](https://github.com/freesurfer/surfa) — Command-injection hardening for FreeView subtitle arguments.
 - [TorchIO](https://github.com/TorchIO-project/torchio) — Block insecure HTTP fallback after HTTPS failures.
