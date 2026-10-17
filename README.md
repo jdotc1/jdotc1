@@ -2,7 +2,8 @@
 
 **Radiation oncologist · Physician-scientist · Independent developer**
 
-I build native macOS tools and modernize medical imaging and scientific software for Apple silicon, with a focus on privacy, data integrity, and defensive security. My clinical practice and MR-based radiomics research guide this work, especially the need to preserve numerical behavior and handle sensitive imaging data carefully.
+Radiation oncologist and security researcher building and hardening medical imaging software for ARM64 on macOS.
+
 
 ## Selected projects
 
