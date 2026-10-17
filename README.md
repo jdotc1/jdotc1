@@ -4,7 +4,7 @@ Radiation oncologist and security researcher building and hardening medical imag
 
 ## Selected projects
 
-| Project | When to use it | Get started |
+| Project | Description | Get started |
 | --- | --- | --- |
 | [SidecarCompare](https://github.com/jdotc1/SidecarCompare) | Review changes between MRI JSON sidecars with exact decimal comparisons, typed values, and documented unit annotations. | [Build the macOS app](https://github.com/jdotc1/SidecarCompare#build-and-run-on-a-mac) · [Use the CLI](https://github.com/jdotc1/SidecarCompare#command-line-comparison) |
 | [EntitlementDiff](https://github.com/jdotc1/EntitlementDiff) | Compare declared app entitlements between builds and share saved comparisons that colleagues can reopen without the original apps. | [Download the macOS app](https://github.com/jdotc1/EntitlementDiff/releases/latest) |
@@ -23,16 +23,16 @@ Open proposals checked on **17 October 2026**:
 
 ## Selected open-source contributions
 
-These examples link directly to upstream pull requests. Statuses were checked on **17 October 2026**.
+These examples link directly to upstream pull requests.
 
-| Contribution | Focus | Status |
-| --- | --- | --- |
-| [BIDScoin #302](https://github.com/Donders-Institute/bidscoin/pull/302) | Preserve literal image paths in local SynthStrip commands. | Merged |
-| [deid #304](https://github.com/pydicom/deid/pull/304) | Default newly created pixel-cleaner output directories to owner-only permissions. | Merged |
-| [dicom-validator #301](https://github.com/pydicom/dicom-validator/pull/301) | Escape filenames in HTML validation-report headings. | Merged |
-| [Semgrep Rules #4085](https://github.com/semgrep/semgrep-rules/pull/4085) | Correct C# authorization-rule false positives for explicit authentication schemes. | Open |
-| [pynetdicom #1099](https://github.com/pydicom/pynetdicom/pull/1099) | Redact user-identity passwords in standard DICOM association logs. | Open |
-| [PlatiPy #322](https://github.com/pyplati/platipy/pull/322) | Strip a custom API-key header when redirects cross authentication boundaries. | Open |
+| Contribution | Focus |
+| --- | --- |
+| [BIDScoin #302](https://github.com/Donders-Institute/bidscoin/pull/302) | Preserve literal image paths in local SynthStrip commands. |
+| [deid #304](https://github.com/pydicom/deid/pull/304) | Default newly created pixel-cleaner output directories to owner-only permissions. |
+| [dicom-validator #301](https://github.com/pydicom/dicom-validator/pull/301) | Escape filenames in HTML validation-report headings. |
+| [Semgrep Rules #4085](https://github.com/semgrep/semgrep-rules/pull/4085) | Correct C# authorization-rule false positives for explicit authentication schemes. |
+| [pynetdicom #1099](https://github.com/pydicom/pynetdicom/pull/1099) | Redact user-identity passwords in standard DICOM association logs. |
+| [PlatiPy #322](https://github.com/pyplati/platipy/pull/322) | Strip a custom API-key header when redirects cross authentication boundaries. |
 
 [Explore the contribution index →](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md)
 
