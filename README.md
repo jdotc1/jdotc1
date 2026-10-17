@@ -1,6 +1,6 @@
 # Jeff
 
-**Radiation oncologist · Physician-scientist · Independent developer**
+**Radiation oncologist · macOS developer**
 
 Radiation oncologist and security researcher building and hardening medical imaging software for ARM64 on macOS.
 
