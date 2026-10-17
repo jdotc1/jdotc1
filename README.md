@@ -38,9 +38,7 @@ These examples link directly to upstream pull requests. Statuses were checked on
 
 ## Engineering approach
 
-I trace how software handles untrusted input and sensitive data, develop focused patches, and verify behavior with synthetic regression cases. I document compatibility changes and validation limits, with particular attention to preserving scientific results and intended application behavior.
-
-My work spans parser robustness, credential protection, file and archive handling, download integrity, and reliable builds for modern hardware.
+Radiation oncologist and security researcher building and hardening medical imaging software for ARM64 on macOS.
 
 ## Try, share, or contribute
 
