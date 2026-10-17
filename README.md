@@ -42,6 +42,7 @@ Security hardening, analysis tooling, data integrity, and build reliability acro
 - [BrainIAK](https://github.com/brainiak/brainiak) — Remove expression execution from noise-dictionary parsing.
 - [BrainStat](https://github.com/MICA-MNI/BrainStat) — Prevent partial downloads from becoming trusted cache entries.
 - [Clinica](https://github.com/aramis-lab/clinica) — Command-injection hardening for FreeSurfer atlas paths.
+- [Codex](https://github.com/openai/codex) — Reported diagnostic-integrity defects in ephemeral conversation handling.
 - [dcm2niix](https://github.com/rordenlab/dcm2niix) — Dependency source pinning and explicit toolchain controls.
 - [dcmjs](https://github.com/dcmjs-org/dcmjs) — Validate byte counts before binary data reads.
 - [dcmqi](https://github.com/QIICR/dcmqi) — Reliable macOS SDK selection.
@@ -84,9 +85,11 @@ Security hardening, analysis tooling, data integrity, and build reliability acro
 - [Nipype](https://github.com/nipy/nipype) — Remove shell execution from executable dependency inspection.
 - [NiReports](https://github.com/nipreps/nireports) — Prevent unterminated SVG input from causing endless scanning.
 - [nitrain](https://github.com/nitrain/nitrain) — Block OpenNeuro download paths outside the data root.
-- [NiWorkflows](https://github.com/nipreps/niworkflows) — Remove shell execution from mri_info filename handling.
+- [NiWorkflows](https://github.com/nipreps/niworkflows) — Remove an unused shell-invoking FreeSurfer helper.
 - [nnU-Net](https://github.com/MIC-DKFZ/nnUNet) — Isolate model downloads in private staging directories.
 - [Papaya](https://github.com/rii-mango/Papaya) — Prevent HTML interpretation of image title labels.
+- [PaperBanana](https://github.com/dwzhu-pku/PaperBanana) — Proposed removal of hosted credential-editing controls.
+- [PaperOrchestra](https://github.com/Ar9av/PaperOrchestra) — Proposed local-only acceptance gates for native research workflows.
 - [PlatiPy](https://github.com/pyplati/platipy) — Prevent credential leakage, unauthorized log access, and file path escapes.
 - [pydicom](https://github.com/pydicom/pydicom) — Reject HTTP error bodies before writing cached data.
 - [PyMedPhys](https://github.com/pymedphys/pymedphys) — Prevent optimized Python from disabling checksum enforcement.
@@ -96,6 +99,7 @@ Security hardening, analysis tooling, data integrity, and build reliability acro
 - [PyRadiomics](https://github.com/AIM-Harvard/pyradiomics) — Reduce notebook network exposure and reject failed downloads.
 - [PyXNAT](https://github.com/pyxnat/pyxnat) — Prevent other local users from reading credential files.
 - [RSNA Anonymizer](https://github.com/RSNA/anonymizer) — Isolate helper caches to reduce shared temporary-file risks.
+- [Semgrep](https://github.com/semgrep/semgrep) — Scope-aware parameter binding to improve security-rule precision.
 - [Semgrep Rules (PR #4085)](https://github.com/semgrep/semgrep-rules/pull/4085) — Proposed authorization-rule precision fix for explicit authentication schemes.
 - [SimpleITK](https://github.com/SimpleITK/SimpleITK) — Private security disclosure and proposed safe archive extraction.
 - [surfa](https://github.com/freesurfer/surfa) — Command-injection hardening for FreeView subtitle arguments.
