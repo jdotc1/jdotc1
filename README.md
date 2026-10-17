@@ -13,6 +13,14 @@ Radiation oncologist and security researcher building and hardening medical imag
 
 I also develop **MacScope**, a private binary-analysis and reverse-engineering workbench for macOS.
 
+## Recent upstream work
+
+Open proposals checked on **17 October 2026**:
+
+- **macOS compatibility:** [OpenJPEG #1677](https://github.com/uclouvain/openjpeg/pull/1677) — library lookup for relocated command-line tools.
+- **Native Linux ARM64 CI:** [OME-Zarr](https://github.com/ome/ome-zarr-py/pull/704), [OME-Zarr models](https://github.com/ome-zarr-py/ome-zarr-models-py/pull/484), [Zarr](https://github.com/zarr-developers/zarr-python/pull/4525), [Numcodecs](https://github.com/zarr-developers/numcodecs/pull/877), [zarrs](https://github.com/zarrs/zarrs/pull/490), [zarrs-python](https://github.com/zarrs/zarrs-python/pull/199), [pylibjpeg-openjpeg](https://github.com/pydicom/pylibjpeg-openjpeg/pull/129), and [pyvips](https://github.com/libvips/pyvips/pull/1427).
+- **ARM64 packaging and build documentation:** [libjxl #5039](https://github.com/libjxl/libjxl/pull/5039) — native Linux ARM64 static release workflow; [#5040](https://github.com/libjxl/libjxl/pull/5040) — ARM64 GCC build-workaround documentation.
+
 ## Selected open-source contributions
 
 These examples link directly to upstream pull requests. Statuses were checked on **17 October 2026**.
