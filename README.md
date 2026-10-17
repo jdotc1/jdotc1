@@ -1,18 +1,15 @@
 # Jeff
 
-**Radiation oncologist · macOS developer**
-
 Radiation oncologist and security researcher building and hardening medical imaging software for ARM64 on macOS.
-
 
 ## Selected projects
 
 | Project | When to use it | Get started |
 | --- | --- | --- |
-| [SidecarCompare](https://github.com/jdotc1/SidecarCompare) | Review MRI acquisition-metadata changes with exact decimal differences, typed values, and documented units. | [Build the macOS app or CLI](https://github.com/jdotc1/SidecarCompare#build-and-run-on-a-mac) |
-| [EntitlementDiff](https://github.com/jdotc1/EntitlementDiff) | Review changes in declared app entitlements between builds and share a comparison a colleague can reopen. | [Download the macOS app](https://github.com/jdotc1/EntitlementDiff/releases/latest) |
-| [DICOM Anonymizer](https://github.com/jdotc1/dicom-anonymizer) | Pseudonymize supported DICOM metadata across numeric patient-folder batches, with consistent UID remapping and a structured report. | [Standalone macOS preview and Python engine](https://github.com/jdotc1/dicom-anonymizer) |
-| [Prism Native MCP](https://github.com/jdotc1/prism-native-mcp) | Create supported native GraphPad Prism tables, descriptive statistics, graphs, and layouts through MCP. | [Version-pinned source preview](https://github.com/jdotc1/prism-native-mcp) |
+| [SidecarCompare](https://github.com/jdotc1/SidecarCompare) | Review changes between MRI JSON sidecars with exact decimal comparisons, typed values, and documented unit annotations. | [Build the macOS app](https://github.com/jdotc1/SidecarCompare#build-and-run-on-a-mac) · [Use the CLI](https://github.com/jdotc1/SidecarCompare#command-line-comparison) |
+| [EntitlementDiff](https://github.com/jdotc1/EntitlementDiff) | Compare declared app entitlements between builds and share saved comparisons that colleagues can reopen without the original apps. | [Download the macOS app](https://github.com/jdotc1/EntitlementDiff/releases/latest) |
+| [DICOM Anonymizer](https://github.com/jdotc1/dicom-anonymizer) | Pseudonymize supported DICOM metadata using numeric folder names as patient pseudonyms, with consistent UID remapping and a structured report. | [Install the macOS preview](https://github.com/jdotc1/dicom-anonymizer#download-and-install-the-macos-app) · [Try the Python engine](https://github.com/jdotc1/dicom-anonymizer#try-it-with-synthetic-data) |
+| [Prism Native MCP](https://github.com/jdotc1/prism-native-mcp) | Create supported native GraphPad Prism tables, descriptive statistics, graphs, and layouts through MCP. | [Install the version-pinned source preview](https://github.com/jdotc1/prism-native-mcp#install-and-connect) |
 
 I also develop **MacScope**, a private binary-analysis and reverse-engineering workbench for macOS.
 
@@ -39,6 +36,6 @@ My work spans parser robustness, credential protection, file and archive handlin
 
 ## Try, share, or contribute
 
-Each project README explains its supported workflow, current availability, examples, and limits. If a tool fits your work, try its synthetic example, share the repository with a colleague, or open a focused issue with a reproducible example. For upstream contributions, the linked pull requests and contribution index show the current review record.
+Start with a project’s README for setup, synthetic examples, and current limitations. If a tool fits your work, try it, share the repository with a colleague, or open an issue with a reproducible example.
 
 [Research profile · ORCID](https://orcid.org/0009-0005-8244-8646)

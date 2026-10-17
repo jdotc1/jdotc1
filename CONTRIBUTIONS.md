@@ -79,7 +79,7 @@ Public pull-request and issue statuses were checked on **17 October 2026**. Merg
 | [RustSec / cargo-audit](https://github.com/rustsec/rustsec) | Documentation for target-platform value discovery. | [PR #1726](https://github.com/rustsec/rustsec/pull/1726) |
 | [scikit-image](https://github.com/scikit-image/scikit-image) | Native Linux ARM64 build and test coverage. | [PR #8359](https://github.com/scikit-image/scikit-image/pull/8359) |
 | [Semgrep](https://github.com/semgrep/semgrep) | Scope registration for untyped object-destructured parameters. | [PR #11991](https://github.com/semgrep/semgrep/pull/11991) |
-| [Semgrep Rules (PR #4085)](https://github.com/semgrep/semgrep-rules/pull/4085) | C# authorization-rule false-positive correction for explicit authentication schemes. | [PR #4085](https://github.com/semgrep/semgrep-rules/pull/4085) |
+| [Semgrep Rules](https://github.com/semgrep/semgrep-rules) | C# authorization-rule false-positive correction for explicit authentication schemes. | [PR #4085](https://github.com/semgrep/semgrep-rules/pull/4085) |
 | [surfa](https://github.com/freesurfer/surfa) | Literal FreeView subtitle arguments. | [PR #86](https://github.com/freesurfer/surfa/pull/86) |
 | [Syft](https://github.com/anchore/syft) | Alpine upstream URL references in CycloneDX SBOMs. | [PR #5437](https://github.com/anchore/syft/pull/5437) |
 | [TorchIO](https://github.com/TorchIO-project/torchio) | Preservation of HTTPS when dataset downloads fail. | [PR #1529](https://github.com/TorchIO-project/torchio/pull/1529) |
