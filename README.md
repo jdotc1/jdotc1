@@ -63,6 +63,7 @@ Security hardening, analysis tooling, data integrity, and build reliability acro
 - [HD-BET](https://github.com/MIC-DKFZ/HD-BET) — Isolate checkpoint downloads in private temporary directories.
 - [HeuDiConv](https://github.com/nipy/heudiconv) — Eliminate executable expression parsing from cached tables.
 - [highdicom](https://github.com/ImagingDataCommons/highdicom) — Reject malformed lengths before excessive payload reads.
+- [ImageIO](https://github.com/imageio/imageio) — Expose native-library loader diagnostics while preserving image-backend fallback.
 - [InVesalius](https://github.com/invesalius/invesalius3) — Restore TLS verification and bound update-discovery requests.
 - [ITK](https://github.com/InsightSoftwareConsortium/ITK) — Architecture-aware FFTW build configuration.
 - [ITK-SNAP](https://github.com/pyushkevich/itksnap) — Command-injection hardening for macOS launcher paths.
@@ -98,6 +99,7 @@ Security hardening, analysis tooling, data integrity, and build reliability acro
 - [pynrrd](https://github.com/mhe/pynrrd) — Reject invalid NRRD dimensions before data processing.
 - [pyplastimatch](https://github.com/ImagingDataCommons/pyplastimatch) — Stop failed external processes from appearing successful.
 - [PyRadiomics](https://github.com/AIM-Harvard/pyradiomics) — Reduce notebook network exposure and reject failed downloads.
+- [PyVista](https://github.com/pyvista/pyvista) — Document actor cleanup across multiple visualization renderers.
 - [PyXNAT](https://github.com/pyxnat/pyxnat) — Prevent other local users from reading credential files.
 - [RSNA Anonymizer](https://github.com/RSNA/anonymizer) — Isolate helper caches to reduce shared temporary-file risks.
 - [RustSec / cargo-audit](https://github.com/rustsec/rustsec) — Clarify target-platform filters for dependency vulnerability audits.
