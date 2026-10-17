@@ -14,15 +14,15 @@ Selected work in security analysis, credential protection, and safer medical-ima
 
 **[Semgrep — authorization-rule precision](https://github.com/semgrep/semgrep-rules/pull/4085) · PR #4085**
 
-Proposed a targeted correction to a C# authorization rule that flags controllers with explicit authentication schemes. Added 14 regression and control cases while preserving the existing rule scope and positive detections. The PR documents before-and-after engine results and full local repository validation.
+a targeted correction to a C# authorization rule that flags controllers with explicit authentication schemes. Added 14 regression and control cases while preserving the existing rule scope and positive detections. The PR documents before-and-after engine results and full local repository validation.
 
 **[pynetdicom — credential protection](https://github.com/pydicom/pynetdicom/pull/1099) · PR #1099**
 
-Proposed password redaction in standard sent and received DICOM association logs, with regression tests checking both returned messages and captured logging output. The change is scoped to standard association logging.
+password redaction in standard sent and received DICOM association logs, with regression tests checking both returned messages and captured logging output. The change is scoped to standard association logging.
 
 **[PlatiPy — API-key handling](https://github.com/pyplati/platipy/pull/322) · PR #322**
 
-Proposed consistent protection for a custom API-key header across HTTP redirect authentication boundaries, covering all 12 authenticated client request sites. The PR documents synthetic checks for same-origin retention and removal across host, port, and HTTPS-downgrade boundaries.
+consistent protection for a custom API-key header across HTTP redirect authentication boundaries, covering all 12 authenticated client request sites. The PR documents synthetic checks for same-origin retention and removal across host, port, and HTTPS-downgrade boundaries.
 
 **[BIDScoin — command and path handling](https://github.com/Donders-Institute/bidscoin/pull/302) · PR #302**
 
@@ -72,7 +72,7 @@ Security hardening, analysis tooling, data integrity, and build reliability acro
 - [MONAI](https://github.com/Project-MONAI/MONAI) — Propagate download publication failures instead of masking errors.
 - [MONAI Label](https://github.com/Project-MONAI/MONAILabel) — Reject failed identity-provider discovery before cache reuse.
 - [MRIQC](https://github.com/nipreps/mriqc) — Report authentication-credential leakage in error diagnostics.
-- [MRtrix3](https://github.com/MRtrix3/mrtrix3) — Proposed removal of shell execution from error-log paging.
+- [MRtrix3](https://github.com/MRtrix3/mrtrix3) — removal of shell execution from error-log paging.
 - [netneurotools](https://github.com/netneurolab/netneurotools) — Apply safe extraction filters to downloaded TAR archives.
 - [neuromaps](https://github.com/netneurolab/neuromaps) — Command-injection hardening for Workbench path arguments.
 - [NiBabel](https://github.com/nipy/nibabel) — Reject malformed NIfTI lengths before payload processing.
@@ -88,8 +88,8 @@ Security hardening, analysis tooling, data integrity, and build reliability acro
 - [NiWorkflows](https://github.com/nipreps/niworkflows) — Remove an unused shell-invoking FreeSurfer helper.
 - [nnU-Net](https://github.com/MIC-DKFZ/nnUNet) — Isolate model downloads in private staging directories.
 - [Papaya](https://github.com/rii-mango/Papaya) — Prevent HTML interpretation of image title labels.
-- [PaperBanana](https://github.com/dwzhu-pku/PaperBanana) — Proposed removal of hosted credential-editing controls.
-- [PaperOrchestra](https://github.com/Ar9av/PaperOrchestra) — Proposed local-only acceptance gates for native research workflows.
+- [PaperBanana](https://github.com/dwzhu-pku/PaperBanana) — removal of hosted credential-editing controls.
+- [PaperOrchestra](https://github.com/Ar9av/PaperOrchestra) — local-only acceptance gates for native research workflows.
 - [PlatiPy](https://github.com/pyplati/platipy) — Prevent credential leakage, unauthorized log access, and file path escapes.
 - [pydicom](https://github.com/pydicom/pydicom) — Reject HTTP error bodies before writing cached data.
 - [PyMedPhys](https://github.com/pymedphys/pymedphys) — Prevent optimized Python from disabling checksum enforcement.
@@ -100,8 +100,8 @@ Security hardening, analysis tooling, data integrity, and build reliability acro
 - [PyXNAT](https://github.com/pyxnat/pyxnat) — Prevent other local users from reading credential files.
 - [RSNA Anonymizer](https://github.com/RSNA/anonymizer) — Isolate helper caches to reduce shared temporary-file risks.
 - [Semgrep](https://github.com/semgrep/semgrep) — Scope-aware parameter binding to improve security-rule precision.
-- [Semgrep Rules (PR #4085)](https://github.com/semgrep/semgrep-rules/pull/4085) — Proposed authorization-rule precision fix for explicit authentication schemes.
-- [SimpleITK](https://github.com/SimpleITK/SimpleITK) — Private security disclosure and proposed safe archive extraction.
+- [Semgrep Rules (PR #4085)](https://github.com/semgrep/semgrep-rules/pull/4085) — authorization-rule precision fix for explicit authentication schemes.
+- [SimpleITK](https://github.com/SimpleITK/SimpleITK) — Private security disclosure and safe archive extraction.
 - [surfa](https://github.com/freesurfer/surfa) — Command-injection hardening for FreeView subtitle arguments.
 - [TorchIO](https://github.com/TorchIO-project/torchio) — Block insecure HTTP fallback after HTTPS failures.
 - [TorchXRayVision](https://github.com/mlmed/torchxrayvision) — Protect existing downloads from failed transfer replacement.
