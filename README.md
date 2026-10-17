@@ -104,6 +104,7 @@ Security hardening, analysis tooling, data integrity, and build reliability acro
 - [PyXNAT](https://github.com/pyxnat/pyxnat) — Prevent other local users from reading credential files.
 - [RSNA Anonymizer](https://github.com/RSNA/anonymizer) — Isolate helper caches to reduce shared temporary-file risks.
 - [RustSec / cargo-audit](https://github.com/rustsec/rustsec) — Clarify target-platform filters for dependency vulnerability audits.
+- [scikit-image](https://github.com/scikit-image/scikit-image) — Add native Linux ARM64 CI with architecture-isolated caches and artifacts.
 - [Semgrep](https://github.com/semgrep/semgrep) — Scope-aware parameter binding to improve security-rule precision.
 - [Semgrep Rules (PR #4085)](https://github.com/semgrep/semgrep-rules/pull/4085) — Authorization-rule precision fix for explicit authentication schemes.
 - [SimpleITK](https://github.com/SimpleITK/SimpleITK) — Private security disclosure and safe archive extraction.
