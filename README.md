@@ -43,6 +43,7 @@ Security hardening, analysis tooling, data integrity, and build reliability acro
 - [BrainStat](https://github.com/MICA-MNI/BrainStat) — Prevent partial downloads from becoming trusted cache entries.
 - [Clinica](https://github.com/aramis-lab/clinica) — Command-injection hardening for FreeSurfer atlas paths.
 - [Codex](https://github.com/openai/codex) — Reported diagnostic-integrity defects in ephemeral conversation handling.
+- [CycloneDX](https://github.com/CycloneDX/cyclonedx-core-java) — Recognize whitespace-prefixed JSON and XML software bills of materials.
 - [dcm2niix](https://github.com/rordenlab/dcm2niix) — Dependency source pinning and explicit toolchain controls.
 - [dcmjs](https://github.com/dcmjs-org/dcmjs) — Validate byte counts before binary data reads.
 - [dcmqi](https://github.com/QIICR/dcmqi) — Reliable macOS SDK selection.
