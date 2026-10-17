@@ -49,6 +49,7 @@ Security hardening, analysis tooling, data integrity, and build reliability acro
 - [dcmstack](https://github.com/moloney/dcmstack) — Prevent cross-call mutation of metadata-filter policy.
 - [deep-mr](https://github.com/INFN-MRI/deep-mr) — Defensive rejection of unsupported GPU devices.
 - [deid](https://github.com/pydicom/deid) — Restrict local access to pixel-cleaner outputs.
+- [Dependency-Track](https://github.com/DependencyTrack/dependency-track) — Enable security-notification filtering by latest project version.
 - [dicom-numpy](https://github.com/innolitics/dicom-numpy) — Limit decompression memory use with streamed ZIP reads.
 - [dicom-validator](https://github.com/pydicom/dicom-validator) — Prevent filename-based HTML injection in reports.
 - [dicomParser](https://github.com/cornerstonejs/dicomParser) — Reject invalid and out-of-bounds binary stream seeks.
@@ -99,10 +100,12 @@ Security hardening, analysis tooling, data integrity, and build reliability acro
 - [PyRadiomics](https://github.com/AIM-Harvard/pyradiomics) — Reduce notebook network exposure and reject failed downloads.
 - [PyXNAT](https://github.com/pyxnat/pyxnat) — Prevent other local users from reading credential files.
 - [RSNA Anonymizer](https://github.com/RSNA/anonymizer) — Isolate helper caches to reduce shared temporary-file risks.
+- [RustSec / cargo-audit](https://github.com/rustsec/rustsec) — Clarify target-platform filters for dependency vulnerability audits.
 - [Semgrep](https://github.com/semgrep/semgrep) — Scope-aware parameter binding to improve security-rule precision.
 - [Semgrep Rules (PR #4085)](https://github.com/semgrep/semgrep-rules/pull/4085) — Authorization-rule precision fix for explicit authentication schemes.
 - [SimpleITK](https://github.com/SimpleITK/SimpleITK) — Private security disclosure and safe archive extraction.
 - [surfa](https://github.com/freesurfer/surfa) — Command-injection hardening for FreeView subtitle arguments.
+- [Syft](https://github.com/anchore/syft) — Preserve Alpine package-source references in CycloneDX SBOMs.
 - [TorchIO](https://github.com/TorchIO-project/torchio) — Block insecure HTTP fallback after HTTPS failures.
 - [TorchXRayVision](https://github.com/mlmed/torchxrayvision) — Protect existing downloads from failed transfer replacement.
 - [TotalSegmentator](https://github.com/wasserth/TotalSegmentator) — Remove shell execution from NORA mask-tagging commands.
