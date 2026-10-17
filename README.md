@@ -6,12 +6,12 @@ I build native macOS tools and modernize medical imaging and scientific software
 
 ## Selected projects
 
-| Project | What it does | Availability |
+| Project | When to use it | Get started |
 | --- | --- | --- |
-| [SidecarCompare](https://github.com/jdotc1/SidecarCompare) | Compares MRI JSON acquisition metadata, with typed differences, exact decimal arithmetic, and documented unit annotations. | Native macOS app and CLI · source |
-| [EntitlementDiff](https://github.com/jdotc1/EntitlementDiff) | Compares embedded entitlement declarations in the main executable of two app builds for a chosen architecture, without launching the inspected apps. | Native macOS app and Swift library |
-| [DICOM Anonymizer](https://github.com/jdotc1/dicom-anonymizer) | Performs local metadata pseudonymization for MR, CT, and RTSTRUCT batches. | Python engine and macOS app preview |
-| [Prism Native MCP](https://github.com/jdotc1/prism-native-mcp) | Connects MCP clients to supported GraphPad Prism tables, descriptive statistics, graphs, and layouts on macOS. | Version-pinned source preview |
+| [SidecarCompare](https://github.com/jdotc1/SidecarCompare) | Review MRI acquisition-metadata changes with exact decimal differences, typed values, and documented units. | [Build the macOS app or CLI](https://github.com/jdotc1/SidecarCompare#build-and-run-on-a-mac) |
+| [EntitlementDiff](https://github.com/jdotc1/EntitlementDiff) | Review changes in declared app entitlements between builds and share a comparison a colleague can reopen. | [Download the macOS app](https://github.com/jdotc1/EntitlementDiff/releases/latest) |
+| [DICOM Anonymizer](https://github.com/jdotc1/dicom-anonymizer) | Pseudonymize supported DICOM metadata across numeric patient-folder batches, with consistent UID remapping and a structured report. | [Standalone macOS preview and Python engine](https://github.com/jdotc1/dicom-anonymizer) |
+| [Prism Native MCP](https://github.com/jdotc1/prism-native-mcp) | Create supported native GraphPad Prism tables, descriptive statistics, graphs, and layouts through MCP. | [Version-pinned source preview](https://github.com/jdotc1/prism-native-mcp) |
 
 I also develop **MacScope**, a private binary-analysis and reverse-engineering workbench for macOS.
 
@@ -35,5 +35,9 @@ These examples link directly to upstream pull requests. Statuses were checked on
 I trace how software handles untrusted input and sensitive data, develop focused patches, and verify behavior with synthetic regression cases. I document compatibility changes and validation limits, with particular attention to preserving scientific results and intended application behavior.
 
 My work spans parser robustness, credential protection, file and archive handling, download integrity, and reliable builds for modern hardware.
+
+## Try, share, or contribute
+
+Each project README explains its supported workflow, current availability, examples, and limits. If a tool fits your work, try its synthetic example, share the repository with a colleague, or open a focused issue with a reproducible example. For upstream contributions, the linked pull requests and contribution index show the current review record.
 
 [Research profile · ORCID](https://orcid.org/0009-0005-8244-8646)
