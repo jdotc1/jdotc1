@@ -4,7 +4,7 @@ Work in medical imaging, scientific software, defensive security, and build reli
 
 [Back to my profile](https://github.com/jdotc1)
 
-Public pull-request and issue statuses were checked on **17 October 2026**. Merged entries have been integrated into an upstream branch; release inclusion depends on the project. Open entries are proposals. The linked records provide current status, implementation details, and validation scope.
+Public pull-request and issue statuses were checked on **18 October 2026**. Merged entries have been integrated into an upstream branch; release inclusion depends on the project. Open entries are proposals. The linked records provide current status, implementation details, and validation scope.
 
 ## Merged upstream work
 
@@ -12,14 +12,20 @@ Public pull-request and issue statuses were checked on **17 October 2026**. Merg
 | --- | --- | --- |
 | [ANTsPy](https://github.com/ANTsX/ANTsPy) | HTTP status checks before caching downloaded test data. | [PR #924](https://github.com/ANTsX/ANTsPy/pull/924) |
 | [BIDScoin](https://github.com/Donders-Institute/bidscoin) | Literal image paths in local SynthStrip commands. | [PR #302](https://github.com/Donders-Institute/bidscoin/pull/302) |
+| [connected-components-3d](https://github.com/seung-lab/connected-components-3d) | Native Linux ARM64 CI using the existing connected-component tests. | [PR #153](https://github.com/seung-lab/connected-components-3d/pull/153) |
+| [CycloneDX](https://github.com/CycloneDX/cyclonedx-core-java) | Detection of JSON and XML software bills of materials with leading whitespace. | [PR #957](https://github.com/CycloneDX/cyclonedx-core-java/pull/957) |
 | [dcm2niix](https://github.com/rordenlab/dcm2niix) | macOS build-path quoting, architecture/SDK/toolchain propagation, optional dependency source pinning, and explicit LTO settings. | [PR #1043](https://github.com/rordenlab/dcm2niix/pull/1043) · [PR #1044](https://github.com/rordenlab/dcm2niix/pull/1044) · [PR #1045](https://github.com/rordenlab/dcm2niix/pull/1045) · [PR #1046](https://github.com/rordenlab/dcm2niix/pull/1046) · [PR #1047](https://github.com/rordenlab/dcm2niix/pull/1047) · [PR #1048](https://github.com/rordenlab/dcm2niix/pull/1048) |
 | [dcmqi](https://github.com/QIICR/dcmqi) | Support for macOS SDK names in CMAKE_OSX_SYSROOT. | [PR #566](https://github.com/QIICR/dcmqi/pull/566) |
 | [deid](https://github.com/pydicom/deid) | Owner-only permissions by default for newly created pixel-cleaner output directories. | [PR #304](https://github.com/pydicom/deid/pull/304) |
 | [dicom-validator](https://github.com/pydicom/dicom-validator) | Escaped filenames in HTML validation-report headings. | [PR #301](https://github.com/pydicom/dicom-validator/pull/301) |
+| [FabIO](https://github.com/silx-kit/fabio) | Native Linux ARM64 package build and test CI. | [PR #675](https://github.com/silx-kit/fabio/pull/675) |
 | [FastSurfer](https://github.com/Deep-MI/FastSurfer) | Quoted paths when generating FreeSurfer stub links. | [PR #950](https://github.com/Deep-MI/FastSurfer/pull/950) |
+| [ITK](https://github.com/InsightSoftwareConsortium/ITK) | macOS target-architecture selection for FFTW SIMD defaults. | [PR #6947](https://github.com/InsightSoftwareConsortium/ITK/pull/6947) |
 | [minc-toolkit-v2](https://github.com/BIC-MNI/minc-toolkit-v2) | Propagation of macOS build settings to HDF5. | [PR #255](https://github.com/BIC-MNI/minc-toolkit-v2/pull/255) |
 | [PaperBanana](https://github.com/dwzhu-pku/PaperBanana) | Legacy plot routing and figure-sizing fixes, plus optional visual-metaphor planning for diagrams. | [PR #69](https://github.com/dwzhu-pku/PaperBanana/pull/69) · [PR #71](https://github.com/dwzhu-pku/PaperBanana/pull/71) |
 | [pyplastimatch](https://github.com/ImagingDataCommons/pyplastimatch) | Propagation of conversion and resampling process failures. | [PR #15](https://github.com/ImagingDataCommons/pyplastimatch/pull/15) |
+| [RSNA Anonymizer](https://github.com/RSNA/anonymizer) | Per-process macOS documentation helper caches. | [PR #41](https://github.com/RSNA/anonymizer/pull/41) |
+| [zarrs](https://github.com/zarrs/zarrs) | Native Linux ARM64 CI using the existing Rust tests with all features enabled. | [PR #490](https://github.com/zarrs/zarrs/pull/490) |
 
 ## Open upstream proposals
 
@@ -29,7 +35,6 @@ Public pull-request and issue statuses were checked on **17 October 2026**. Merg
 | [BrainIAK](https://github.com/brainiak/brainiak) | Literal parsing of noise dictionaries. | [PR #616](https://github.com/brainiak/brainiak/pull/616) |
 | [BrainStat](https://github.com/MICA-MNI/BrainStat) | Publication of downloaded data only after a successful copy. | [PR #385](https://github.com/MICA-MNI/BrainStat/pull/385) |
 | [Clinica](https://github.com/aramis-lab/clinica) | Literal FreeSurfer atlas paths in subprocess arguments. | [PR #1741](https://github.com/aramis-lab/clinica/pull/1741) |
-| [CycloneDX](https://github.com/CycloneDX/cyclonedx-core-java) | Detection of JSON and XML software bills of materials with leading whitespace. | [PR #957](https://github.com/CycloneDX/cyclonedx-core-java/pull/957) |
 | [dcmjs](https://github.com/dcmjs-org/dcmjs) | Byte-count validation before BufferStream reads. | [PR #605](https://github.com/dcmjs-org/dcmjs/pull/605) |
 | [dcmstack](https://github.com/moloney/dcmstack) | Independent metadata-filter defaults for each call. | [PR #102](https://github.com/moloney/dcmstack/pull/102) |
 | [deep-mr](https://github.com/INFN-MRI/deep-mr) | Explicit rejection of MPS before CUDA conversion. | [PR #5](https://github.com/INFN-MRI/deep-mr/pull/5) |
@@ -46,7 +51,6 @@ Public pull-request and issue statuses were checked on **17 October 2026**. Merg
 | [highdicom](https://github.com/ImagingDataCommons/highdicom) | Validation of undefined pixel-fragment lengths before reads. | [PR #471](https://github.com/ImagingDataCommons/highdicom/pull/471) |
 | [ImageIO](https://github.com/imageio/imageio) | Debug logging for FreeImage loader failures. | [PR #1240](https://github.com/imageio/imageio/pull/1240) |
 | [InVesalius](https://github.com/invesalius/invesalius3) | TLS verification and bounded update-discovery requests. | [PR #1514](https://github.com/invesalius/invesalius3/pull/1514) |
-| [ITK](https://github.com/InsightSoftwareConsortium/ITK) | macOS target-architecture selection for FFTW SIMD defaults. | [PR #6947](https://github.com/InsightSoftwareConsortium/ITK/pull/6947) |
 | [ITK-SNAP](https://github.com/pyushkevich/itksnap) | Quoted application paths in the macOS launcher. | [PR #280](https://github.com/pyushkevich/itksnap/pull/280) |
 | [libjxl](https://github.com/libjxl/libjxl) | Native Linux ARM64 static release workflow; documentation of an ARM64 GCC build workaround. | [PR #5039](https://github.com/libjxl/libjxl/pull/5039) · [PR #5040](https://github.com/libjxl/libjxl/pull/5040) |
 | [medicaldetectiontoolkit](https://github.com/MIC-DKFZ/medicaldetectiontoolkit) | Literal checkpoint paths for cleanup. | [PR #151](https://github.com/MIC-DKFZ/medicaldetectiontoolkit/pull/151) |
@@ -80,10 +84,8 @@ Public pull-request and issue statuses were checked on **17 October 2026**. Merg
 | [pynetdicom](https://github.com/pydicom/pynetdicom) | Password redaction in standard DICOM association logs. | [PR #1099](https://github.com/pydicom/pynetdicom/pull/1099) |
 | [pynrrd](https://github.com/mhe/pynrrd) | Validation of nonpositive NRRD dimensions before data access. | [PR #173](https://github.com/mhe/pynrrd/pull/173) |
 | [PyRadiomics](https://github.com/AIM-Harvard/pyradiomics) | HTTPS installation instructions, localhost-bound notebook examples, external-tool failure propagation in the experimental DICOM script, and download cache integrity. | [PR #956](https://github.com/AIM-Harvard/pyradiomics/pull/956) · [PR #957](https://github.com/AIM-Harvard/pyradiomics/pull/957) · [PR #958](https://github.com/AIM-Harvard/pyradiomics/pull/958) · [PR #959](https://github.com/AIM-Harvard/pyradiomics/pull/959) |
-| [pyvips](https://github.com/libvips/pyvips) | Native Linux ARM64 CI for libvips/CFFI integration. | [PR #1427](https://github.com/libvips/pyvips/pull/1427) |
 | [PyVista](https://github.com/pyvista/pyvista) | A multi-renderer example for actor cleanup. | [PR #9432](https://github.com/pyvista/pyvista/pull/9432) |
 | [PyXNAT](https://github.com/pyxnat/pyxnat) | Restricted saved credential-file permissions on POSIX. | [PR #218](https://github.com/pyxnat/pyxnat/pull/218) |
-| [RSNA Anonymizer](https://github.com/RSNA/anonymizer) | Per-process macOS documentation helper caches. | [PR #41](https://github.com/RSNA/anonymizer/pull/41) |
 | [RustSec / cargo-audit](https://github.com/rustsec/rustsec) | Documentation for target-platform value discovery. | [PR #1726](https://github.com/rustsec/rustsec/pull/1726) |
 | [scikit-image](https://github.com/scikit-image/scikit-image) | Native Linux ARM64 build and test coverage. | [PR #8359](https://github.com/scikit-image/scikit-image/pull/8359) |
 | [Semgrep](https://github.com/semgrep/semgrep) | Scope registration for untyped object-destructured parameters. | [PR #11991](https://github.com/semgrep/semgrep/pull/11991) |
@@ -91,14 +93,12 @@ Public pull-request and issue statuses were checked on **17 October 2026**. Merg
 | [surfa](https://github.com/freesurfer/surfa) | Literal FreeView subtitle arguments. | [PR #86](https://github.com/freesurfer/surfa/pull/86) |
 | [Syft](https://github.com/anchore/syft) | Alpine upstream URL references in CycloneDX SBOMs and parsed CPE attributes in custom output templates. | [PR #5437](https://github.com/anchore/syft/pull/5437) · [PR #5438](https://github.com/anchore/syft/pull/5438) |
 | [TorchIO](https://github.com/TorchIO-project/torchio) | Preservation of HTTPS when dataset downloads fail. | [PR #1529](https://github.com/TorchIO-project/torchio/pull/1529) |
-| [TorchXRayVision](https://github.com/mlmed/torchxrayvision) | Preservation of existing downloads when transfers fail. | [PR #199](https://github.com/mlmed/torchxrayvision/pull/199) |
 | [TotalSegmentator](https://github.com/wasserth/TotalSegmentator) | NORA mask-tagging arguments without shell interpretation. | [PR #627](https://github.com/wasserth/TotalSegmentator/pull/627) |
 | [TractSeg](https://github.com/MIC-DKFZ/TractSeg) | Literal cleanup filenames. | [PR #294](https://github.com/MIC-DKFZ/TractSeg/pull/294) |
 | [WORC](https://github.com/MStarmans91/WORC) | Literal parsing of PyRadiomics center-of-mass coordinates. | [PR #100](https://github.com/MStarmans91/WORC/pull/100) |
 | [XCP-D](https://github.com/PennLINC/xcp_d) | Bounded buffering for example downloads. | [PR #1638](https://github.com/PennLINC/xcp_d/pull/1638) |
 | [xnatutils](https://github.com/Australian-Imaging-Service/xnatutils) | Containment of per-file XNAT download destinations. | [PR #16](https://github.com/Australian-Imaging-Service/xnatutils/pull/16) |
 | [Zarr-Python](https://github.com/zarr-developers/zarr-python) | Native Linux ARM64 test coverage for Zarr. | [PR #4525](https://github.com/zarr-developers/zarr-python/pull/4525) |
-| [zarrs](https://github.com/zarrs/zarrs) | Native Linux ARM64 CI using the existing Rust tests with all features enabled. | [PR #490](https://github.com/zarrs/zarrs/pull/490) |
 | [zarrs-python](https://github.com/zarrs/zarrs-python) | Native Linux ARM64 CI for Python/Rust integration, including both test suites and type-stub checks. | [PR #199](https://github.com/zarrs/zarrs-python/pull/199) |
 
 ## Public issue reports
@@ -125,6 +125,12 @@ These proposals were closed without merge.
 | --- | --- | --- |
 | [PaperBanana](https://github.com/dwzhu-pku/PaperBanana) | Proposed removal of hosted credential-editing controls. | [PR #70](https://github.com/dwzhu-pku/PaperBanana/pull/70) |
 | [PaperOrchestra](https://github.com/Ar9av/PaperOrchestra) | Proposed native launcher integration with local acceptance checks. | [PR #12](https://github.com/Ar9av/PaperOrchestra/pull/12) · Closed draft |
+| [pyvips](https://github.com/libvips/pyvips) | Native Linux ARM64 CI for libvips/CFFI integration. | [PR #1427](https://github.com/libvips/pyvips/pull/1427) |
+| [TorchXRayVision](https://github.com/mlmed/torchxrayvision) | Preservation of existing downloads when transfers fail. | [PR #199](https://github.com/mlmed/torchxrayvision/pull/199) |
+
+**PaperBanana:** Maintainer-authored [PR #95](https://github.com/dwzhu-pku/PaperBanana/pull/95) merged Critic round controls adapted from [my PR #73](https://github.com/dwzhu-pku/PaperBanana/pull/73), and [PR #96](https://github.com/dwzhu-pku/PaperBanana/pull/96) merged local/Ollama text routing adapted from [my PR #74](https://github.com/dwzhu-pku/PaperBanana/pull/74). These follow-ups incorporated selected parts of the original proposals.
+
+**TorchXRayVision:** [Maintainer-authored PR #200](https://github.com/mlmed/torchxrayvision/pull/200) was merged with attribution to [my original PR #199](https://github.com/mlmed/torchxrayvision/pull/199).
 
 ## Private reporting
 
