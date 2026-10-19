@@ -10,11 +10,12 @@ My work covers DICOM and MRI metadata, secure file handling, native build system
 
 | Project | What it does | Availability |
 | --- | --- | --- |
+| **AIRS** | Inspect bounded ARM64 Mach-O unwind evidence and compare app entitlements in a native macOS workspace, with checked scope and unresolved results shown explicitly. | Private macOS preview |
 | [DICOM Anonymizer](https://github.com/jdotc1/dicom-anonymizer) | Local metadata pseudonymization for MR, CT, and RTSTRUCT batches, with consistent UID remapping and structured reports. Native Apple Silicon app and Python engine. | [macOS preview](https://github.com/jdotc1/dicom-anonymizer#download-and-install-the-macos-app) |
 | [SidecarCompare](https://github.com/jdotc1/SidecarCompare) | Compare MRI JSON sidecars with exact decimal differences, typed values, and documented units. Native SwiftUI app with a shared Swift core and CLI. | [Build from source](https://github.com/jdotc1/SidecarCompare#build-and-run-on-a-mac) · [CLI](https://github.com/jdotc1/SidecarCompare#command-line-comparison) |
 | [Prism Native MCP](https://github.com/jdotc1/prism-native-mcp) | Create supported GraphPad Prism tables, descriptive analyses, native graphs, layouts, and figure exports through a local MCP server. | [Version-pinned source preview](https://github.com/jdotc1/prism-native-mcp#install-and-connect) |
 
-Current private development includes **AIRS**, which incorporates EntitlementDiff's entitlement-comparison functionality, and **MacScope**, a binary-analysis and reverse-engineering workbench for macOS.
+Other private development includes **MacScope**, a binary-analysis and reverse-engineering workbench for macOS.
 
 ## Selected merged contributions
 
