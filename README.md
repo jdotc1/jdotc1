@@ -19,20 +19,25 @@ Other private development includes **MacScope**, a binary-analysis and reverse-e
 
 ## Selected merged contributions
 
-| Area | Upstream work |
+Selected upstream merges focused on defensive input handling, protecting imaging outputs, and software supply-chain reliability.
+
+| Focus | Merged upstream contribution |
 | --- | --- |
-| **Apple Silicon and macOS builds** | **[dcm2niix](https://github.com/rordenlab/dcm2niix/pull/1043):** build-path handling and propagation of [architecture](https://github.com/rordenlab/dcm2niix/pull/1044), [SDK](https://github.com/rordenlab/dcm2niix/pull/1045), and [toolchain](https://github.com/rordenlab/dcm2niix/pull/1047) settings. **[ITK](https://github.com/InsightSoftwareConsortium/ITK/pull/6947):** target-architecture selection for FFTW SIMD defaults. **[MINC Toolkit](https://github.com/BIC-MNI/minc-toolkit-v2/pull/255):** forwarding macOS build settings to HDF5. |
-| **Medical imaging security** | **[BIDScoin](https://github.com/Donders-Institute/bidscoin/pull/302)** and **[FastSurfer](https://github.com/Deep-MI/FastSurfer/pull/950):** safer path handling in imaging commands and link helpers. **[deid](https://github.com/pydicom/deid/pull/304):** owner-only defaults for new pixel-cleaner output directories. **[dicom-validator](https://github.com/pydicom/dicom-validator/pull/301):** filename escaping in HTML report headings. |
-| **Imaging workflow reliability** | **[ANTsPy](https://github.com/ANTsX/ANTsPy/pull/924):** HTTP-status checks before caching downloaded test data. **[pyplastimatch](https://github.com/ImagingDataCommons/pyplastimatch/pull/15):** propagation of conversion and resampling process failures. |
-| **Native Linux ARM64 testing** | Build and test coverage for **[FabIO](https://github.com/silx-kit/fabio/pull/675)**, **[connected-components-3d](https://github.com/seung-lab/connected-components-3d/pull/153)**, **[zarrs](https://github.com/zarrs/zarrs/pull/490)**, and **[fastremap](https://github.com/seung-lab/fastremap/pull/60)**. |
-| **Software supply-chain tooling** | **[CycloneDX Core Java](https://github.com/CycloneDX/cyclonedx-core-java/pull/957):** detection of JSON and XML software bills of materials with leading whitespace. |
+| **Defensive NIfTI parsing** | **[NiBabel #1568](https://github.com/nipy/nibabel/pull/1568):** Rejects undersized NIfTI extensions before payload reads, avoiding unnecessary reads of the remaining input when processing malformed files. |
+| **Privacy of imaging outputs** | **[deid #304](https://github.com/pydicom/deid/pull/304):** Defaults newly created pixel-cleaner output directories to owner-only permissions, reducing unintended access on shared POSIX systems. |
+| **HTML report safety** | **[dicom-validator #301](https://github.com/pydicom/dicom-validator/pull/301):** Escapes filenames in HTML validation-report headings so filename content renders as text. |
+| **Command-path hardening** | **[BIDScoin #302](https://github.com/Donders-Institute/bidscoin/pull/302):** Quotes image, output, and mask paths in local SynthStrip commands, keeping shell metacharacters in those paths literal. |
+| **SBOM ingestion reliability** | **[CycloneDX Core Java #957](https://github.com/CycloneDX/cyclonedx-core-java/pull/957):** Corrects format detection for JSON/XML software bills of materials with leading whitespace, allowing valid SBOMs to reach the appropriate parser. |
+| **Dependency reproducibility** | **[dcm2niix #1046](https://github.com/rordenlab/dcm2niix/pull/1046):** Pins the optional Cloudflare-zlib dependency to a fixed commit, making dependency source selection reproducible. |
+
+Additional merged work covers native Apple Silicon/macOS builds, Linux ARM64 testing, and imaging workflow reliability; see the [full contribution index](CONTRIBUTIONS.md#merged-upstream-work).
 
 ## Current upstream proposals
 
 Open pull requests include:
 
 - **Medical imaging security:** [dicom-rs](https://github.com/Enet4/dicom-rs/pull/845) UID path-safety checks; [pynetdicom](https://github.com/pydicom/pynetdicom/pull/1099) password redaction; [PlatiPy](https://github.com/pyplati/platipy/pull/322) API-key handling across redirects; [TorchIO](https://github.com/TorchIO-project/torchio/pull/1529) preservation of HTTPS on failed downloads.
-- **Image and data integrity:** [dicom2nifti](https://github.com/icometrix/dicom2nifti/pull/167) temporal metadata preservation; [NiBabel](https://github.com/nipy/nibabel/pull/1568) NIfTI extension-length validation; [PyMedPhys](https://github.com/pymedphys/pymedphys/pull/2394) checksum enforcement under optimized Python; [MONAI](https://github.com/Project-MONAI/MONAI/pull/9177) download-publication failure handling.
+- **Image and data integrity:** [dicom2nifti](https://github.com/icometrix/dicom2nifti/pull/167) temporal metadata preservation; [PyMedPhys](https://github.com/pymedphys/pymedphys/pull/2394) checksum enforcement under optimized Python; [MONAI](https://github.com/Project-MONAI/MONAI/pull/9177) download-publication failure handling.
 - **Native builds and packaging:** [3D Slicer](https://github.com/Slicer/Slicer/pull/9478) macOS bundle hardening and Apple Silicon workflow documentation; [OpenJPEG](https://github.com/uclouvain/openjpeg/pull/1677) relocated macOS library lookup; native Linux ARM64 coverage for [scikit-image](https://github.com/scikit-image/scikit-image/pull/8359), [OME-Zarr](https://github.com/ome/ome-zarr-py/pull/704), and [Zarr](https://github.com/zarr-developers/zarr-python/pull/4525).
 - **Security tooling:** [Semgrep](https://github.com/semgrep/semgrep/pull/11991) parameter-scope handling and [rule accuracy](https://github.com/semgrep/semgrep-rules/pull/4085); [Gitleaks](https://github.com/gitleaks/gitleaks/pull/2307) report preservation during validation; [XCP-D](https://github.com/PennLINC/xcp_d/pull/1640) fork-PR validation with read-only permissions.
 

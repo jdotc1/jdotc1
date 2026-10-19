@@ -25,6 +25,7 @@ Public pull-request and issue statuses were checked on **19 October 2026**. Merg
 | [FastSurfer](https://github.com/Deep-MI/FastSurfer) | Quoted paths when generating FreeSurfer stub links. | [PR #950](https://github.com/Deep-MI/FastSurfer/pull/950) |
 | [ITK](https://github.com/InsightSoftwareConsortium/ITK) | macOS target-architecture selection for FFTW SIMD defaults. | [PR #6947](https://github.com/InsightSoftwareConsortium/ITK/pull/6947) |
 | [minc-toolkit-v2](https://github.com/BIC-MNI/minc-toolkit-v2) | Propagation of macOS build settings to HDF5. | [PR #255](https://github.com/BIC-MNI/minc-toolkit-v2/pull/255) |
+| [NiBabel](https://github.com/nipy/nibabel) | Rejection of undersized NIfTI extensions before payload reads, avoiding unnecessary reads of malformed input. | [PR #1568](https://github.com/nipy/nibabel/pull/1568) |
 | [PaperBanana](https://github.com/dwzhu-pku/PaperBanana) | Legacy plot routing and figure-sizing fixes, plus optional visual-metaphor planning for diagrams. | [PR #69](https://github.com/dwzhu-pku/PaperBanana/pull/69) · [PR #71](https://github.com/dwzhu-pku/PaperBanana/pull/71) |
 | [pyplastimatch](https://github.com/ImagingDataCommons/pyplastimatch) | Propagation of conversion and resampling process failures. | [PR #15](https://github.com/ImagingDataCommons/pyplastimatch/pull/15) |
 | [RSNA Anonymizer](https://github.com/RSNA/anonymizer) | Per-process macOS documentation helper caches. | [PR #41](https://github.com/RSNA/anonymizer/pull/41) |
@@ -70,7 +71,6 @@ Public pull-request and issue statuses were checked on **19 October 2026**. Merg
 | [napari / npe2](https://github.com/napari/npe2) | Native Linux ARM64 test coverage for the plugin infrastructure. | [PR #525](https://github.com/napari/npe2/pull/525) |
 | [netneurotools](https://github.com/netneurolab/netneurotools) | Explicit TAR extraction filters for downloaded archives. | [PR #186](https://github.com/netneurolab/netneurotools/pull/186) |
 | [neuromaps](https://github.com/netneurolab/neuromaps) | Literal paths in Workbench resampling. | [PR #226](https://github.com/netneurolab/neuromaps/pull/226) |
-| [NiBabel](https://github.com/nipy/nibabel) | Validation of undersized NIfTI extension lengths before payload reads. | [PR #1568](https://github.com/nipy/nibabel/pull/1568) |
 | [NIFTI-Reader-JS](https://github.com/rii-mango/NIFTI-Reader-JS) | Validation of negative NIfTI extension lengths before payload access. | [PR #58](https://github.com/rii-mango/NIFTI-Reader-JS/pull/58) |
 | [NiftyReg](https://github.com/KCL-BMEIS/niftyreg) | SIMD selection for explicit macOS ARM64 targets. | [PR #155](https://github.com/KCL-BMEIS/niftyreg/pull/155) |
 | [NiftySeg](https://github.com/KCL-BMEIS/NiftySeg) | Propagation of macOS target architectures to the optional NiftyReg build. | [PR #18](https://github.com/KCL-BMEIS/NiftySeg/pull/18) |
