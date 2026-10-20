@@ -2,55 +2,43 @@
 
 **Radiation oncologist · Physician-scientist · Security researcher**
 
-I build and harden **open-source medical imaging software for Apple Silicon and ARM64**, with a focus on native macOS applications, MR imaging, and radiomics.
+I work at the intersection of **medical imaging security, radiomics, and native macOS software on Apple Silicon (ARM64)**. I contribute defensive fixes to the open-source tools used to acquire, convert, analyze, and share imaging data, and build applications for inspecting binaries, reviewing entitlements, and preserving research data integrity.
 
-My work covers DICOM and MRI metadata, secure file handling, native build systems, and application inspection. I contribute fixes upstream and develop focused tools for imaging and research workflows.
+My focus is practical: protect patient metadata and credentials, handle untrusted files safely, preserve quantitative imaging information, and make architecture-specific behavior explicit. My clinical and research interests in MR imaging and radiomics inform the problems I choose to work on.
 
-## Selected projects
+## Applications I develop
 
-| Project | What it does | Availability |
+| Application | Security and research focus | Explore |
 | --- | --- | --- |
-| [AIRS](https://github.com/jdotc1/AIRS-app) | Inspect bounded ARM64 Mach-O unwind evidence and compare app entitlements in a native macOS workspace, with checked scope and unresolved results shown explicitly. | [macOS preview](https://github.com/jdotc1/AIRS-app/releases/tag/v0.1.0) |
-| [DICOM Anonymizer](https://github.com/jdotc1/dicom-anonymizer) | Local metadata pseudonymization for MR, CT, and RTSTRUCT batches, with consistent UID remapping and structured reports. Native Apple Silicon app and Python engine. | [macOS preview](https://github.com/jdotc1/dicom-anonymizer#download-and-install-the-macos-app) |
-| [SidecarCompare](https://github.com/jdotc1/SidecarCompare) | Compare MRI JSON sidecars with exact decimal differences, typed values, and documented units. Native SwiftUI app with a shared Swift core and CLI. | [Build from source](https://github.com/jdotc1/SidecarCompare#build-and-run-on-a-mac) · [CLI](https://github.com/jdotc1/SidecarCompare#command-line-comparison) |
-| [Prism Native MCP](https://github.com/jdotc1/prism-native-mcp) | Create supported GraphPad Prism tables, descriptive analyses, native graphs, layouts, and figure exports through a local MCP server. | [Version-pinned source preview](https://github.com/jdotc1/prism-native-mcp#install-and-connect) |
+| **[AIRS](https://github.com/jdotc1/AIRS-app)** | Native macOS workspace for bounded ARM64 Mach-O unwind analysis and app-entitlement comparisons. Reads inspected binaries as data, with analysis coverage and unresolved results made explicit. | [Download the Apple Silicon preview](https://github.com/jdotc1/AIRS-app/releases) |
+| **[EntitlementDiff](https://github.com/jdotc1/EntitlementDiff)** | Review changes in declared macOS app entitlements between builds, with explicit arm64 or x86_64 selection, exact typed values, and saved comparisons colleagues can reopen. Inspects the selected main executable without launching the app. | [Download the macOS app](https://github.com/jdotc1/EntitlementDiff/releases) |
+| **[DICOM Anonymizer](https://github.com/jdotc1/dicom-anonymizer)** | Local DICOM metadata pseudonymization for MR, CT, and RTSTRUCT batches. Consistently remaps patient-specific UIDs and references, audits staged outputs, and preserves source files. | [Download the Apple Silicon preview](https://github.com/jdotc1/dicom-anonymizer/releases) |
+| **[SidecarCompare](https://github.com/jdotc1/SidecarCompare)** | Review MRI acquisition-metadata changes using exact decimal comparisons, typed values, and documented units. Preserves both source sidecars and supports local snapshots and reports through a native SwiftUI app and shared CLI core. | [Build the macOS app](https://github.com/jdotc1/SidecarCompare#build-and-run-on-a-mac) · [Use the CLI](https://github.com/jdotc1/SidecarCompare#command-line-comparison) |
 
-Other private development includes **MacScope**, a binary-analysis and reverse-engineering workbench for macOS.
+I also develop **MacScope**, a private binary-analysis and reverse-engineering workbench for macOS. My related research tooling includes **[Prism Native MCP](https://github.com/jdotc1/prism-native-mcp)**, which connects original observations to native GraphPad Prism tables, descriptive analyses, editable graphs, and layouts.
 
-## Selected merged contributions
+## Security contributions
 
-Selected upstream merges focused on defensive input handling, protecting imaging outputs, and software supply-chain reliability.
+My upstream work addresses concrete failure modes in imaging and research software: malformed input, shell interpretation of filenames, unintended file access, credential exposure, and unreliable dependency or download handling.
 
-| Focus | Merged upstream contribution |
+| Area | Contribution |
 | --- | --- |
-| **Defensive NIfTI parsing** | **[NiBabel #1568](https://github.com/nipy/nibabel/pull/1568):** Rejects undersized NIfTI extensions before payload reads, avoiding unnecessary reads of the remaining input when processing malformed files. |
-| **Privacy of imaging outputs** | **[deid #304](https://github.com/pydicom/deid/pull/304):** Defaults newly created pixel-cleaner output directories to owner-only permissions, reducing unintended access on shared POSIX systems. |
-| **HTML report safety** | **[dicom-validator #301](https://github.com/pydicom/dicom-validator/pull/301):** Escapes filenames in HTML validation-report headings so filename content renders as text. |
-| **Command-path hardening** | **[BIDScoin #302](https://github.com/Donders-Institute/bidscoin/pull/302):** Quotes image, output, and mask paths in local SynthStrip commands, keeping shell metacharacters in those paths literal. |
-| **SBOM ingestion reliability** | **[CycloneDX Core Java #957](https://github.com/CycloneDX/cyclonedx-core-java/pull/957):** Corrects format detection for JSON/XML software bills of materials with leading whitespace, allowing valid SBOMs to reach the appropriate parser. |
-| **Dependency reproducibility** | **[dcm2niix #1046](https://github.com/rordenlab/dcm2niix/pull/1046):** Pins the optional Cloudflare-zlib dependency to a fixed commit, making dependency source selection reproducible. |
+| **Defensive image parsing** | [NiBabel #1568](https://github.com/nipy/nibabel/pull/1568): reject undersized NIfTI extensions before payload reads. |
+| **Privacy of imaging outputs** | [deid #304](https://github.com/pydicom/deid/pull/304): default newly created pixel-cleaner output directories to owner-only permissions. |
+| **Safe report rendering** | [dicom-validator #301](https://github.com/pydicom/dicom-validator/pull/301): render filenames as text in HTML validation-report headings. |
+| **Literal command arguments** | [BIDScoin #302](https://github.com/Donders-Institute/bidscoin/pull/302): quote image, output, and mask paths in local SynthStrip commands. |
+| **Software supply-chain reliability** | [CycloneDX Core Java #957](https://github.com/CycloneDX/cyclonedx-core-java/pull/957): recognize JSON/XML software bills of materials with leading whitespace. [dcm2niix #1046](https://github.com/rordenlab/dcm2niix/pull/1046): pin an optional dependency to a fixed source commit. |
 
-Additional merged work covers native Apple Silicon/macOS builds, Linux ARM64 testing, and imaging workflow reliability; see the [full contribution index](CONTRIBUTIONS.md#merged-upstream-work).
-
-## Current upstream proposals
-
-Open pull requests include:
-
-- **Medical imaging security:** [dicom-rs](https://github.com/Enet4/dicom-rs/pull/845) UID path-safety checks; [pynetdicom](https://github.com/pydicom/pynetdicom/pull/1099) password redaction; [PlatiPy](https://github.com/pyplati/platipy/pull/322) API-key handling across redirects; [TorchIO](https://github.com/TorchIO-project/torchio/pull/1529) preservation of HTTPS on failed downloads.
-- **Image and data integrity:** [dicom2nifti](https://github.com/icometrix/dicom2nifti/pull/167) temporal metadata preservation; [PyMedPhys](https://github.com/pymedphys/pymedphys/pull/2394) checksum enforcement under optimized Python; [MONAI](https://github.com/Project-MONAI/MONAI/pull/9177) download-publication failure handling.
-- **Native builds and packaging:** [3D Slicer](https://github.com/Slicer/Slicer/pull/9478) macOS bundle hardening and Apple Silicon workflow documentation; [OpenJPEG](https://github.com/uclouvain/openjpeg/pull/1677) relocated macOS library lookup; native Linux ARM64 coverage for [scikit-image](https://github.com/scikit-image/scikit-image/pull/8359), [OME-Zarr](https://github.com/ome/ome-zarr-py/pull/704), and [Zarr](https://github.com/zarr-developers/zarr-python/pull/4525).
-- **Security tooling:** [Semgrep](https://github.com/semgrep/semgrep/pull/11991) parameter-scope handling and [rule accuracy](https://github.com/semgrep/semgrep-rules/pull/4085); [Gitleaks](https://github.com/gitleaks/gitleaks/pull/2307) report preservation during validation; [XCP-D](https://github.com/PennLINC/xcp_d/pull/1640) fork-PR validation with read-only permissions.
-
-**[Full contribution index →](CONTRIBUTIONS.md)** — additional contributions, verified status, and work incorporated through maintainer-authored follow-ups. Status checked on **19 October 2026**.
+The **[full contribution index](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md)** brings together my work across medical imaging and radiomics, DICOM and NIfTI infrastructure, native macOS builds, Linux ARM64 coverage, security tooling, and research workflows. It includes code contributions, documentation, issue reports, and fork work, organized by project.
 
 ## Engineering approach
 
-My security research combines source review, static binary analysis, and focused regression testing. I pay particular attention to untrusted image metadata, filesystem boundaries, credential handling, dependency provenance, and architecture-specific behavior.
+I combine source review, static binary analysis, and focused regression testing. I pay particular attention to parser boundaries, filesystem containment, credential handling, dependency provenance, and the differences between declared configuration and observed behavior.
 
-I favor small, reviewable changes with explicit validation scope. For imaging tools, that means preserving numerical values and metadata, surfacing failures clearly, and documenting the limits of each workflow.
+For imaging and radiomics, numerical values, units, acquisition metadata, and source lineage matter as much as successful execution. I favor small, reviewable fixes and local tools that preserve inputs, expose failures, and make their supported scope clear.
 
 ## Connect
 
-Project READMEs include setup instructions, examples, and current limitations. Issues and pull requests are welcome for reproducible bugs, medical imaging workflows, and native Apple Silicon/ARM64 improvements.
+I welcome collaboration on medical imaging security, radiomics infrastructure, defensive binary analysis, and native Apple Silicon applications. Project READMEs include setup instructions, examples, and supported workflows.
 
 [Research profile · ORCID](https://orcid.org/0009-0005-8244-8646)
