@@ -21,13 +21,17 @@ I also develop **MacScope**, a private binary-analysis and reverse-engineering w
 
 My upstream work addresses concrete failure modes in imaging and research software: malformed input, shell interpretation of filenames, unintended file access, credential exposure, and unreliable dependency or download handling.
 
+Selected merged upstream contributions:
+
 | Area | Contribution |
 | --- | --- |
-| **Defensive image parsing** | [NiBabel #1568](https://github.com/nipy/nibabel/pull/1568): reject undersized NIfTI extensions before payload reads. |
+| **Defensive image parsing** | [NiBabel #1568](https://github.com/nipy/nibabel/pull/1568): reject undersized NIfTI extensions before payload reads. [NIFTI-Reader-JS #58](https://github.com/rii-mango/NIFTI-Reader-JS/pull/58): reject negative NIfTI extension sizes before payload access. |
 | **Privacy of imaging outputs** | [deid #304](https://github.com/pydicom/deid/pull/304): default newly created pixel-cleaner output directories to owner-only permissions. |
 | **Safe report rendering** | [dicom-validator #301](https://github.com/pydicom/dicom-validator/pull/301): render filenames as text in HTML validation-report headings. |
+| **macOS helper isolation** | [RSNA Anonymizer #41](https://github.com/RSNA/anonymizer/pull/41): place the compiled documentation helper in a private temporary directory for each process, avoiding reuse of a fixed-name executable. |
 | **Literal command arguments** | [BIDScoin #302](https://github.com/Donders-Institute/bidscoin/pull/302): quote image, output, and mask paths in local SynthStrip commands. |
-| **Software supply-chain reliability** | [CycloneDX Core Java #957](https://github.com/CycloneDX/cyclonedx-core-java/pull/957): recognize JSON/XML software bills of materials with leading whitespace. [dcm2niix #1046](https://github.com/rordenlab/dcm2niix/pull/1046): pin an optional dependency to a fixed source commit. |
+| **Reproducible dependency sources** | [dcm2niix #1046](https://github.com/rordenlab/dcm2niix/pull/1046): pin the optional Cloudflare zlib dependency to a fixed source commit. |
+| **Security-tooling compatibility** | [CycloneDX Core Java #957](https://github.com/CycloneDX/cyclonedx-core-java/pull/957): recognize JSON/XML software bills of materials with leading whitespace. |
 
 The **[full contribution index](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md)** brings together my work across medical imaging and radiomics, DICOM and NIfTI infrastructure, native macOS builds, Linux ARM64 coverage, security tooling, and research workflows. It includes code contributions, documentation, issue reports, and fork work, organized by project.
 
