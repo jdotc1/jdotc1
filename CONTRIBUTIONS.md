@@ -6,12 +6,13 @@ My code contributions, documentation, issue reports, and fork work across medica
 
 ## Merged upstream contributions
 
-**39 authored pull requests merged across 29 upstream projects.** Each linked PR in this section is merged in its public upstream repository. The descriptions distinguish security hardening, data integrity, feature work, build compatibility, and test coverage.
+**42 authored pull requests merged across 32 external projects.** This count includes PRs authored by `jdotc1` and merged into repositories owned by others. Each linked PR in this section has a verified upstream merge. Security hardening, data integrity, feature work, build compatibility, and test coverage are described according to the scope of each change.
 
 | Project | Merged contribution | Upstream records |
 | --- | --- | --- |
 | [ANTsPy](https://github.com/ANTsX/ANTsPy) | Reject failed HTTP responses before caching downloaded test data. | [PR #924](https://github.com/ANTsX/ANTsPy/pull/924) |
 | [BIDScoin](https://github.com/Donders-Institute/bidscoin) | Literal image paths in local SynthStrip commands. | [PR #302](https://github.com/Donders-Institute/bidscoin/pull/302) |
+| [BrainStat](https://github.com/MICA-MNI/BrainStat) | Stage downloads and replace the destination only after a successful copy, preserving an existing file when copying fails. | [PR #385](https://github.com/MICA-MNI/BrainStat/pull/385) |
 | [connected-components-3d](https://github.com/seung-lab/connected-components-3d) | Native Linux ARM64 CI using the existing connected-component tests. | [PR #153](https://github.com/seung-lab/connected-components-3d/pull/153) |
 | [CycloneDX Core Java](https://github.com/CycloneDX/cyclonedx-core-java) | Recognize JSON/XML software bills of materials with leading whitespace, including after a UTF-8 byte-order marker. | [PR #957](https://github.com/CycloneDX/cyclonedx-core-java/pull/957) |
 | [dcm2niix](https://github.com/rordenlab/dcm2niix) | macOS build-path quoting, architecture/SDK/toolchain propagation, optional dependency source pinning, and explicit LTO settings. | [PR #1043](https://github.com/rordenlab/dcm2niix/pull/1043) · [PR #1044](https://github.com/rordenlab/dcm2niix/pull/1044) · [PR #1045](https://github.com/rordenlab/dcm2niix/pull/1045) · [PR #1046](https://github.com/rordenlab/dcm2niix/pull/1046) · [PR #1047](https://github.com/rordenlab/dcm2niix/pull/1047) · [PR #1048](https://github.com/rordenlab/dcm2niix/pull/1048) |
@@ -21,6 +22,7 @@ My code contributions, documentation, issue reports, and fork work across medica
 | [FabIO](https://github.com/silx-kit/fabio) | Native Linux ARM64 package build and test CI. | [PR #675](https://github.com/silx-kit/fabio/pull/675) |
 | [fastremap](https://github.com/seung-lab/fastremap) | Native Linux ARM64 CI and Windows editable-build compiler selection. | [PR #60](https://github.com/seung-lab/fastremap/pull/60) |
 | [FastSurfer](https://github.com/Deep-MI/FastSurfer) | Quote FreeSurfer stub destinations so helper generation and permissions work in installation paths containing spaces. | [PR #950](https://github.com/Deep-MI/FastSurfer/pull/950) |
+| [fsspec](https://github.com/fsspec/filesystem_spec) | Preserve explicitly requested zero buffering in immediate and deferred SFTP opens. | [PR #2359](https://github.com/fsspec/filesystem_spec/pull/2359) |
 | [highdicom](https://github.com/ImagingDataCommons/highdicom) | Reject undefined encapsulated pixel-fragment lengths before attempting payload reads. | [PR #471](https://github.com/ImagingDataCommons/highdicom/pull/471) |
 | [ITK](https://github.com/InsightSoftwareConsortium/ITK) | Select FFTW SIMD defaults from the explicitly requested macOS target architecture. | [PR #6947](https://github.com/InsightSoftwareConsortium/ITK/pull/6947) |
 | [ITK-SNAP](https://github.com/pyushkevich/itksnap) | Quoted application paths in the macOS launcher. | [PR #280](https://github.com/pyushkevich/itksnap/pull/280) |
@@ -36,13 +38,14 @@ My code contributions, documentation, issue reports, and fork work across medica
 | [PyTables](https://github.com/PyTables/PyTables) | Preserve coordinate views and read-only index arrays; reject non-integer Atom dimensions; validate array indices before conversion, reads, or writes. | [PR #1387](https://github.com/PyTables/PyTables/pull/1387) · [PR #1388](https://github.com/PyTables/PyTables/pull/1388) · [PR #1389](https://github.com/PyTables/PyTables/pull/1389) |
 | [REA](https://github.com/morluto/rea) | Preserve mixed-slice Mach-O signature observations and partial evidence; align session-discovery capabilities with supported target operations. | [PR #5763](https://github.com/morluto/rea/pull/5763) · [PR #5765](https://github.com/morluto/rea/pull/5765) |
 | [RSNA Anonymizer](https://github.com/RSNA/anonymizer) | Per-process macOS documentation helper caches. | [PR #41](https://github.com/RSNA/anonymizer/pull/41) |
+| [silx](https://github.com/silx-kit/silx) | Support Qt 6.12 drag-event constructors in tests while retaining compatibility with older Qt versions. | [PR #4745](https://github.com/silx-kit/silx/pull/4745) |
 | [xarray](https://github.com/pydata/xarray) | Guard the DataArray-to-Dask-DataFrame test with its optional PyArrow dependency. | [PR #11780](https://github.com/pydata/xarray/pull/11780) |
 | [zarrs](https://github.com/zarrs/zarrs) | Native Linux ARM64 CI using the existing Rust tests with all features enabled. | [PR #490](https://github.com/zarrs/zarrs/pull/490) |
 | [zarrs-python](https://github.com/zarrs/zarrs-python) | Native Linux ARM64 CI for Python/Rust integration, including both test suites and type-stub checks. | [PR #199](https://github.com/zarrs/zarrs-python/pull/199) |
 
 ## Changes incorporated through maintainer pull requests
 
-Three additional contributions were adapted and merged through maintainer-authored follow-ups. The original PRs were closed without merge; each merged follow-up credits my contribution. These are recorded separately from the 39 authored merges above.
+Three additional contributions were adapted and merged through maintainer-authored follow-ups. The original PRs were closed without merge; each merged follow-up credits my contribution. These are recorded separately from the 42 authored merges above.
 
 | Project | Incorporated scope | Original proposal → merged follow-up |
 | --- | --- | --- |
@@ -60,7 +63,6 @@ This section preserves other submitted patches, documentation, issue reports, an
 | [batchgenerators](https://github.com/MIC-DKFZ/batchgenerators) | Scale sampling that respects requested intervals entirely below one. | [PR #144](https://github.com/MIC-DKFZ/batchgenerators/pull/144) |
 | [Blosc / python-blosc2](https://github.com/Blosc/python-blosc2) | Native Linux ARM64 test coverage. | [PR #737](https://github.com/Blosc/python-blosc2/pull/737) |
 | [BrainIAK](https://github.com/brainiak/brainiak) | Parse noise dictionaries as literals rather than executable expressions. | [PR #616](https://github.com/brainiak/brainiak/pull/616) |
-| [BrainStat](https://github.com/MICA-MNI/BrainStat) | Publication of downloaded data only after a successful copy. | [PR #385](https://github.com/MICA-MNI/BrainStat/pull/385) |
 | [Clinica](https://github.com/aramis-lab/clinica) | Literal FreeSurfer atlas paths in subprocess arguments. | [PR #1741](https://github.com/aramis-lab/clinica/pull/1741) |
 | [Codex](https://github.com/openai/codex) | Reported spurious unknown-conversation errors after successful ephemeral title generation. | [Issue #46289](https://github.com/openai/codex/issues/46289) |
 | [dcmjs](https://github.com/dcmjs-org/dcmjs) | Byte-count validation before BufferStream reads. | [PR #605](https://github.com/dcmjs-org/dcmjs/pull/605) |
