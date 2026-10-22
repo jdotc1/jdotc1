@@ -1,5 +1,3 @@
-# Jeffrey D. Cooney, MD, PhD
-
 **Radiation oncologist · Physician-scientist · Independent security researcher**
 
 I investigate security and data-integrity failures in **medical imaging and scientific software**, contribute fixes upstream, and develop **native macOS research tools for Apple Silicon (ARM64)**. My clinical work in radiation oncology and research in MR imaging and radiomics inform a practical focus: protecting imaging workflows while preserving the data, metadata, and evidence needed for reproducible analysis.
