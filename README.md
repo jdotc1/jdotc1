@@ -6,7 +6,7 @@ I work at the intersection of **medical imaging security, radiomics, and native 
 
 My focus is practical: protect patient metadata and credentials, handle untrusted files safely, preserve quantitative imaging information, and make architecture-specific behavior explicit. My clinical and research interests in MR imaging and radiomics inform the problems I choose to work on.
 
-## Applications I develop
+## My apps
 
 | Application | Security and research focus | Explore |
 | --- | --- | --- |
