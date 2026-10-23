@@ -8,7 +8,7 @@ I develop and maintain AIRS, EntitlementDiff, DICOM Anonymizer, and SidecarCompa
 
 **70 authored pull requests merged across 45 external repositories.** The total spans security hardening, scientific data integrity, imaging workflows, platform support, and test improvements.
 
-### Selected merged security and privacy contributions
+### Selected security & privacy contributions
 
 | Area | Merged contributions |
 | --- | --- |
@@ -26,7 +26,7 @@ I develop and maintain AIRS, EntitlementDiff, DICOM Anonymizer, and SidecarCompa
 
 I maintain the following **MIT-licensed open-source projects**, with a focus on explicit analysis scope, reproducible results, and preserving source data.
 
-| Application | Security and research focus | Explore |
+| Application | Security & research focus | Explore |
 | --- | --- | --- |
 | **[AIRS](https://github.com/jdotc1/AIRS-app)** | Native macOS workspace for bounded ARM64 Mach-O unwind analysis and app-entitlement comparisons. Reads inspected binaries as data, with analysis coverage and unresolved results made explicit. | [Download the beta](https://github.com/jdotc1/AIRS-app/releases) |
 | **[EntitlementDiff](https://github.com/jdotc1/EntitlementDiff)** | Review changes in declared macOS app entitlements between builds, with explicit architecture selection, exact typed values, and saved comparisons colleagues can reopen. Inspects the selected main executable without launching the app. | [Download the macOS app](https://github.com/jdotc1/EntitlementDiff/releases) |
@@ -35,7 +35,7 @@ I maintain the following **MIT-licensed open-source projects**, with a focus on 
 
 My related research tooling includes **[Prism Native MCP](https://github.com/jdotc1/prism-native-mcp)**, which connects original observations to native GraphPad Prism tables, descriptive analyses, editable graphs, and layouts.
 
-## Additional upstream contributions
+## Additional contributions
 
 ### Scientific data integrity and security tooling
 
@@ -50,7 +50,7 @@ My related research tooling includes **[Prism Native MCP](https://github.com/jdo
 | **SBOM parser resilience** | [CycloneDX Core Java #957](https://github.com/CycloneDX/cyclonedx-core-java/pull/957): recognize JSON/XML software bills of materials with leading whitespace. |
 | **Security notification fidelity** | [Dependency-Track #7704](https://github.com/DependencyTrack/dependency-track/pull/7704): expose the latest project status in notification subjects. |
 
-### Imaging, research, and ARM64/macOS support
+### Imaging, research, and ARM64 support
 
 | Area | Merged contributions |
 | --- | --- |
@@ -63,7 +63,7 @@ My related research tooling includes **[Prism Native MCP](https://github.com/jdo
 
 The **[full contribution index](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md)** also preserves documentation, issue reports, additional proposals, and fork work with links to the original records.
 
-## Research and engineering practice
+## Research & engineering practice
 
 I combine source review, static binary analysis, and focused regression testing to trace failures to specific parsing, filesystem, process, or data-handling boundaries. I favor small, reviewable patches with explicit supported scope and reproducible evidence. My maintained [DICOM Anonymizer](https://github.com/jdotc1/dicom-anonymizer) includes a documented [private security-reporting process](https://github.com/jdotc1/dicom-anonymizer/blob/main/SECURITY.md) and guidance for synthetic reproductions.
 
