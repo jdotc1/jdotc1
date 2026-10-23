@@ -6,7 +6,7 @@ I develop and maintain AIRS, EntitlementDiff, DICOM Anonymizer, and SidecarCompa
 
 ## Security research
 
-**70 authored pull requests merged across 45 external repositories.** These are PRs authored by `jdotc1` and merged into repositories owned by others. The total spans security hardening, scientific data integrity, imaging workflows, platform support, and test improvements.
+**70 authored pull requests merged across 45 external repositories.** The total spans security hardening, scientific data integrity, imaging workflows, platform support, and test improvements.
 
 ### Selected merged security and privacy contributions
 
