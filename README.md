@@ -1,4 +1,4 @@
-**Security researcher · Medical imaging security & software hardening · Radiation oncologist**
+**Medical imaging security · Radiation oncology**
 
 I investigate and repair security and data-integrity failures in **medical imaging and scientific software**, contribute fixes upstream, and maintain **open-source security and research tools for Apple Silicon (ARM64)**. My work focuses on defensive DICOM/NIfTI parsing, archive containment, private output permissions, safe report rendering, and preserving caller-requested safeguards.
 
@@ -6,7 +6,7 @@ I develop and maintain **AIRS, EntitlementDiff, DICOM Anonymizer, and SidecarCom
 
 ## Security research and upstream track record
 
-**64 authored pull requests merged across 43 external repositories.** These are PRs authored by `jdotc1` and merged into repositories owned by others. The total spans security hardening, scientific data integrity, imaging workflows, platform support, and test improvements.
+**68 authored pull requests merged across 45 external repositories.** These are PRs authored by `jdotc1` and merged into repositories owned by others. The total spans security hardening, scientific data integrity, imaging workflows, platform support, and test improvements.
 
 The **[contribution index](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md#merged-upstream-contributions)** links each merged PR to its upstream record. **[Three additional contributions](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md#changes-incorporated-through-maintainer-pull-requests)** incorporated through maintainer-authored follow-ups are documented separately.
 
@@ -24,7 +24,7 @@ The **[contribution index](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTI
 | **Dependency provenance** | [dcm2niix #1046](https://github.com/rordenlab/dcm2niix/pull/1046): pin the optional Cloudflare zlib dependency to a fixed source commit. |
 | **Radiotherapy logfile integrity** | [PyMedPhys #2394](https://github.com/pymedphys/pymedphys/pull/2394): keep TRF archive checksum checks active under Python `-O`, preserving incoming logfiles when archived copies fail verification. |
 
-## Open-source projects I maintain
+## Open-source projects
 
 I maintain the following **MIT-licensed open-source projects**, with a focus on explicit analysis scope, reproducible results, and preserving source data.
 
@@ -35,7 +35,7 @@ I maintain the following **MIT-licensed open-source projects**, with a focus on 
 | **[DICOM Anonymizer](https://github.com/jdotc1/dicom-anonymizer)** | Local DICOM metadata pseudonymization for MR, CT, and RTSTRUCT batches. Consistently remaps patient-specific UIDs and references, audits staged outputs, and preserves source files. | [Download the beta](https://github.com/jdotc1/dicom-anonymizer/releases) |
 | **[SidecarCompare](https://github.com/jdotc1/SidecarCompare)** | Review MRI acquisition-metadata changes using exact decimal comparisons, typed values, and documented units. Preserves both source sidecars and supports local snapshots and reports through a native SwiftUI app and shared CLI core. | [Build the macOS app](https://github.com/jdotc1/SidecarCompare#build-and-run-on-a-mac) · [Use the CLI](https://github.com/jdotc1/SidecarCompare#command-line-comparison) |
 
-I also develop **MacScope**, a private binary-analysis and reverse-engineering workbench for macOS. My related research tooling includes **[Prism Native MCP](https://github.com/jdotc1/prism-native-mcp)**, which connects original observations to native GraphPad Prism tables, descriptive analyses, editable graphs, and layouts.
+My related research tooling includes **[Prism Native MCP](https://github.com/jdotc1/prism-native-mcp)**, which connects original observations to native GraphPad Prism tables, descriptive analyses, editable graphs, and layouts.
 
 ## Additional upstream contributions
 
