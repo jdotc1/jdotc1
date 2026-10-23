@@ -1,4 +1,4 @@
-**Medical imaging security · Radiation oncology**
+**medical imaging security · radiation oncology**
 
 I investigate security-relevant edge cases and data-integrity defects in medical imaging and scientific software, contribute focused upstream fixes, and maintain open-source binary inspection, privacy, and research tools for Apple Silicon (ARM64). My work emphasizes defensive DICOM/NIfTI parsing, archive extraction containment, filesystem access controls, safe HTML output, integrity verification, and enforcement of caller-specified safeguards.
 
