@@ -6,9 +6,7 @@ I develop and maintain AIRS, EntitlementDiff, DICOM Anonymizer, and SidecarCompa
 
 ## Security research and upstream track record
 
-**68 authored pull requests merged across 45 external repositories.** These are PRs authored by `jdotc1` and merged into repositories owned by others. The total spans security hardening, scientific data integrity, imaging workflows, platform support, and test improvements.
-
-The **[contribution index](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md#merged-upstream-contributions)** links each merged PR to its upstream record. **[Three additional contributions](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md#changes-incorporated-through-maintainer-pull-requests)** incorporated through maintainer-authored follow-ups are documented separately.
+**70 authored pull requests merged across 45 external repositories.** These are PRs authored by `jdotc1` and merged into repositories owned by others. The total spans security hardening, scientific data integrity, imaging workflows, platform support, and test improvements.
 
 ### Selected merged security and privacy contributions
 
