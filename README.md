@@ -1,4 +1,4 @@
-**Security researcher · Open-source maintainer · Radiation oncologist**
+**Security researcher · Medical imaging security & software hardening · Radiation oncologist**
 
 I investigate and repair security and data-integrity failures in **medical imaging and scientific software**, contribute fixes upstream, and maintain **open-source security and research tools for Apple Silicon (ARM64)**. My work focuses on defensive DICOM/NIfTI parsing, archive containment, private output permissions, safe report rendering, and preserving caller-requested safeguards.
 
@@ -6,9 +6,9 @@ I develop and maintain **AIRS, EntitlementDiff, DICOM Anonymizer, and SidecarCom
 
 ## Security research and upstream track record
 
-**64 authored pull requests merged across 43 external repositories**, verified **October 23, 2026**. These are PRs authored by `jdotc1` and merged into repositories owned by others. The total spans security hardening, scientific data integrity, imaging workflows, platform support, and test improvements.
+**64 authored pull requests merged across 43 external repositories.** These are PRs authored by `jdotc1` and merged into repositories owned by others. The total spans security hardening, scientific data integrity, imaging workflows, platform support, and test improvements.
 
-The **[verified contribution index](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md#merged-upstream-contributions)** links all **64 merged PRs** to their upstream records. **[Three additional contributions](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md#changes-incorporated-through-maintainer-pull-requests)** incorporated through maintainer-authored follow-ups are documented separately.
+The **[contribution index](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md#merged-upstream-contributions)** links each merged PR to its upstream record. **[Three additional contributions](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md#changes-incorporated-through-maintainer-pull-requests)** incorporated through maintainer-authored follow-ups are documented separately.
 
 ### Selected merged security and privacy contributions
 
