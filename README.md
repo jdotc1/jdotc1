@@ -50,7 +50,7 @@ My related research tooling includes **[Prism Native MCP](https://github.com/jdo
 | **Imaging metadata paths** | [ANTsPy #931](https://github.com/ANTsX/ANTsPy/pull/931): keep JSON sidecars adjacent to NumPy images by replacing only the terminal `.npy` suffix, with migration guidance for legacy metadata paths. |
 | **Binary-analysis evidence** | [REA #5765](https://github.com/morluto/rea/pull/5765): preserve mixed-slice Mach-O signature observations and partial evidence. [REA #5763](https://github.com/morluto/rea/pull/5763): align session-discovery capabilities with supported target operations. |
 | **SBOM compatibility** | [CycloneDX Core Java #957](https://github.com/CycloneDX/cyclonedx-core-java/pull/957): recognize JSON/XML software bills of materials with leading whitespace. |
-| **Security-tool notifications** | [Dependency-Track #7704](https://github.com/DependencyTrack/dependency-track/pull/7704): expose the latest project status in notification subjects. |
+| **Notification tooling** | [Dependency-Track #7704](https://github.com/DependencyTrack/dependency-track/pull/7704): expose the latest project status in notification subjects. |
 
 ### Imaging, research, and platform support
 
