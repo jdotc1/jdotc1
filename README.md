@@ -50,7 +50,7 @@ My related research tooling includes **[Prism Native MCP](https://github.com/jdo
 | **SBOM parser resilience** | [CycloneDX Core Java #957](https://github.com/CycloneDX/cyclonedx-core-java/pull/957): recognize JSON/XML software bills of materials with leading whitespace. |
 | **Security notification fidelity** | [Dependency-Track #7704](https://github.com/DependencyTrack/dependency-track/pull/7704): expose the latest project status in notification subjects. |
 
-### Imaging, research, and platform support
+### Imaging, research, and ARM64/macOS support
 
 | Area | Merged contributions |
 | --- | --- |
