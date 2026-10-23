@@ -6,7 +6,7 @@ My code contributions, documentation, issue reports, and fork work across medica
 
 ## Merged upstream contributions
 
-**64 authored pull requests merged across 43 external repositories.** This count includes PRs authored by `jdotc1` and merged into repositories owned by others. Each linked PR in this section has a verified upstream merge. Security hardening, data integrity, feature work, build compatibility, and test coverage are described according to the scope of each change.
+**68 authored pull requests merged across 45 external repositories.** This count includes PRs authored by `jdotc1` and merged into repositories owned by others. Each linked PR in this section has a verified upstream merge. Security hardening, data integrity, feature work, build compatibility, and test coverage are described according to the scope of each change.
 
 | Project | Merged contribution | Upstream records |
 | --- | --- | --- |
