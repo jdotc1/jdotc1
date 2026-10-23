@@ -1,8 +1,8 @@
 **Medical imaging security · Radiation oncology**
 
-I investigate and repair security and data-integrity failures in **medical imaging and scientific software**, contribute fixes upstream, and maintain **open-source security and research tools for Apple Silicon (ARM64)**. My work focuses on defensive DICOM/NIfTI parsing, archive containment, private output permissions, safe report rendering, and preserving caller-requested safeguards.
+I investigate security-relevant edge cases and data-integrity defects in medical imaging and scientific software, contribute focused upstream fixes, and maintain open-source binary inspection, privacy, and research tools for Apple Silicon (ARM64). My work emphasizes defensive DICOM/NIfTI parsing, archive extraction containment, filesystem access controls, safe HTML output, integrity verification, and enforcement of caller-specified safeguards.
 
-I develop and maintain **AIRS, EntitlementDiff, DICOM Anonymizer, and SidecarCompare** for binary inspection, entitlement review, imaging-data privacy, and reproducible metadata analysis. My clinical work in radiation oncology and research in MR imaging and radiomics inform this engineering work.
+I develop and maintain AIRS, EntitlementDiff, DICOM Anonymizer, and SidecarCompare for static binary inspection, entitlement auditing, imaging-data privacy, and reproducible metadata analysis. My clinical work in radiation oncology and research in MR imaging and radiomics inform this engineering work.
 
 ## Security research and upstream track record
 
