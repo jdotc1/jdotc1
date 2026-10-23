@@ -1,4 +1,4 @@
-**Independent security researcher · Open-source maintainer · Radiation oncologist**
+**Security researcher · Open-source maintainer · Radiation oncologist**
 
 I investigate and repair security and data-integrity failures in **medical imaging and scientific software**, contribute fixes upstream, and maintain **open-source security and research tools for Apple Silicon (ARM64)**. My work focuses on defensive DICOM/NIfTI parsing, archive containment, private output permissions, safe report rendering, and preserving caller-requested safeguards.
 
