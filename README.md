@@ -14,15 +14,15 @@ The **[contribution index](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTI
 
 | Area | Merged contributions |
 | --- | --- |
-| **Defensive DICOM and NIfTI parsing** | [NiBabel #1568](https://github.com/nipy/nibabel/pull/1568) and [NIFTI-Reader-JS #58](https://github.com/rii-mango/NIFTI-Reader-JS/pull/58): reject undersized NIfTI extension lengths before payload reads. [highdicom #471](https://github.com/ImagingDataCommons/highdicom/pull/471): reject undefined encapsulated pixel-fragment lengths before payload reads. |
-| **Archive destination containment** | [Nilearn #6654](https://github.com/nilearn/nilearn/pull/6654): check path components so a sibling directory sharing a name prefix is not accepted as an extraction destination. |
-| **Private output permissions** | [deid #304](https://github.com/pydicom/deid/pull/304): default newly created pixel-cleaner output directories to owner-only permissions. [fsspec #2358](https://github.com/fsspec/filesystem_spec/pull/2358): preserve caller-selected SFTP directory modes when creating parents. |
-| **S3 request safeguards** | [s3fs #1067](https://github.com/fsspec/s3fs/pull/1067): forward caller-supplied delete options, including expected bucket owner and MFA parameters. [s3fs #1068](https://github.com/fsspec/s3fs/pull/1068): preserve exclusive-create conditions, requested ACLs, and metadata for zero-byte writes. |
-| **Safe HTML report rendering** | [dicom-validator #301](https://github.com/pydicom/dicom-validator/pull/301): escape filenames in validation-report headings so filename markup is rendered as text. |
-| **macOS helper isolation** | [RSNA Anonymizer #41](https://github.com/RSNA/anonymizer/pull/41): place the compiled documentation helper in a private temporary directory for each process, avoiding reuse of a fixed-name executable. |
-| **Literal command arguments** | [BIDScoin #302](https://github.com/Donders-Institute/bidscoin/pull/302): quote image, output, and mask paths in local SynthStrip commands. |
-| **Dependency provenance** | [dcm2niix #1046](https://github.com/rordenlab/dcm2niix/pull/1046): pin the optional Cloudflare zlib dependency to a fixed source commit. |
-| **Radiotherapy logfile integrity** | [PyMedPhys #2394](https://github.com/pymedphys/pymedphys/pull/2394): keep TRF archive checksum checks active under Python `-O`, preserving incoming logfiles when archived copies fail verification. |
+| **Imaging parser hardening** | [NiBabel #1568](https://github.com/nipy/nibabel/pull/1568) and [NIFTI-Reader-JS #58](https://github.com/rii-mango/NIFTI-Reader-JS/pull/58): reject undersized NIfTI extension lengths before payload reads. [highdicom #471](https://github.com/ImagingDataCommons/highdicom/pull/471): reject undefined encapsulated pixel-fragment lengths before payload reads. |
+| **Archive extraction containment** | [Nilearn #6654](https://github.com/nilearn/nilearn/pull/6654): check path components so a sibling directory sharing a name prefix is not accepted as an extraction destination. |
+| **Filesystem access controls** | [deid #304](https://github.com/pydicom/deid/pull/304): default newly created pixel-cleaner output directories to owner-only permissions. [fsspec #2358](https://github.com/fsspec/filesystem_spec/pull/2358): preserve caller-selected SFTP directory modes when creating parents. |
+| **S3 request integrity** | [s3fs #1067](https://github.com/fsspec/s3fs/pull/1067): forward caller-supplied delete options, including expected bucket owner and MFA parameters. [s3fs #1068](https://github.com/fsspec/s3fs/pull/1068): preserve exclusive-create conditions, requested ACLs, and metadata for zero-byte writes. |
+| **HTML output encoding** | [dicom-validator #301](https://github.com/pydicom/dicom-validator/pull/301): escape filenames in validation-report headings so filename markup is rendered as text. |
+| **Temporary executable isolation** | [RSNA Anonymizer #41](https://github.com/RSNA/anonymizer/pull/41): place the compiled documentation helper in a private temporary directory for each process, avoiding reuse of a fixed-name executable. |
+| **Shell argument integrity** | [BIDScoin #302](https://github.com/Donders-Institute/bidscoin/pull/302): quote image, output, and mask paths in local SynthStrip commands. |
+| **Supply chain reproducibility** | [dcm2niix #1046](https://github.com/rordenlab/dcm2niix/pull/1046): pin the optional Cloudflare zlib dependency to a fixed source commit. |
+| **Archive checksum enforcement** | [PyMedPhys #2394](https://github.com/pymedphys/pymedphys/pull/2394): keep TRF archive checksum checks active under Python `-O`, preserving incoming logfiles when archived copies fail verification. |
 
 ## Open-source projects
 
@@ -43,14 +43,14 @@ My related research tooling includes **[Prism Native MCP](https://github.com/jdo
 
 | Area | Merged contributions |
 | --- | --- |
-| **Array data integrity** | [PyTables #1387](https://github.com/PyTables/PyTables/pull/1387), [#1388](https://github.com/PyTables/PyTables/pull/1388), and [#1389](https://github.com/PyTables/PyTables/pull/1389): preserve coordinate views and read-only indices, reject non-integer Atom dimensions, and validate selectors before conversion, reads, or writes. |
-| **Download publication** | [BrainStat #385](https://github.com/MICA-MNI/BrainStat/pull/385): stage downloads and replace the destination only after a successful copy, preserving an existing file when copying fails. |
-| **Existing-file preservation** | [fonttools #4342](https://github.com/fonttools/fonttools/pull/4342): stage archives beside the destination before replacement, preserving unrelated sibling ZIPs and existing output if archive creation fails. [svglib #518](https://github.com/deeplook/svglib/pull/518): parse compressed SVG input directly, preserving sibling SVG files and relative-image resolution. |
-| **DICOM validation state** | [dicom-validator #303](https://github.com/pydicom/dicom-validator/pull/303): restore the caller's pydicom reading-validation mode after file validation, including exceptional exits. |
-| **Imaging metadata paths** | [ANTsPy #931](https://github.com/ANTsX/ANTsPy/pull/931): keep JSON sidecars adjacent to NumPy images by replacing only the terminal `.npy` suffix, with migration guidance for legacy metadata paths. |
-| **Binary-analysis evidence** | [REA #5765](https://github.com/morluto/rea/pull/5765): preserve mixed-slice Mach-O signature observations and partial evidence. [REA #5763](https://github.com/morluto/rea/pull/5763): align session-discovery capabilities with supported target operations. |
-| **SBOM compatibility** | [CycloneDX Core Java #957](https://github.com/CycloneDX/cyclonedx-core-java/pull/957): recognize JSON/XML software bills of materials with leading whitespace. |
-| **Notification tooling** | [Dependency-Track #7704](https://github.com/DependencyTrack/dependency-track/pull/7704): expose the latest project status in notification subjects. |
+| **Array validation safeguards** | [PyTables #1387](https://github.com/PyTables/PyTables/pull/1387), [#1388](https://github.com/PyTables/PyTables/pull/1388), and [#1389](https://github.com/PyTables/PyTables/pull/1389): preserve coordinate views and read-only indices, reject non-integer Atom dimensions, and validate selectors before conversion, reads, or writes. |
+| **Atomic download publication** | [BrainStat #385](https://github.com/MICA-MNI/BrainStat/pull/385): stage downloads and replace the destination only after a successful copy, preserving an existing file when copying fails. |
+| **File overwrite prevention** | [fonttools #4342](https://github.com/fonttools/fonttools/pull/4342): stage archives beside the destination before replacement, preserving unrelated sibling ZIPs and existing output if archive creation fails. [svglib #518](https://github.com/deeplook/svglib/pull/518): parse compressed SVG input directly, preserving sibling SVG files and relative-image resolution. |
+| **Validation state isolation** | [dicom-validator #303](https://github.com/pydicom/dicom-validator/pull/303): restore the caller's pydicom reading-validation mode after file validation, including exceptional exits. |
+| **Metadata path integrity** | [ANTsPy #931](https://github.com/ANTsX/ANTsPy/pull/931): keep JSON sidecars adjacent to NumPy images by replacing only the terminal `.npy` suffix, with migration guidance for legacy metadata paths. |
+| **Analysis evidence integrity** | [REA #5765](https://github.com/morluto/rea/pull/5765): preserve mixed-slice Mach-O signature observations and partial evidence. [REA #5763](https://github.com/morluto/rea/pull/5763): align session-discovery capabilities with supported target operations. |
+| **SBOM parser resilience** | [CycloneDX Core Java #957](https://github.com/CycloneDX/cyclonedx-core-java/pull/957): recognize JSON/XML software bills of materials with leading whitespace. |
+| **Security notification fidelity** | [Dependency-Track #7704](https://github.com/DependencyTrack/dependency-track/pull/7704): expose the latest project status in notification subjects. |
 
 ### Imaging, research, and platform support
 
