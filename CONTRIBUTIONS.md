@@ -1,7 +1,4 @@
 # Contribution index
-
-My code contributions, documentation, issue reports, and fork work across medical imaging, radiomics, defensive security, native macOS, ARM64, and related research software.
-
 [Back to my profile](https://github.com/jdotc1)
 
 ## Merged upstream contributions
