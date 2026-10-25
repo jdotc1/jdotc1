@@ -4,7 +4,7 @@ I investigate security-relevant edge cases and data-integrity defects in medical
 
 I develop and maintain AIRS, EntitlementDiff, DICOM Anonymizer, and SidecarCompare for static binary inspection, entitlement auditing, imaging-data privacy, and reproducible metadata analysis. My clinical work in radiation oncology and research in MR imaging and radiomics inform this engineering work.
 
-## Security research
+## Medical imaging hardening
 
 **77 authored pull requests merged across 45 external repositories.** The total spans security hardening, scientific data integrity, imaging workflows, platform support, and test improvements.
 
