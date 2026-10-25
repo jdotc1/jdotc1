@@ -4,7 +4,7 @@ I identify and patch security and data-integrity vulnerabilities in medical imag
 
 ## Medical imaging hardening
 
-**88 PRs merged** across **49 external repositories**.
+[**88 PRs merged** across **49 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md).
 
 ### Selected security & privacy contributions
 
