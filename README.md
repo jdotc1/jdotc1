@@ -6,8 +6,7 @@ I develop and maintain AIRS, EntitlementDiff, DICOM Anonymizer, and SidecarCompa
 
 ## Medical imaging hardening
 
-**77 authored pull requests merged across 45 external repositories.** The total spans security hardening, scientific data integrity, imaging workflows, platform support, and test improvements.
-
+**77 PRs merged** across **45 external repositories**.
 ### Selected security & privacy contributions
 
 | Area | Merged contributions |
