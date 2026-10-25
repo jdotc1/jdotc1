@@ -1,29 +1,47 @@
 **medical imaging security · radiation oncology**
 
-I identify and patch security and data-integrity vulnerabilities in medical imaging and scientific software, with a focus on secure parsing, filesystem safety, and integrity validation. I also develop open-source binary analysis, privacy, and research tools for Apple Silicon (ARM64), drawing on my background in radiation oncology, MR imaging, and radiomics.
+I identify and patch security and data-integrity defects in medical imaging software, focusing on defensive DICOM/NIfTI parsing, de-identification integrity, archive containment, and filesystem safeguards. I extend this work to scientific infrastructure and develop open-source privacy, binary-inspection, and research tools for Apple Silicon (ARM64), informed by my background in radiation oncology, MR imaging, and radiomics.
 
 ## Medical imaging hardening
 
-[**88 PRs merged** across **49 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md).
+[**88 PRs merged** across **49 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, and platform engineering.
 
 ### Selected security & privacy contributions
 
+#### Medical imaging & privacy
+
 | Merged contributions |
 | :--- |
-| **Imaging parser hardening**<br>[NiBabel #1568](https://github.com/nipy/nibabel/pull/1568) and [NIFTI-Reader-JS #58](https://github.com/rii-mango/NIFTI-Reader-JS/pull/58): reject undersized NIfTI extensions before reading payloads.<br>[highdicom #471](https://github.com/ImagingDataCommons/highdicom/pull/471): reject undefined encapsulated pixel-fragment lengths before reading payloads. |
-| **Archive extraction containment**<br>[Nilearn #6654](https://github.com/nilearn/nilearn/pull/6654): check extraction paths by component, excluding sibling directories with matching name prefixes. |
-| **De-identification policy integrity**<br>[deid #306](https://github.com/pydicom/deid/pull/306): preserve existing named filter rules when combining de-identification recipes.<br>[deid #307](https://github.com/pydicom/deid/pull/307): refresh DICOM field lookups and apply KEEP rules to current fields, including newly added ones. |
-| **Validation-state isolation**<br>[dicom-validator #303](https://github.com/pydicom/dicom-validator/pull/303): restore process-wide DICOM reading-validation settings after validation, including failure paths. |
-| **Filesystem access controls**<br>[deid #304](https://github.com/pydicom/deid/pull/304): default new pixel-cleaner output directories to owner-only permissions.<br>[fsspec #2358](https://github.com/fsspec/filesystem_spec/pull/2358): honor requested SFTP permissions when creating parent directories. |
-| **Unintended file overwrite prevention**<br>[fonttools #4342](https://github.com/fonttools/fonttools/pull/4342): protect unrelated ZIP archives during file generation.<br>[svglib #518](https://github.com/deeplook/svglib/pull/518): parse compressed SVGs without overwriting sibling files. |
-| **S3 request integrity**<br>[s3fs #1067](https://github.com/fsspec/s3fs/pull/1067): forward delete safeguards, including expected bucket owner and MFA parameters.<br>[s3fs #1068](https://github.com/fsspec/s3fs/pull/1068): honor exclusive-create conditions, ACLs, and metadata for zero-byte writes. |
-| **Array index bounds enforcement**<br>[PyTables #1389](https://github.com/PyTables/PyTables/pull/1389) and [#1393](https://github.com/PyTables/PyTables/pull/1393): reject invalid indices before data access, preventing unintended reads and writes. |
+| **Imaging parser hardening**<br>[NiBabel #1568](https://github.com/nipy/nibabel/pull/1568) and [NIFTI-Reader-JS #58](https://github.com/rii-mango/NIFTI-Reader-JS/pull/58): reject undersized NIfTI extensions before reading payloads.<br>[highdicom #471](https://github.com/ImagingDataCommons/highdicom/pull/471): reject undefined DICOM encapsulated pixel-fragment lengths before reading their payloads. |
+| **Archive extraction containment**<br>[Nilearn #6654](https://github.com/nilearn/nilearn/pull/6654): validate extraction destinations by path components to prevent sibling-prefix confusion in containment checks. |
+| **De-identification policy integrity**<br>[deid #306](https://github.com/pydicom/deid/pull/306): preserve earlier named filter rules so later recipes cannot silently replace them.<br>[deid #307](https://github.com/pydicom/deid/pull/307): refresh DICOM field lookups and apply KEEP rules to current fields, including newly added ones. |
+| **Validation-state isolation**<br>[dicom-validator #303](https://github.com/pydicom/dicom-validator/pull/303): restore pydicom's process-wide reading-validation mode after success or failure so permissive settings do not persist. |
+| **Medical imaging output permissions**<br>[deid #304](https://github.com/pydicom/deid/pull/304): default new pixel-cleaner output directories to owner-only permissions. |
 | **HTML output encoding**<br>[dicom-validator #301](https://github.com/pydicom/dicom-validator/pull/301): escape filenames in HTML report headings to render markup as text. |
 | **Temporary executable isolation**<br>[RSNA Anonymizer #41](https://github.com/RSNA/anonymizer/pull/41): isolate each process's compiled macOS documentation helper in a private temporary directory. |
 | **Shell argument integrity**<br>[BIDScoin #302](https://github.com/Donders-Institute/bidscoin/pull/302): quote image, output, and mask paths in local SynthStrip commands. |
 | **Supply chain reproducibility**<br>[dcm2niix #1046](https://github.com/rordenlab/dcm2niix/pull/1046): pin optional Cloudflare zlib to a source commit. |
-| **Code-signature evidence integrity**<br>[REA #5765](https://github.com/morluto/rea/pull/5765): preserve partial Mach-O signature observations and explicitly flag incomplete per-architecture coverage. |
 | **Archive checksum enforcement**<br>[PyMedPhys #2394](https://github.com/pymedphys/pymedphys/pull/2394): enforce TRF archive checksums under Python `-O`; retain incoming logfiles when verification fails. |
+
+#### Broader security & data-integrity engineering
+
+| Merged contributions |
+| :--- |
+| **Unintended file overwrite prevention**<br>[fonttools #4342](https://github.com/fonttools/fonttools/pull/4342): protect unrelated ZIP archives during file generation.<br>[svglib #518](https://github.com/deeplook/svglib/pull/518): parse compressed SVGs without overwriting sibling files. |
+| **S3 request integrity**<br>[s3fs #1067](https://github.com/fsspec/s3fs/pull/1067): forward delete safeguards, including expected bucket owner and MFA parameters.<br>[s3fs #1068](https://github.com/fsspec/s3fs/pull/1068): honor exclusive-create conditions, ACLs, and metadata for zero-byte writes. |
+| **Array index bounds enforcement**<br>[PyTables #1389](https://github.com/PyTables/PyTables/pull/1389) and [#1393](https://github.com/PyTables/PyTables/pull/1393): reject invalid indices before data access, preventing unintended reads and writes. |
+| **SFTP directory permissions**<br>[fsspec #2358](https://github.com/fsspec/filesystem_spec/pull/2358): honor requested permissions when creating parent directories. |
+| **Code-signature evidence integrity**<br>[REA #5765](https://github.com/morluto/rea/pull/5765): preserve partial Mach-O signature observations and explicitly flag incomplete per-architecture coverage. |
+
+### Open medical-imaging security proposals
+
+These proposals remain **open and unmerged**; they are separate from the 88 merged PRs.
+
+| Open hardening proposals |
+| :--- |
+| **Output-path containment**<br>[dicomweb-client #130](https://github.com/ImagingDataCommons/dicomweb-client/pull/130): propose constraining UID-derived CLI output paths to the selected directory. |
+| **Credential redaction**<br>[MRIQC #1451](https://github.com/nipreps/mriqc/pull/1451): propose redacting NITRC credentials from failed-download diagnostics. |
+| **Literal data parsing**<br>[HeuDiConv #880](https://github.com/nipy/heudiconv/pull/880): propose parsing cached conversion tables as data rather than executing expressions. |
 
 ## My projects
 
@@ -31,9 +49,9 @@ I develop and maintain these **MIT-licensed open-source projects**.
 
 | Projects |
 | :--- |
-| **[AIRS](https://github.com/jdotc1/AIRS)**<br>Native macOS workspace for bounded ARM64 Mach-O unwind analysis and entitlement comparisons. Reads binaries as data and reports coverage and unresolved results.<br>[Download](https://github.com/jdotc1/AIRS/releases) |
-| **[EntitlementDiff](https://github.com/jdotc1/EntitlementDiff)**<br>Compare declared macOS entitlements by architecture, with exact typed values and saved comparisons. Inspects the selected main executable without launching the app.<br>[Download](https://github.com/jdotc1/EntitlementDiff/releases) |
-| **[DICOM Anonymizer](https://github.com/jdotc1/dicom-anonymizer)**<br>Local macOS pseudonymization of MR, CT, and RTSTRUCT metadata, with optional MRI JSON-sidecar cleaning. Bundles Python, consistently remaps patient-specific UIDs and references, audits output, and supports interruption recovery. Preserves source files; leaves image pixels and contours unchanged.<br>[Download](https://github.com/jdotc1/dicom-anonymizer/releases) |
+| **[DICOM Anonymizer](https://github.com/jdotc1/dicom-anonymizer)**<br>Local macOS preview for pseudonymization of MR, CT, and RTSTRUCT metadata, with optional MRI JSON-sidecar cleaning. Bundles Python, consistently remaps patient-specific UIDs and references, audits output, and supports interruption recovery. Preserves source files; leaves image pixels and contours unchanged.<br>[Download](https://github.com/jdotc1/dicom-anonymizer/releases) |
+| **[AIRS](https://github.com/jdotc1/AIRS)**<br>Native macOS evidence-review workspace for bounded ARM64 Mach-O unwind analysis, structural code-signature evidence, and entitlement comparisons. Inspects binaries as data without executing them; reports coverage and unresolved results.<br>[Download](https://github.com/jdotc1/AIRS/releases) |
+| **[EntitlementDiff](https://github.com/jdotc1/EntitlementDiff)**<br>Read-only macOS security-review utility comparing declared entitlements across app builds and architectures, with exact typed values and saved comparisons. Inspects the selected main executable without launching the app; does not establish effective permissions.<br>[Download](https://github.com/jdotc1/EntitlementDiff/releases) |
 | **[SidecarCompare](https://github.com/jdotc1/SidecarCompare)**<br>Compare MRI acquisition metadata with exact decimals, typed values, and documented units. Preserves source sidecars and saves local snapshots and reports through a native SwiftUI app and shared CLI core.<br>[Use CLI](https://github.com/jdotc1/SidecarCompare#command-line-comparison) |
 
 My research tooling also includes **[Prism Native MCP](https://github.com/jdotc1/prism-native-mcp)**, connecting original observations to native GraphPad Prism tables, descriptive analyses, editable graphs, and layouts.
