@@ -6,7 +6,7 @@ I develop and maintain **AIRS**, **EntitlementDiff**, **DICOM Anonymizer**, and 
 
 ## Medical imaging hardening
 
-**77 PRs merged** across **46 external repositories**.
+**83 PRs merged** across **48 external repositories**.
 ### Selected security & privacy contributions
 
 | Area | Merged contributions |
