@@ -21,9 +21,9 @@ I develop and maintain AIRS, EntitlementDiff, DICOM Anonymizer, and SidecarCompa
 | **Supply chain reproducibility** | [dcm2niix #1046](https://github.com/rordenlab/dcm2niix/pull/1046): pin the optional Cloudflare zlib dependency to a fixed source commit. |
 | **Archive checksum enforcement** | [PyMedPhys #2394](https://github.com/pymedphys/pymedphys/pull/2394): keep TRF archive checksum checks active under Python `-O`, preserving incoming logfiles when archived copies fail verification. |
 
-## Open-source projects
+## My projects
 
-I maintain the following **MIT-licensed open-source projects**, with a focus on explicit analysis scope, reproducible results, and preserving source data.
+I developed and maintain the following **MIT-licensed open-source projects**, with a focus on explicit analysis scope, reproducible results, and preserving source data.
 
 | Application | Security & research focus | Explore |
 | --- | --- | --- |
