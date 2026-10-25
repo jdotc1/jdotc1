@@ -1,8 +1,6 @@
 **medical imaging security · radiation oncology**
 
-I investigate security and data-integrity defects in medical imaging and scientific software and contribute focused upstream fixes. My work centers on defensive DICOM/NIfTI parsing, archive containment, filesystem permissions, output encoding, and integrity checks.
-
-I also build open-source binary inspection, privacy, and research tools for Apple Silicon (ARM64), informed by my clinical work in radiation oncology and research in MR imaging and radiomics.
+I identify and patch security and data-integrity vulnerabilities in medical imaging and scientific software, with a focus on secure parsing, filesystem safety, and integrity validation. I also develop open-source binary analysis, privacy, and research tools for Apple Silicon (ARM64), drawing on my background in radiation oncology, MR imaging, and radiomics.
 
 ## Medical imaging hardening
 
