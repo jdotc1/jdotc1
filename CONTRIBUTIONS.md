@@ -3,7 +3,7 @@
 
 ## Merged upstream contributions
 
-**77 authored pull requests merged across 46 external repositories.** This count includes PRs authored by `jdotc1` and merged into repositories owned by others. Each linked PR in this section has a verified upstream merge. Security hardening, data integrity, feature work, build compatibility, and test coverage are described according to the scope of each change.
+**77 PRs merged across 46 external repositories.**
 
 | Project | Merged contribution | Upstream records |
 | --- | --- | --- |
