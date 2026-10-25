@@ -68,7 +68,7 @@ The **[full contribution index](https://github.com/jdotc1/jdotc1/blob/main/CONTR
 
 ## Research & engineering practice
 
-I use source review, static binary analysis, and focused regression tests to produce small, reviewable patches with reproducible evidence. My [DICOM Anonymizer](https://github.com/jdotc1/dicom-anonymizer) documents a [private security-reporting process](https://github.com/jdotc1/dicom-anonymizer/blob/main/SECURITY.md) and guidance for synthetic reproductions.
+I use source review, static binary analysis, and focused regression tests to produce small, reviewable patches with reproducible evidence. My [AIRS](https://github.com/jdotc1/AIRS-app) project applies these principles to ARM64 Mach-O inspection, emphasizing bounded analysis, explicit coverage, and transparent reporting of unresolved findings. My [DICOM Anonymizer](https://github.com/jdotc1/dicom-anonymizer) documents a [private security-reporting process](https://github.com/jdotc1/dicom-anonymizer/blob/main/SECURITY.md) and guidance for synthetic reproductions.
 
 In imaging and radiomics, I prioritize numerical fidelity, units, acquisition metadata, and source lineage, and distinguish declared configuration from observed behavior.
 
