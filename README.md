@@ -12,13 +12,17 @@ I identify and patch security and data-integrity vulnerabilities in medical imag
 | :--- |
 | **Imaging parser hardening**<br>[NiBabel #1568](https://github.com/nipy/nibabel/pull/1568) and [NIFTI-Reader-JS #58](https://github.com/rii-mango/NIFTI-Reader-JS/pull/58): reject undersized NIfTI extensions before reading payloads.<br>[highdicom #471](https://github.com/ImagingDataCommons/highdicom/pull/471): reject undefined encapsulated pixel-fragment lengths before reading payloads. |
 | **Archive extraction containment**<br>[Nilearn #6654](https://github.com/nilearn/nilearn/pull/6654): check extraction paths by component, excluding sibling directories with matching name prefixes. |
-| **De-identification field consistency**<br>[deid #307](https://github.com/pydicom/deid/pull/307): refresh DICOM field lookups after dataset or extraction-option changes; apply KEEP rules to current fields, including newly added ones. |
+| **De-identification policy integrity**<br>[deid #306](https://github.com/pydicom/deid/pull/306): preserve existing named filter rules when combining de-identification recipes.<br>[deid #307](https://github.com/pydicom/deid/pull/307): refresh DICOM field lookups and apply KEEP rules to current fields, including newly added ones. |
+| **Validation-state isolation**<br>[dicom-validator #303](https://github.com/pydicom/dicom-validator/pull/303): restore process-wide DICOM reading-validation settings after validation, including failure paths. |
 | **Filesystem access controls**<br>[deid #304](https://github.com/pydicom/deid/pull/304): default new pixel-cleaner output directories to owner-only permissions.<br>[fsspec #2358](https://github.com/fsspec/filesystem_spec/pull/2358): honor requested SFTP permissions when creating parent directories. |
+| **Unintended file overwrite prevention**<br>[fonttools #4342](https://github.com/fonttools/fonttools/pull/4342): protect unrelated ZIP archives during file generation.<br>[svglib #518](https://github.com/deeplook/svglib/pull/518): parse compressed SVGs without overwriting sibling files. |
 | **S3 request integrity**<br>[s3fs #1067](https://github.com/fsspec/s3fs/pull/1067): forward delete safeguards, including expected bucket owner and MFA parameters.<br>[s3fs #1068](https://github.com/fsspec/s3fs/pull/1068): honor exclusive-create conditions, ACLs, and metadata for zero-byte writes. |
+| **Array index bounds enforcement**<br>[PyTables #1389](https://github.com/PyTables/PyTables/pull/1389) and [#1393](https://github.com/PyTables/PyTables/pull/1393): reject invalid indices before data access, preventing unintended reads and writes. |
 | **HTML output encoding**<br>[dicom-validator #301](https://github.com/pydicom/dicom-validator/pull/301): escape filenames in HTML report headings to render markup as text. |
 | **Temporary executable isolation**<br>[RSNA Anonymizer #41](https://github.com/RSNA/anonymizer/pull/41): isolate each process's compiled macOS documentation helper in a private temporary directory. |
 | **Shell argument integrity**<br>[BIDScoin #302](https://github.com/Donders-Institute/bidscoin/pull/302): quote image, output, and mask paths in local SynthStrip commands. |
 | **Supply chain reproducibility**<br>[dcm2niix #1046](https://github.com/rordenlab/dcm2niix/pull/1046): pin optional Cloudflare zlib to a source commit. |
+| **Code-signature evidence integrity**<br>[REA #5765](https://github.com/morluto/rea/pull/5765): preserve partial Mach-O signature observations and explicitly flag incomplete per-architecture coverage. |
 | **Archive checksum enforcement**<br>[PyMedPhys #2394](https://github.com/pymedphys/pymedphys/pull/2394): enforce TRF archive checksums under Python `-O`; retain incoming logfiles when verification fails. |
 
 ## My projects
@@ -40,13 +44,11 @@ My research tooling also includes **[Prism Native MCP](https://github.com/jdotc1
 
 | Merged contributions |
 | :--- |
-| **Array validation safeguards**<br>[PyTables #1387](https://github.com/PyTables/PyTables/pull/1387), [PyTables #1388](https://github.com/PyTables/PyTables/pull/1388), and [PyTables #1389](https://github.com/PyTables/PyTables/pull/1389): preserve coordinate views and read-only indices, reject non-integer Atom dimensions, and validate selectors before conversion, reads, or writes. |
+| **Array type and view integrity**<br>[PyTables #1387](https://github.com/PyTables/PyTables/pull/1387): preserve coordinate views and read-only indices.<br>[PyTables #1388](https://github.com/PyTables/PyTables/pull/1388): reject non-integer Atom dimensions before coercion. |
 | **Atomic download publication**<br>[BrainStat #385](https://github.com/MICA-MNI/BrainStat/pull/385): publish downloads atomically after successful copying, preserving existing files on failure. |
-| **File overwrite prevention**<br>[fonttools #4342](https://github.com/fonttools/fonttools/pull/4342): stage archives beside the destination before replacement, protecting sibling ZIPs and existing output on failure.<br>[svglib #518](https://github.com/deeplook/svglib/pull/518): read compressed SVGs directly, preserving sibling files and relative-image resolution. |
-| **Validation state isolation**<br>[dicom-validator #303](https://github.com/pydicom/dicom-validator/pull/303): restore the caller's pydicom reading-validation mode, including after exceptions. |
 | **Imaging metadata and geometry integrity**<br>[highdicom #487](https://github.com/ImagingDataCommons/highdicom/pull/487): return singleton DICOM structured-report temporal coordinates as sequences; preserve multi-value containers and element types.<br>[PyVista #9454](https://github.com/pyvista/pyvista/pull/9454): compare structured-data extents to distinguish cell layouts and shifted offsets. |
 | **Metadata path integrity**<br>[ANTsPy #931](https://github.com/ANTsX/ANTsPy/pull/931): replace only the terminal `.npy` suffix to keep JSON sidecars beside NumPy images; document legacy-path migration. |
-| **Analysis evidence integrity**<br>[REA #5765](https://github.com/morluto/rea/pull/5765): preserve mixed-slice Mach-O signature observations and partial evidence.<br>[REA #5763](https://github.com/morluto/rea/pull/5763): align session-discovery capabilities with supported target operations. |
+| **Session capability reporting**<br>[REA #5763](https://github.com/morluto/rea/pull/5763): align session-discovery capabilities with supported target operations. |
 | **SBOM parser resilience**<br>[CycloneDX Core Java #957](https://github.com/CycloneDX/cyclonedx-core-java/pull/957): recognize JSON/XML SBOMs with leading whitespace. |
 | **Security notification fidelity**<br>[Dependency-Track #7704](https://github.com/DependencyTrack/dependency-track/pull/7704): expose latest-version status in notification subjects. |
 
