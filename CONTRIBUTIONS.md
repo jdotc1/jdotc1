@@ -3,7 +3,7 @@
 
 ## Merged upstream contributions
 
-**83 PRs** merged across **48 external repositories**.
+**84 PRs** merged across **49 external repositories**.
 
 | Project | Merged contribution | Upstream records |
 | --- | --- | --- |
