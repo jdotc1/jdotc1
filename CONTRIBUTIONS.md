@@ -10,11 +10,12 @@
 
 ## Merged upstream contributions
 
-**88 PRs** merged across **49 external repositories**.
+**89 PRs** merged across **50 external repositories**.
 
 | Merged contributions |
 | :--- |
 | **[ANTsPy](https://github.com/ANTsX/ANTsPy)**<br>Reject failed HTTP responses before caching test data;<br>correct NumPy sidecar paths and document migration;<br>return displacement-field transforms correctly;<br>join sample filenames to the cache directory.<br>[PR&nbsp;#924](https://github.com/ANTsX/ANTsPy/pull/924) · [PR&nbsp;#931](https://github.com/ANTsX/ANTsPy/pull/931) · [PR&nbsp;#933](https://github.com/ANTsX/ANTsPy/pull/933) · [PR&nbsp;#934](https://github.com/ANTsX/ANTsPy/pull/934) |
+| **[arkdraw](https://github.com/gabe-santana/arkdraw)**<br>Align connector-shadow filter bounds with the default arrowhead size and add a regression test.<br>[PR&nbsp;#29](https://github.com/gabe-santana/arkdraw/pull/29) |
 | **[BIDScoin](https://github.com/Donders-Institute/bidscoin)**<br>Quote image, output, and mask paths in local SynthStrip commands.<br>[PR&nbsp;#302](https://github.com/Donders-Institute/bidscoin/pull/302) |
 | **[Blosc / python-blosc2](https://github.com/Blosc/python-blosc2)**<br>Native Linux ARM64 test coverage.<br>[PR&nbsp;#737](https://github.com/Blosc/python-blosc2/pull/737) |
 | **[BrainStat](https://github.com/MICA-MNI/BrainStat)**<br>Publish downloads atomically after successful copying, preserving existing files on failure.<br>[PR&nbsp;#385](https://github.com/MICA-MNI/BrainStat/pull/385) |
