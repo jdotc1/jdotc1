@@ -4,7 +4,7 @@ I identify and patch security and data-integrity defects in medical imaging soft
 
 ## Medical imaging hardening
 
-[**90 PRs merged** across **51 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, and platform engineering.
+[**99 PRs merged** across **56 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, and platform engineering.
 
 ### Selected security & privacy contributions
 
@@ -13,6 +13,7 @@ I identify and patch security and data-integrity defects in medical imaging soft
 | Merged contributions |
 | :--- |
 | **Imaging parser hardening**<br>[NiBabel #1568](https://github.com/nipy/nibabel/pull/1568) and [NIFTI-Reader-JS #58](https://github.com/rii-mango/NIFTI-Reader-JS/pull/58): reject undersized NIfTI extensions before reading payloads.<br>[highdicom #471](https://github.com/ImagingDataCommons/highdicom/pull/471): reject undefined DICOM encapsulated pixel-fragment lengths before reading their payloads. |
+| **DICOM receive-path safety**<br>[DICOM-rs #845](https://github.com/Enet4/dicom-rs/pull/845): reject unsafe SOP Instance UIDs before storing received DICOM files. |
 | **Archive extraction containment**<br>[Nilearn #6654](https://github.com/nilearn/nilearn/pull/6654): validate extraction destinations by path components to prevent sibling-prefix confusion in containment checks. |
 | **De-identification policy integrity**<br>[deid #306](https://github.com/pydicom/deid/pull/306): preserve earlier named filter rules so later recipes cannot silently replace them.<br>[deid #307](https://github.com/pydicom/deid/pull/307): refresh DICOM field lookups and apply KEEP rules to current fields, including newly added ones. |
 | **Validation-state isolation**<br>[dicom-validator #303](https://github.com/pydicom/dicom-validator/pull/303): restore pydicom's process-wide reading-validation mode after success or failure so permissive settings do not persist. |
@@ -35,7 +36,7 @@ I identify and patch security and data-integrity defects in medical imaging soft
 
 ### Open medical-imaging security proposals
 
-These proposals remain **open and unmerged**; they are separate from the 90 merged PRs.
+These proposals remain **open and unmerged**; they are separate from the 99 merged PRs.
 
 | Open hardening proposals |
 | :--- |
