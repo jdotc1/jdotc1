@@ -10,7 +10,7 @@
 
 ## Merged upstream contributions
 
-**89 PRs** merged across **50 external repositories**.
+**90 PRs** merged across **51 external repositories**.
 
 | Merged contributions |
 | :--- |
@@ -21,6 +21,7 @@
 | **[BrainStat](https://github.com/MICA-MNI/BrainStat)**<br>Publish downloads atomically after successful copying, preserving existing files on failure.<br>[PR&nbsp;#385](https://github.com/MICA-MNI/BrainStat/pull/385) |
 | **[connected-components-3d](https://github.com/seung-lab/connected-components-3d)**<br>Add native Linux ARM64 CI;<br>correct binary provisional-label bounds;<br>preserve empty-grid shapes in labels and voxel graphs.<br>[PR&nbsp;#153](https://github.com/seung-lab/connected-components-3d/pull/153) · [PR&nbsp;#154](https://github.com/seung-lab/connected-components-3d/pull/154) · [PR&nbsp;#155](https://github.com/seung-lab/connected-components-3d/pull/155) |
 | **[CycloneDX Core Java](https://github.com/CycloneDX/cyclonedx-core-java)**<br>Recognize JSON/XML SBOMs with leading whitespace, including after a UTF-8 byte-order marker.<br>[PR&nbsp;#957](https://github.com/CycloneDX/cyclonedx-core-java/pull/957) |
+| **[datacenter-twin-lab](https://github.com/mohammadrezwankhan/datacenter-twin-lab)**<br>Document targeted API dependency-lock refresh and validation steps, including a review for unintended lockfile changes.<br>[PR&nbsp;#88](https://github.com/mohammadrezwankhan/datacenter-twin-lab/pull/88) |
 | **[dcm2niix](https://github.com/rordenlab/dcm2niix)**<br>Quote macOS build paths;<br>propagate architecture, SDK, and toolchain settings;<br>pin optional Cloudflare zlib to a source commit;<br>honor explicit LTO settings and non-MSVC OpenJPEG flags.<br>[PR&nbsp;#1043](https://github.com/rordenlab/dcm2niix/pull/1043) · [PR&nbsp;#1044](https://github.com/rordenlab/dcm2niix/pull/1044) · [PR&nbsp;#1045](https://github.com/rordenlab/dcm2niix/pull/1045) · [PR&nbsp;#1046](https://github.com/rordenlab/dcm2niix/pull/1046) · [PR&nbsp;#1047](https://github.com/rordenlab/dcm2niix/pull/1047) · [PR&nbsp;#1048](https://github.com/rordenlab/dcm2niix/pull/1048) · [PR&nbsp;#1050](https://github.com/rordenlab/dcm2niix/pull/1050) |
 | **[dcmqi](https://github.com/QIICR/dcmqi)**<br>Accept macOS SDK names in `CMAKE_OSX_SYSROOT`; reject missing absolute paths.<br>[PR&nbsp;#566](https://github.com/QIICR/dcmqi/pull/566) |
 | **[deid](https://github.com/pydicom/deid)**<br>Default new pixel-cleaner output directories to owner-only permissions;<br>fix recipe append bookkeeping and retain named filter groups;<br>refresh DICOM field lookups after dataset or extraction-option changes;<br>apply KEEP rules to current fields, including newly added ones.<br>[PR&nbsp;#304](https://github.com/pydicom/deid/pull/304) · [PR&nbsp;#306](https://github.com/pydicom/deid/pull/306) · [PR&nbsp;#307](https://github.com/pydicom/deid/pull/307) |
@@ -67,7 +68,7 @@
 
 ## Changes incorporated through maintainer pull requests
 
-Three contributions were adapted into merged maintainer-authored PRs that credit my work. My original PRs closed without merge; these follow-ups are excluded from the 88 authored merges above.
+Three contributions were adapted into merged maintainer-authored PRs that credit my work. My original PRs closed without merge; these follow-ups are excluded from the 90 authored merges above.
 
 | Incorporated contributions |
 | :--- |
