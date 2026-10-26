@@ -4,7 +4,7 @@ I identify and patch security and data-integrity defects in medical imaging soft
 
 ## Medical imaging hardening
 
-[**89 PRs merged** across **50 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, and platform engineering.
+[**90 PRs merged** across **51 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, and platform engineering.
 
 ### Selected security & privacy contributions
 
@@ -35,7 +35,7 @@ I identify and patch security and data-integrity defects in medical imaging soft
 
 ### Open medical-imaging security proposals
 
-These proposals remain **open and unmerged**; they are separate from the 88 merged PRs.
+These proposals remain **open and unmerged**; they are separate from the 90 merged PRs.
 
 | Open hardening proposals |
 | :--- |
