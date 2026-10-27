@@ -10,7 +10,7 @@
 
 ## Merged upstream contributions
 
-**101 PRs** merged across **57 external repositories**.
+**102 PRs** merged across **58 external repositories**.
 
 | Merged contributions |
 | :--- |
@@ -35,6 +35,7 @@
 | **[flisk](https://github.com/flisk-sh/flisk)**<br>Log generated Go JSON encoding failures;<br>warn on discovery-path fallback;<br>report template-load filesystem errors;<br>scaffold TODO tests instead of unconditional passes.<br>[PR&nbsp;#2307](https://github.com/flisk-sh/flisk/pull/2307) · [PR&nbsp;#2318](https://github.com/flisk-sh/flisk/pull/2318) · [PR&nbsp;#2327](https://github.com/flisk-sh/flisk/pull/2327) · [PR&nbsp;#2334](https://github.com/flisk-sh/flisk/pull/2334) |
 | **[fonttools](https://github.com/fonttools/fonttools)**<br>Stage archives beside the destination before replacement, protecting sibling ZIPs and existing output on failure.<br>[PR&nbsp;#4342](https://github.com/fonttools/fonttools/pull/4342) |
 | **[fsspec](https://github.com/fsspec/filesystem_spec)**<br>Honor requested SFTP parent-directory permissions and zero buffering for immediate and deferred opens;<br>correct Git-filesystem traversal checks and returned path metadata;<br>raise an error when WebHDFS reports a refused rename.<br>[PR&nbsp;#2358](https://github.com/fsspec/filesystem_spec/pull/2358) · [PR&nbsp;#2359](https://github.com/fsspec/filesystem_spec/pull/2359) · [PR&nbsp;#2360](https://github.com/fsspec/filesystem_spec/pull/2360) · [PR&nbsp;#2378](https://github.com/fsspec/filesystem_spec/pull/2378) |
+| **[gookit/color](https://github.com/gookit/color)**<br>Widen RGB channel sums before averaging to prevent `uint8` overflow in ANSI color selection; cover foreground, background, and aliases with regression colors.<br>[PR&nbsp;#127](https://github.com/gookit/color/pull/127) |
 | **[highdicom](https://github.com/ImagingDataCommons/highdicom)**<br>Reject undefined encapsulated pixel-fragment lengths before reading payloads; return singleton DICOM structured-report temporal coordinates as sequences, preserving multi-value containers and element types.<br>[PR&nbsp;#471](https://github.com/ImagingDataCommons/highdicom/pull/471) · [PR&nbsp;#487](https://github.com/ImagingDataCommons/highdicom/pull/487) |
 | **[higher-kinded-j](https://github.com/higher-kinded-j/higher-kinded-j)**<br>Require a test class for each selected Monad; remove the architecture-test rule's global factory bypass.<br>[PR&nbsp;#1230](https://github.com/higher-kinded-j/higher-kinded-j/pull/1230) |
 | **[ITK](https://github.com/InsightSoftwareConsortium/ITK)**<br>Derive FFTW SIMD defaults from the requested macOS architecture;<br>preserve nonzero origins on singleton xarray axes;<br>suppress warnings only for generated wrappers;<br>remove a retired ExternalData mirror;<br>install xarray in macOS/Windows CI and mark its test skipped when the dependency is absent.<br>[PR&nbsp;#6947](https://github.com/InsightSoftwareConsortium/ITK/pull/6947) · [PR&nbsp;#6970](https://github.com/InsightSoftwareConsortium/ITK/pull/6970) · [PR&nbsp;#6987](https://github.com/InsightSoftwareConsortium/ITK/pull/6987) · [PR&nbsp;#6993](https://github.com/InsightSoftwareConsortium/ITK/pull/6993) · [PR&nbsp;#7004](https://github.com/InsightSoftwareConsortium/ITK/pull/7004) |
@@ -74,7 +75,7 @@
 
 ## Changes incorporated through maintainer pull requests
 
-Three contributions were adapted into merged maintainer-authored PRs that credit my work. My original PRs closed without merge; these follow-ups are excluded from the 101 authored merges above.
+Three contributions were adapted into merged maintainer-authored PRs that credit my work. My original PRs closed without merge; these follow-ups are excluded from the 102 authored merges above.
 
 | Incorporated contributions |
 | :--- |
