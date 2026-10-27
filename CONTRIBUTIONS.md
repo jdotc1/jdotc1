@@ -10,7 +10,7 @@
 
 ## Merged upstream contributions
 
-**100 PRs** merged across **57 external repositories**.
+**101 PRs** merged across **57 external repositories**.
 
 | Merged contributions |
 | :--- |
@@ -48,7 +48,7 @@
 | **[NiBabel](https://github.com/nipy/nibabel)**<br>Reject undersized NIfTI extensions before reading payloads.<br>[PR&nbsp;#1568](https://github.com/nipy/nibabel/pull/1568) |
 | **[NIFTI-Reader-JS](https://github.com/rii-mango/NIFTI-Reader-JS)**<br>Reject extension lengths below 16 bytes in the parser and constructor; retain multiple-of-16 validation.<br>[PR&nbsp;#58](https://github.com/rii-mango/NIFTI-Reader-JS/pull/58) |
 | **[Nilearn](https://github.com/nilearn/nilearn)**<br>Check archive extraction destinations by path components and stabilize plotting-test parameter order.<br>[PR&nbsp;#6654](https://github.com/nilearn/nilearn/pull/6654) · [PR&nbsp;#6664](https://github.com/nilearn/nilearn/pull/6664) |
-| **[OME-Zarr](https://github.com/ome/ome-zarr-py)**<br>Native Linux ARM64 CI for the latest-Dask configuration.<br>[PR&nbsp;#704](https://github.com/ome/ome-zarr-py/pull/704) |
+| **[OME-Zarr](https://github.com/ome/ome-zarr-py)**<br>Native Linux ARM64 CI for the latest-Dask configuration; retain invalid-location and existing-destination download checks under optimized Python.<br>[PR&nbsp;#704](https://github.com/ome/ome-zarr-py/pull/704) · [PR&nbsp;#707](https://github.com/ome/ome-zarr-py/pull/707) |
 | **[PaperBanana](https://github.com/dwzhu-pku/PaperBanana)**<br>Fix legacy plot routing, input normalization, and figure sizes; add opt-in visual-metaphor planning for diagrams.<br>[PR&nbsp;#69](https://github.com/dwzhu-pku/PaperBanana/pull/69) · [PR&nbsp;#71](https://github.com/dwzhu-pku/PaperBanana/pull/71) |
 | **[Pillow](https://github.com/python-pillow/Pillow)**<br>Avoid division by zero for zero-width images in `ImageOps.cover()`; preserve palettes and transparency in zero-dimension `ImageOps` results.<br>[PR&nbsp;#10271](https://github.com/python-pillow/Pillow/pull/10271) · [PR&nbsp;#10299](https://github.com/python-pillow/Pillow/pull/10299) |
 | **[pydantic-zarr](https://github.com/zarr-developers/pydantic-zarr)**<br>Add native Linux ARM64 metadata test coverage.<br>[PR&nbsp;#182](https://github.com/zarr-developers/pydantic-zarr/pull/182) |
@@ -74,7 +74,7 @@
 
 ## Changes incorporated through maintainer pull requests
 
-Three contributions were adapted into merged maintainer-authored PRs that credit my work. My original PRs closed without merge; these follow-ups are excluded from the 100 authored merges above.
+Three contributions were adapted into merged maintainer-authored PRs that credit my work. My original PRs closed without merge; these follow-ups are excluded from the 101 authored merges above.
 
 | Incorporated contributions |
 | :--- |
