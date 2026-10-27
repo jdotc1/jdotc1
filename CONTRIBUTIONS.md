@@ -10,7 +10,7 @@
 
 ## Merged upstream contributions
 
-**99 PRs** merged across **56 external repositories**.
+**100 PRs** merged across **57 external repositories**.
 
 | Merged contributions |
 | :--- |
@@ -66,6 +66,7 @@
 | **[silx](https://github.com/silx-kit/silx)**<br>Support Qt 6.12 drag-event constructors and older Qt versions in tests.<br>[PR&nbsp;#4745](https://github.com/silx-kit/silx/pull/4745) |
 | **[Sphinx-Gallery](https://github.com/sphinx-gallery/sphinx-gallery)**<br>Preserve notebook-cell backticks and complete cell-magic payloads.<br>[PR&nbsp;#1659](https://github.com/sphinx-gallery/sphinx-gallery/pull/1659) |
 | **[svglib](https://github.com/deeplook/svglib)**<br>Read compressed SVGs directly, preserving sibling files and relative-image resolution; accept explicit arc signs and SVG transform whitespace.<br>[PR&nbsp;#518](https://github.com/deeplook/svglib/pull/518) · [PR&nbsp;#524](https://github.com/deeplook/svglib/pull/524) |
+| **[Textpattern](https://github.com/textpattern/textpattern)**<br>Specify a User-Agent for clean-URL setup and diagnostic probes, and remove obsolete error suppression.<br>[PR&nbsp;#2099](https://github.com/textpattern/textpattern/pull/2099) |
 | **[Watchexec](https://github.com/watchexec/watchexec)**<br>Fix the RPM installation glob; remove obsolete Linux package-repository guidance.<br>[PR&nbsp;#1158](https://github.com/watchexec/watchexec/pull/1158) |
 | **[xarray](https://github.com/pydata/xarray)**<br>Skip the DataArray-to-Dask-DataFrame test when PyArrow is absent; make dimension-argument and spline deprecation warnings visible.<br>[PR&nbsp;#11780](https://github.com/pydata/xarray/pull/11780) · [PR&nbsp;#11791](https://github.com/pydata/xarray/pull/11791) |
 | **[zarrs](https://github.com/zarrs/zarrs)**<br>Native Linux ARM64 CI for Rust tests with all features enabled.<br>[PR&nbsp;#490](https://github.com/zarrs/zarrs/pull/490) |
@@ -73,7 +74,7 @@
 
 ## Changes incorporated through maintainer pull requests
 
-Three contributions were adapted into merged maintainer-authored PRs that credit my work. My original PRs closed without merge; these follow-ups are excluded from the 99 authored merges above.
+Three contributions were adapted into merged maintainer-authored PRs that credit my work. My original PRs closed without merge; these follow-ups are excluded from the 100 authored merges above.
 
 | Incorporated contributions |
 | :--- |
