@@ -4,7 +4,7 @@ I identify and patch security and data-integrity defects in medical imaging soft
 
 ## Medical imaging hardening
 
-[**100 PRs merged** across **57 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, and platform engineering.
+[**101 PRs merged** across **57 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, and platform engineering.
 
 ### Selected security & privacy contributions
 
@@ -36,7 +36,7 @@ I identify and patch security and data-integrity defects in medical imaging soft
 
 ### Open medical-imaging security proposals
 
-These proposals remain **open and unmerged**; they are separate from the 100 merged PRs.
+These proposals remain **open and unmerged**; they are separate from the 101 merged PRs.
 
 | Open hardening proposals |
 | :--- |
@@ -75,7 +75,7 @@ My research tooling also includes **[Prism Native MCP](https://github.com/jdotc1
 
 | Merged contributions |
 | :--- |
-| **Failure handling**<br>[Pillow #10271](https://github.com/python-pillow/Pillow/pull/10271): handle zero-width images in `ImageOps.cover()` without division by zero.<br>[ANTsPy #924](https://github.com/ANTsX/ANTsPy/pull/924): reject failed HTTP responses before caching test data.<br>[pyplastimatch #15](https://github.com/ImagingDataCommons/pyplastimatch/pull/15): propagate conversion and resampling failures to callers. |
+| **Failure handling**<br>[Pillow #10271](https://github.com/python-pillow/Pillow/pull/10271): handle zero-width images in `ImageOps.cover()` without division by zero.<br>[ANTsPy #924](https://github.com/ANTsX/ANTsPy/pull/924): reject failed HTTP responses before caching test data.<br>[pyplastimatch #15](https://github.com/ImagingDataCommons/pyplastimatch/pull/15): propagate conversion and resampling failures to callers.<br>[OME-Zarr #707](https://github.com/ome/ome-zarr-py/pull/707): enforce download-path and existing-destination checks under optimized Python. |
 | **Imaging build diagnostics**<br>[ITK #6987](https://github.com/InsightSoftwareConsortium/ITK/pull/6987): restore warnings for handwritten wrapper code while retaining suppression for generated sources. |
 | **macOS architecture compatibility**<br>[ITK #6947](https://github.com/InsightSoftwareConsortium/ITK/pull/6947): derive FFTW SIMD defaults from the requested macOS architecture.<br>[dcm2niix #1043](https://github.com/rordenlab/dcm2niix/pull/1043): support linking from source paths containing spaces. |
 | **Shell path safety**<br>[ITK-SNAP #280](https://github.com/pyushkevich/itksnap/pull/280): preserve spaced application paths in the macOS launcher.<br>[FastSurfer #950](https://github.com/Deep-MI/FastSurfer/pull/950): quote FreeSurfer stub destinations during helper generation. |
