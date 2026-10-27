@@ -4,7 +4,7 @@ I identify and patch security and data-integrity defects in medical imaging soft
 
 ## Medical imaging hardening
 
-[**102 PRs merged** across **58 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, and platform engineering.
+[**111 PRs merged** across **60 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, and platform engineering.
 
 ### Selected security & privacy contributions
 
@@ -20,7 +20,7 @@ I identify and patch security and data-integrity defects in medical imaging soft
 | **Medical imaging output permissions**<br>[deid #304](https://github.com/pydicom/deid/pull/304): default new pixel-cleaner output directories to owner-only permissions. |
 | **HTML output encoding**<br>[dicom-validator #301](https://github.com/pydicom/dicom-validator/pull/301): escape filenames in HTML report headings to render markup as text. |
 | **Temporary executable isolation**<br>[RSNA Anonymizer #41](https://github.com/RSNA/anonymizer/pull/41): isolate each process's compiled macOS documentation helper in a private temporary directory. |
-| **Shell argument integrity**<br>[BIDScoin #302](https://github.com/Donders-Institute/bidscoin/pull/302): quote image, output, and mask paths in local SynthStrip commands. |
+| **Shell argument integrity**<br>[BIDScoin #302](https://github.com/Donders-Institute/bidscoin/pull/302): quote image, output, and mask paths in local SynthStrip commands.<br>[surfa #86](https://github.com/freesurfer/surfa/pull/86): preserve FreeView subtitle text as a literal shell argument. |
 | **Supply chain reproducibility**<br>[dcm2niix #1046](https://github.com/rordenlab/dcm2niix/pull/1046): pin optional Cloudflare zlib to a source commit. |
 | **Archive checksum enforcement**<br>[PyMedPhys #2394](https://github.com/pymedphys/pymedphys/pull/2394): enforce TRF archive checksums under Python `-O`; retain incoming logfiles when verification fails. |
 
@@ -32,11 +32,11 @@ I identify and patch security and data-integrity defects in medical imaging soft
 | **S3 request integrity**<br>[s3fs #1067](https://github.com/fsspec/s3fs/pull/1067): forward delete safeguards, including expected bucket owner and MFA parameters.<br>[s3fs #1068](https://github.com/fsspec/s3fs/pull/1068): honor exclusive-create conditions, ACLs, and metadata for zero-byte writes. |
 | **Array index bounds enforcement**<br>[PyTables #1389](https://github.com/PyTables/PyTables/pull/1389) and [#1393](https://github.com/PyTables/PyTables/pull/1393): reject invalid indices before data access, preventing unintended reads and writes. |
 | **SFTP directory permissions**<br>[fsspec #2358](https://github.com/fsspec/filesystem_spec/pull/2358): honor requested permissions when creating parent directories. |
-| **Code-signature evidence integrity**<br>[REA #5765](https://github.com/morluto/rea/pull/5765): preserve partial Mach-O signature observations and explicitly flag incomplete per-architecture coverage. |
+| **Code-signature evidence integrity**<br>[REA #5765](https://github.com/morluto/rea/pull/5765): preserve partial Mach-O signature observations and explicitly flag incomplete per-architecture coverage.<br>[REA #5778](https://github.com/morluto/rea/pull/5778): reject mixed native dyld diagnostics instead of misclassifying them as known refusals. |
 
 ### Open medical-imaging security proposals
 
-These proposals remain **open and unmerged**; they are separate from the 102 merged PRs.
+These proposals remain **open and unmerged**; they are separate from the 111 merged PRs.
 
 | Open hardening proposals |
 | :--- |
@@ -65,7 +65,7 @@ My research tooling also includes **[Prism Native MCP](https://github.com/jdotc1
 | :--- |
 | **Array type and view integrity**<br>[PyTables #1387](https://github.com/PyTables/PyTables/pull/1387): preserve coordinate views and read-only indices.<br>[PyTables #1388](https://github.com/PyTables/PyTables/pull/1388): reject non-integer Atom dimensions before coercion. |
 | **Atomic download publication**<br>[BrainStat #385](https://github.com/MICA-MNI/BrainStat/pull/385): publish downloads atomically after successful copying, preserving existing files on failure. |
-| **Imaging metadata and geometry integrity**<br>[highdicom #487](https://github.com/ImagingDataCommons/highdicom/pull/487): return singleton DICOM structured-report temporal coordinates as sequences; preserve multi-value containers and element types.<br>[PyVista #9454](https://github.com/pyvista/pyvista/pull/9454): compare structured-data extents to distinguish cell layouts and shifted offsets. |
+| **Imaging data and geometry integrity**<br>[highdicom #486](https://github.com/ImagingDataCommons/highdicom/pull/486): prevent integer overflow during volume normalization.<br>[highdicom #487](https://github.com/ImagingDataCommons/highdicom/pull/487): preserve DICOM structured-report temporal-coordinate sequence types.<br>[highdicom #489](https://github.com/ImagingDataCommons/highdicom/pull/489): correctly decode maximum-length LUTs and prevent unintended mutation of caller Datasets.<br>[PyVista #9454](https://github.com/pyvista/pyvista/pull/9454): compare structured-data extents to distinguish cell layouts and shifted offsets. |
 | **Metadata path integrity**<br>[ANTsPy #931](https://github.com/ANTsX/ANTsPy/pull/931): replace only the terminal `.npy` suffix to keep JSON sidecars beside NumPy images; document legacy-path migration. |
 | **Session capability reporting**<br>[REA #5763](https://github.com/morluto/rea/pull/5763): align session-discovery capabilities with supported target operations. |
 | **SBOM parser resilience**<br>[CycloneDX Core Java #957](https://github.com/CycloneDX/cyclonedx-core-java/pull/957): recognize JSON/XML SBOMs with leading whitespace. |
@@ -76,10 +76,11 @@ My research tooling also includes **[Prism Native MCP](https://github.com/jdotc1
 | Merged contributions |
 | :--- |
 | **Failure handling**<br>[Pillow #10271](https://github.com/python-pillow/Pillow/pull/10271): handle zero-width images in `ImageOps.cover()` without division by zero.<br>[ANTsPy #924](https://github.com/ANTsX/ANTsPy/pull/924): reject failed HTTP responses before caching test data.<br>[pyplastimatch #15](https://github.com/ImagingDataCommons/pyplastimatch/pull/15): propagate conversion and resampling failures to callers.<br>[OME-Zarr #707](https://github.com/ome/ome-zarr-py/pull/707): enforce download-path and existing-destination checks under optimized Python. |
-| **Imaging build diagnostics**<br>[ITK #6987](https://github.com/InsightSoftwareConsortium/ITK/pull/6987): restore warnings for handwritten wrapper code while retaining suppression for generated sources. |
+| **Imaging numerical safeguards and build diagnostics**<br>[ITK #6986](https://github.com/InsightSoftwareConsortium/ITK/pull/6986): handle empty VectorContainer-to-NumPy conversions.<br>[ITK #6991](https://github.com/InsightSoftwareConsortium/ITK/pull/6991): reject transform parameter counts beyond the metric limit.<br>[ITK #6987](https://github.com/InsightSoftwareConsortium/ITK/pull/6987): restore warnings for handwritten wrapper code while retaining suppression for generated sources. |
 | **macOS architecture compatibility**<br>[ITK #6947](https://github.com/InsightSoftwareConsortium/ITK/pull/6947): derive FFTW SIMD defaults from the requested macOS architecture.<br>[dcm2niix #1043](https://github.com/rordenlab/dcm2niix/pull/1043): support linking from source paths containing spaces. |
 | **Shell path safety**<br>[ITK-SNAP #280](https://github.com/pyushkevich/itksnap/pull/280): preserve spaced application paths in the macOS launcher.<br>[FastSurfer #950](https://github.com/Deep-MI/FastSurfer/pull/950): quote FreeSurfer stub destinations during helper generation. |
 | **Buffering policy enforcement**<br>[fsspec #2359](https://github.com/fsspec/filesystem_spec/pull/2359): honor zero buffering for immediate and deferred SFTP opens. |
+| **Data URL decoding integrity**<br>[fsspec #2386](https://github.com/fsspec/filesystem_spec/pull/2386): recognize case and permitted whitespace in base64 markers. |
 | **Linux ARM64 integration testing**<br>Cover JPEG/JPEG 2000 plugins and pydicom integration in [pylibjpeg-libjpeg #91](https://github.com/pydicom/pylibjpeg-libjpeg/pull/91) and [pylibjpeg-openjpeg #129](https://github.com/pydicom/pylibjpeg-openjpeg/pull/129).<br>Test the latest-Dask configuration in [OME-Zarr #704](https://github.com/ome/ome-zarr-py/pull/704).<br>Extend coverage to [zarrs #490](https://github.com/zarrs/zarrs/pull/490), [zarrs-python #199](https://github.com/zarrs/zarrs-python/pull/199), [connected-components-3d #153](https://github.com/seung-lab/connected-components-3d/pull/153), [fastremap #60](https://github.com/seung-lab/fastremap/pull/60), and [FabIO #675](https://github.com/silx-kit/fabio/pull/675). |
 | **Test suite reliability**<br>[ITK #7004](https://github.com/InsightSoftwareConsortium/ITK/pull/7004): install xarray in macOS/Windows CI and mark its test skipped when the dependency is absent.<br>[Nilearn #6664](https://github.com/nilearn/nilearn/pull/6664): stabilize plotting-test parameter order for parallel collection.<br>[xarray #11780](https://github.com/pydata/xarray/pull/11780): skip the DataArray-to-Dask-DataFrame test when PyArrow is absent.<br>[silx #4745](https://github.com/silx-kit/silx/pull/4745): support Qt 6.12 drag-event constructors and older Qt versions. |
 
