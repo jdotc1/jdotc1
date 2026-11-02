@@ -49,16 +49,17 @@ These proposals remain **open and unmerged**; they are separate from the 131 mer
 
 ## My projects
 
-I develop and maintain these **MIT-licensed open-source projects**.
+I develop macOS applications, data-integrity tools, and reusable libraries. Each repository documents its own licensing and distribution terms.
 
-| Projects |
-| :--- |
-| **[DICOM Anonymizer](https://github.com/jdotc1/dicom-anonymizer)**<br>Local macOS preview for pseudonymization of MR, CT, and RTSTRUCT metadata, with optional MRI JSON-sidecar cleaning. Bundles Python, consistently remaps patient-specific UIDs and references, audits output, and supports interruption recovery. Preserves source files; leaves image pixels and contours unchanged.<br>[Download](https://github.com/jdotc1/dicom-anonymizer/releases) |
-| **[AIRS](https://github.com/jdotc1/AIRS)**<br>Native macOS evidence-review workspace for bounded ARM64 Mach-O unwind analysis, structural code-signature evidence, and entitlement comparisons. Inspects binaries as data without executing them; reports coverage and unresolved results.<br>[Download](https://github.com/jdotc1/AIRS/releases) |
-| **[EntitlementDiff](https://github.com/jdotc1/EntitlementDiff)**<br>Read-only macOS security-review utility comparing declared entitlements across app builds and architectures, with exact typed values and saved comparisons. Inspects the selected main executable without launching the app; does not establish effective permissions.<br>[Download](https://github.com/jdotc1/EntitlementDiff/releases) |
-| **[SidecarCompare](https://github.com/jdotc1/SidecarCompare)**<br>Compare MRI acquisition metadata with exact decimals, typed values, and documented units. Preserves source sidecars and saves local snapshots and reports through a native SwiftUI app and shared CLI core.<br>[Use CLI](https://github.com/jdotc1/SidecarCompare#command-line-comparison) |
-
-My research tooling also includes **[Prism Native MCP](https://github.com/jdotc1/prism-native-mcp)**, connecting original observations to native GraphPad Prism tables, descriptive analyses, editable graphs, and layouts.
+| Project | What it helps you do |
+| :--- | :--- |
+| **[DICOM Anonymizer](https://github.com/jdotc1/dicom-anonymizer)** | Locally pseudonymize MR, CT and RTSTRUCT metadata, including reference-consistent UID remapping, output audits and interruption recovery. Source files are preserved; pixels and contours are not scrubbed. [Preview releases](https://github.com/jdotc1/dicom-anonymizer/releases). |
+| <img src="https://raw.githubusercontent.com/jdotc1/AIRS/main/resources/AIRS-icon.png" width="52" alt="AIRS icon"><br>**[AIRS](https://github.com/jdotc1/AIRS)** | Review ARM64 Mach-O unwind and structural evidence without executing inspected binaries, with explicit coverage and saved reports. [Preview releases](https://github.com/jdotc1/AIRS/releases). |
+| <img src="https://raw.githubusercontent.com/jdotc1/EntitlementDiff/main/Resources/Icon/Previews/Default.png" width="52" alt="EntitlementDiff icon"><br>**[EntitlementDiff](https://github.com/jdotc1/EntitlementDiff)** | Compare declared entitlements between macOS app builds and architectures, preserving exact typed values and saved comparisons. [Releases](https://github.com/jdotc1/EntitlementDiff/releases). |
+| <img src="https://raw.githubusercontent.com/jdotc1/SidecarCompare/main/Packaging/Icon/Previews/Default-512.png" width="52" alt="SidecarCompare icon"><br>**[SidecarCompare](https://github.com/jdotc1/SidecarCompare)** | Compare MRI JSON acquisition metadata with exact numbers, original tokens and documented units in a native app and shared CLI core. |
+| <img src="https://raw.githubusercontent.com/jdotc1/Lumen/main/Design/previews/LumenCatalog/Default.png" width="52" alt="Lumen Catalog icon"><br>**[Lumen](https://github.com/jdotc1/Lumen)** | Build macOS interfaces with semantic design tokens, editable themes, reusable SwiftUI/AppKit components and an interactive Catalog. The related [LumenUI repository](https://github.com/jdotc1/LumenUI) tracks the broader component system. |
+| <img src="https://raw.githubusercontent.com/jdotc1/MacScope-app/main/Docs/brand/app-icon-light.png" width="52" alt="MacScope icon"><br>**[MacScope public workspace](https://github.com/jdotc1/MacScope-app)** | Explore the architecture and source of the native macOS binary-analysis workspace, including coordinated disassembly, graph, pseudocode and hex views and isolated workers. |
+| **[Prism Native MCP](https://github.com/jdotc1/prism-native-mcp)** | Use a local MCP server to build native GraphPad Prism tables, descriptive analyses, editable graphs and layouts from supplied observations. |
 
 ## Additional merged contributions
 
