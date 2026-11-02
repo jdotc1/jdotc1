@@ -4,7 +4,7 @@ I identify and patch security and data-integrity defects in medical imaging soft
 
 ## Medical imaging hardening
 
-[**131 PRs merged** across **70 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, and platform engineering.
+[**134 PRs merged** across **72 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, and platform engineering.
 
 ### Selected security & privacy contributions
 
@@ -35,11 +35,12 @@ I identify and patch security and data-integrity defects in medical imaging soft
 | **S3 request integrity**<br>[s3fs #1067](https://github.com/fsspec/s3fs/pull/1067): forward delete safeguards, including expected bucket owner and MFA parameters.<br>[s3fs #1068](https://github.com/fsspec/s3fs/pull/1068): honor exclusive-create conditions, ACLs, and metadata for zero-byte writes. |
 | **Array index bounds enforcement**<br>[PyTables #1389](https://github.com/PyTables/PyTables/pull/1389) and [#1393](https://github.com/PyTables/PyTables/pull/1393): reject invalid indices before data access, preventing unintended reads and writes. |
 | **SFTP directory permissions**<br>[fsspec #2358](https://github.com/fsspec/filesystem_spec/pull/2358): honor requested permissions when creating parent directories. |
+| **Permission-scoped CI**<br>[XCP-D #1640](https://github.com/PennLINC/xcp_d/pull/1640): validate fork lockfiles with read-only permissions while restricting write access to same-repository updates. |
 | **Code-signature evidence integrity**<br>[REA #5765](https://github.com/morluto/rea/pull/5765): preserve partial Mach-O signature observations and explicitly flag incomplete per-architecture coverage.<br>[REA #5778](https://github.com/morluto/rea/pull/5778): reject mixed native dyld diagnostics instead of misclassifying them as known refusals. |
 
 ### Open medical-imaging security proposals
 
-These proposals remain **open and unmerged**; they are separate from the 131 merged PRs.
+These proposals remain **open and unmerged**; they are separate from the 134 merged PRs.
 
 | Open hardening proposals |
 | :--- |
@@ -87,9 +88,10 @@ I develop macOS applications, data-integrity tools, and reusable libraries. Each
 | **Buffering policy enforcement**<br>[fsspec #2359](https://github.com/fsspec/filesystem_spec/pull/2359): honor zero buffering for immediate and deferred SFTP opens. |
 | **Data URL decoding integrity**<br>[fsspec #2386](https://github.com/fsspec/filesystem_spec/pull/2386): recognize case and permitted whitespace in base64 markers. |
 | **Linux ARM64 integration testing**<br>[libjxl #5039](https://github.com/libjxl/libjxl/pull/5039): publish native Linux AArch64 static release tools.<br>[libjxl #5040](https://github.com/libjxl/libjxl/pull/5040): document a GCC/Highway ARM64 build workaround.<br>Cover JPEG/JPEG 2000 plugins and pydicom integration in [pylibjpeg-libjpeg #91](https://github.com/pydicom/pylibjpeg-libjpeg/pull/91) and [pylibjpeg-openjpeg #129](https://github.com/pydicom/pylibjpeg-openjpeg/pull/129).<br>Test the latest-Dask configuration in [OME-Zarr #704](https://github.com/ome/ome-zarr-py/pull/704).<br>Extend coverage to [zarrs #490](https://github.com/zarrs/zarrs/pull/490), [zarrs-python #199](https://github.com/zarrs/zarrs-python/pull/199), [connected-components-3d #153](https://github.com/seung-lab/connected-components-3d/pull/153), [fastremap #60](https://github.com/seung-lab/fastremap/pull/60), and [FabIO #675](https://github.com/silx-kit/fabio/pull/675). |
+| **Offline example verification**<br>[recusal #149](https://github.com/philpaz/recusal/pull/149): add subprocess smoke tests for documented offline examples.<br>[recusal #150](https://github.com/philpaz/recusal/pull/150): index cookbook and framework examples with documentation-coverage regression tests. |
 | **Test suite reliability**<br>[ITK #7004](https://github.com/InsightSoftwareConsortium/ITK/pull/7004): install xarray in macOS/Windows CI and mark its test skipped when the dependency is absent.<br>[Nilearn #6664](https://github.com/nilearn/nilearn/pull/6664): stabilize plotting-test parameter order for parallel collection.<br>[xarray #11780](https://github.com/pydata/xarray/pull/11780): skip the DataArray-to-Dask-DataFrame test when PyArrow is absent.<br>[silx #4745](https://github.com/silx-kit/silx/pull/4745): support Qt 6.12 drag-event constructors and older Qt versions. |
 
-The **[full contribution index](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md)** links all merged PRs, documentation, issue reports, additional proposals, and fork work.
+Across **154 external repositories**, I have submitted **289 PRs**: **134 merged**, **118 open**, and **37 closed without merge** (November 2, 2026). The **[full contribution index](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md)** records each external PR, plus documentation, issue reports, and fork work.
 
 ## Research & engineering practice
 
