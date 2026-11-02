@@ -10,7 +10,7 @@
 
 ## Merged upstream contributions
 
-**130 PRs** merged across **70 external repositories**.
+**131 PRs** merged across **70 external repositories**.
 
 | Merged contributions |
 | :--- |
@@ -39,7 +39,7 @@
 | **[fonttools](https://github.com/fonttools/fonttools)**<br>Stage archives beside the destination before replacement, protecting sibling ZIPs and existing output on failure.<br>[PR&nbsp;#4342](https://github.com/fonttools/fonttools/pull/4342) |
 | **[fsspec](https://github.com/fsspec/filesystem_spec)**<br>Honor requested SFTP parent-directory permissions and zero buffering for immediate and deferred opens;<br>correct Git-filesystem traversal checks and returned path metadata;<br>raise an error when WebHDFS reports a refused rename;<br>recognize permitted case and ASCII whitespace in data URL base64 markers.<br>[PR&nbsp;#2358](https://github.com/fsspec/filesystem_spec/pull/2358) · [PR&nbsp;#2359](https://github.com/fsspec/filesystem_spec/pull/2359) · [PR&nbsp;#2360](https://github.com/fsspec/filesystem_spec/pull/2360) · [PR&nbsp;#2378](https://github.com/fsspec/filesystem_spec/pull/2378) · [PR&nbsp;#2386](https://github.com/fsspec/filesystem_spec/pull/2386) |
 | **[gookit/color](https://github.com/gookit/color)**<br>Widen RGB channel sums before averaging to prevent `uint8` overflow in ANSI color selection; cover foreground, background, and aliases with regression colors.<br>[PR&nbsp;#127](https://github.com/gookit/color/pull/127) |
-| **[highdicom](https://github.com/ImagingDataCommons/highdicom)**<br>Reject undefined encapsulated pixel-fragment lengths before reading payloads;<br>preserve DICOM structured-report temporal-coordinate sequence types;<br>prevent overflow in integer volume normalization;<br>decode maximum-length LUTs and avoid unintended mutation of input Datasets.<br>[PR&nbsp;#471](https://github.com/ImagingDataCommons/highdicom/pull/471) · [PR&nbsp;#486](https://github.com/ImagingDataCommons/highdicom/pull/486) · [PR&nbsp;#487](https://github.com/ImagingDataCommons/highdicom/pull/487) · [PR&nbsp;#489](https://github.com/ImagingDataCommons/highdicom/pull/489) |
+| **[highdicom](https://github.com/ImagingDataCommons/highdicom)**<br>Reject undefined encapsulated pixel-fragment lengths before reading payloads;<br>preserve DICOM structured-report temporal-coordinate sequence types;<br>prevent overflow in integer volume normalization;<br>preserve root/non-SR context in content-item queries and insertion;<br>decode maximum-length LUTs and avoid unintended mutation of input Datasets.<br>[PR&nbsp;#471](https://github.com/ImagingDataCommons/highdicom/pull/471) · [PR&nbsp;#486](https://github.com/ImagingDataCommons/highdicom/pull/486) · [PR&nbsp;#487](https://github.com/ImagingDataCommons/highdicom/pull/487) · [PR&nbsp;#488](https://github.com/ImagingDataCommons/highdicom/pull/488) · [PR&nbsp;#489](https://github.com/ImagingDataCommons/highdicom/pull/489) |
 | **[higher-kinded-j](https://github.com/higher-kinded-j/higher-kinded-j)**<br>Require a test class for each selected Monad; remove the architecture-test rule's global factory bypass.<br>[PR&nbsp;#1230](https://github.com/higher-kinded-j/higher-kinded-j/pull/1230) |
 | **[ITK](https://github.com/InsightSoftwareConsortium/ITK)**<br>Derive FFTW SIMD defaults from the requested macOS architecture;<br>preserve nonzero origins on singleton xarray axes;<br>handle empty VectorContainer-to-NumPy conversions;<br>suppress warnings only for generated wrappers;<br>remove a retired ExternalData mirror;<br>reject transform parameter counts exceeding the metric limit;<br>install xarray in macOS/Windows CI and mark its test skipped when the dependency is absent.<br>[PR&nbsp;#6947](https://github.com/InsightSoftwareConsortium/ITK/pull/6947) · [PR&nbsp;#6970](https://github.com/InsightSoftwareConsortium/ITK/pull/6970) · [PR&nbsp;#6986](https://github.com/InsightSoftwareConsortium/ITK/pull/6986) · [PR&nbsp;#6987](https://github.com/InsightSoftwareConsortium/ITK/pull/6987) · [PR&nbsp;#6991](https://github.com/InsightSoftwareConsortium/ITK/pull/6991) · [PR&nbsp;#6993](https://github.com/InsightSoftwareConsortium/ITK/pull/6993) · [PR&nbsp;#7004](https://github.com/InsightSoftwareConsortium/ITK/pull/7004) |
 | **[ITK-SNAP](https://github.com/pyushkevich/itksnap)**<br>Quote application paths in the macOS launcher.<br>[PR&nbsp;#280](https://github.com/pyushkevich/itksnap/pull/280) |
@@ -87,7 +87,7 @@
 
 ## Changes incorporated through maintainer pull requests
 
-Three contributions were adapted into merged maintainer-authored PRs that credit my work. My original PRs closed without merge; these follow-ups are excluded from the 130 authored merges above.
+Three contributions were adapted into merged maintainer-authored PRs that credit my work. My original PRs closed without merge; these follow-ups are excluded from the 131 authored merges above.
 
 | Incorporated contributions |
 | :--- |
@@ -124,7 +124,7 @@ Other proposals, documentation, issue reports, and fork work; inclusion does not
 | **[Gitleaks](https://github.com/gitleaks/gitleaks)**<br>Reported premature report deletion on invalid output format; proposed preservation during option validation.<br>[PR&nbsp;#2307](https://github.com/gitleaks/gitleaks/pull/2307) · [Issue&nbsp;#2304](https://github.com/gitleaks/gitleaks/issues/2304) |
 | **[HD-BET](https://github.com/MIC-DKFZ/HD-BET)**<br>Private staging for checkpoint downloads.<br>[PR&nbsp;#71](https://github.com/MIC-DKFZ/HD-BET/pull/71) |
 | **[HeuDiConv](https://github.com/nipy/heudiconv)**<br>Parse cached conversion tables as literals rather than executable expressions.<br>[PR&nbsp;#880](https://github.com/nipy/heudiconv/pull/880) |
-| **[highdicom](https://github.com/ImagingDataCommons/highdicom)**<br>Reported undefined pixel-fragment lengths, addressed by merged PR #471 above. Proposed corrections to content-item query/insertion context; other accepted fixes are indexed above.<br>[Issue&nbsp;#470](https://github.com/ImagingDataCommons/highdicom/issues/470) · [PR&nbsp;#488](https://github.com/ImagingDataCommons/highdicom/pull/488) |
+| **[highdicom](https://github.com/ImagingDataCommons/highdicom)**<br>Reported undefined pixel-fragment lengths, addressed by merged PR #471 above.<br>[Issue&nbsp;#470](https://github.com/ImagingDataCommons/highdicom/issues/470) |
 | **[ImageIO](https://github.com/imageio/imageio)**<br>Debug logging for FreeImage loader failures.<br>[PR&nbsp;#1240](https://github.com/imageio/imageio/pull/1240) |
 | **[InVesalius](https://github.com/invesalius/invesalius3)**<br>TLS verification and bounded update-discovery requests.<br>[PR&nbsp;#1514](https://github.com/invesalius/invesalius3/pull/1514) |
 | **[ITK](https://github.com/InsightSoftwareConsortium/ITK)**<br>Proposed fixes for Bruker geometry cardinalities and invalid work regions in empty or tiny narrow bands.<br>[PR&nbsp;#6990](https://github.com/InsightSoftwareConsortium/ITK/pull/6990) · [PR&nbsp;#6992](https://github.com/InsightSoftwareConsortium/ITK/pull/6992) |
