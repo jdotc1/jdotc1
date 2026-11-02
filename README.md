@@ -4,7 +4,7 @@ I identify and patch security and data-integrity defects in medical imaging soft
 
 ## Medical imaging hardening
 
-[**130 PRs merged** across **70 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, and platform engineering.
+[**131 PRs merged** across **70 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, and platform engineering.
 
 ### Selected security & privacy contributions
 
@@ -39,7 +39,7 @@ I identify and patch security and data-integrity defects in medical imaging soft
 
 ### Open medical-imaging security proposals
 
-These proposals remain **open and unmerged**; they are separate from the 130 merged PRs.
+These proposals remain **open and unmerged**; they are separate from the 131 merged PRs.
 
 | Open hardening proposals |
 | :--- |
@@ -69,7 +69,7 @@ My research tooling also includes **[Prism Native MCP](https://github.com/jdotc1
 | **Array type and view integrity**<br>[PyTables #1387](https://github.com/PyTables/PyTables/pull/1387): preserve coordinate views and read-only indices.<br>[PyTables #1388](https://github.com/PyTables/PyTables/pull/1388): reject non-integer Atom dimensions before coercion. |
 | **Scientific array correctness**<br>[batchgenerators #144](https://github.com/MIC-DKFZ/batchgenerators/pull/144): retain requested subunit scale bounds in spatial augmentation.<br>[xarray #11793](https://github.com/pydata/xarray/pull/11793): handle variable-width string arrays in `str.extract`. |
 | **Atomic download publication**<br>[BrainStat #385](https://github.com/MICA-MNI/BrainStat/pull/385): publish downloads atomically after successful copying, preserving existing files on failure. |
-| **Imaging data and geometry integrity**<br>[highdicom #486](https://github.com/ImagingDataCommons/highdicom/pull/486): prevent integer overflow during volume normalization.<br>[highdicom #487](https://github.com/ImagingDataCommons/highdicom/pull/487): preserve DICOM structured-report temporal-coordinate sequence types.<br>[highdicom #489](https://github.com/ImagingDataCommons/highdicom/pull/489): correctly decode maximum-length LUTs and prevent unintended mutation of caller Datasets.<br>[PyVista #9454](https://github.com/pyvista/pyvista/pull/9454): compare structured-data extents to distinguish cell layouts and shifted offsets. |
+| **Imaging data and geometry integrity**<br>[highdicom #486](https://github.com/ImagingDataCommons/highdicom/pull/486): prevent integer overflow during volume normalization.<br>[highdicom #487](https://github.com/ImagingDataCommons/highdicom/pull/487): preserve DICOM structured-report temporal-coordinate sequence types.<br>[highdicom #488](https://github.com/ImagingDataCommons/highdicom/pull/488): preserve root/non-SR context in content-item queries and insertion.<br>[highdicom #489](https://github.com/ImagingDataCommons/highdicom/pull/489): correctly decode maximum-length LUTs and prevent unintended mutation of caller Datasets.<br>[PyVista #9454](https://github.com/pyvista/pyvista/pull/9454): compare structured-data extents to distinguish cell layouts and shifted offsets. |
 | **Metadata path integrity**<br>[ANTsPy #931](https://github.com/ANTsX/ANTsPy/pull/931): replace only the terminal `.npy` suffix to keep JSON sidecars beside NumPy images; document legacy-path migration. |
 | **Session capability reporting**<br>[REA #5763](https://github.com/morluto/rea/pull/5763): align session-discovery capabilities with supported target operations. |
 | **SBOM parser resilience**<br>[CycloneDX Core Java #957](https://github.com/CycloneDX/cyclonedx-core-java/pull/957): recognize JSON/XML SBOMs with leading whitespace. |
