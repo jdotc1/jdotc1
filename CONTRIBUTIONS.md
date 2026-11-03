@@ -10,9 +10,9 @@
 
 ## Merged upstream contributions
 
-**134 authored PRs** merged across **72 external repositories**.
+**135 authored PRs** merged across **72 external repositories**.
 
-**All external PRs:** **289 authored PRs** across **154 repositories** — **134 merged**, **118 open**, and **37 closed without merge** (verified November 2, 2026).
+**Currently verifiable external PRs:** **287 authored PRs** across **153 repositories** — **135 merged**, **112 open**, and **40 closed without merge** (verified November 3, 2026). Two previously indexed OpenScribe PRs are currently inaccessible (GitHub 404); their historical entries remain below but are excluded from these live counts.
 
 | Merged contributions |
 | :--- |
@@ -77,7 +77,7 @@
 | **[RSNA Anonymizer](https://github.com/RSNA/anonymizer)**<br>Isolate each process's compiled macOS documentation helper in a private temporary directory.<br>[PR&nbsp;#41](https://github.com/RSNA/anonymizer/pull/41) |
 | **[s3fs](https://github.com/fsspec/s3fs)**<br>Forward delete safeguards, including expected bucket owner and MFA; honor exclusive-create conditions, ACLs, and metadata for zero-byte writes.<br>[PR&nbsp;#1067](https://github.com/fsspec/s3fs/pull/1067) · [PR&nbsp;#1068](https://github.com/fsspec/s3fs/pull/1068) |
 | **[scikit-image](https://github.com/scikit-image/scikit-image)**<br>Native Linux ARM64 build and test coverage.<br>[PR&nbsp;#8359](https://github.com/scikit-image/scikit-image/pull/8359) |
-| **[silx](https://github.com/silx-kit/silx)**<br>Support Qt 6.12 drag-event constructors and older Qt versions in tests.<br>[PR&nbsp;#4745](https://github.com/silx-kit/silx/pull/4745) |
+| **[silx](https://github.com/silx-kit/silx)**<br>Support Qt 6.12 drag-event constructors and older Qt versions in tests;<br>avoid Snip fitting-cache comparison errors and stale cache hits when data lengths change.<br>[PR&nbsp;#4745](https://github.com/silx-kit/silx/pull/4745) · [PR&nbsp;#4751](https://github.com/silx-kit/silx/pull/4751) |
 | **[Sphinx-Gallery](https://github.com/sphinx-gallery/sphinx-gallery)**<br>Preserve notebook-cell backticks and complete cell-magic payloads.<br>[PR&nbsp;#1659](https://github.com/sphinx-gallery/sphinx-gallery/pull/1659) |
 | **[svglib](https://github.com/deeplook/svglib)**<br>Read compressed SVGs directly, preserving sibling files and relative-image resolution; accept explicit arc signs and SVG transform whitespace.<br>[PR&nbsp;#518](https://github.com/deeplook/svglib/pull/518) · [PR&nbsp;#524](https://github.com/deeplook/svglib/pull/524) |
 | **[surfa](https://github.com/freesurfer/surfa)**<br>Quote FreeView subtitles as literal shell arguments, preserving embedded quotes and substitutions as text.<br>[PR&nbsp;#86](https://github.com/freesurfer/surfa/pull/86) |
@@ -91,7 +91,7 @@
 
 ## Changes incorporated through maintainer pull requests
 
-Three contributions were adapted into merged maintainer-authored PRs that credit my work. My original PRs closed without merge; these follow-ups are excluded from the 134 authored merges above.
+Three contributions were adapted into merged maintainer-authored PRs that credit my work. My original PRs closed without merge; these follow-ups are excluded from the 135 authored merges above.
 
 | Incorporated contributions |
 | :--- |
@@ -106,7 +106,7 @@ Other proposals, documentation, issue reports, and fork work; inclusion does not
 | Additional proposals and records |
 | :--- |
 | **[3D Slicer](https://github.com/Slicer/Slicer)**<br>macOS packaging failure checks, dependency/run-path containment, FAT64 detection, and Apple Silicon build/launcher docs; consolidated in PR #9478.<br>[PR&nbsp;#9478](https://github.com/Slicer/Slicer/pull/9478) · [PR&nbsp;#9464](https://github.com/Slicer/Slicer/pull/9464) · [PR&nbsp;#9465](https://github.com/Slicer/Slicer/pull/9465) · [PR&nbsp;#9466](https://github.com/Slicer/Slicer/pull/9466) · [PR&nbsp;#9467](https://github.com/Slicer/Slicer/pull/9467) · [PR&nbsp;#9468](https://github.com/Slicer/Slicer/pull/9468) · [PR&nbsp;#9469](https://github.com/Slicer/Slicer/pull/9469) · [PR&nbsp;#9470](https://github.com/Slicer/Slicer/pull/9470) · [PR&nbsp;#9471](https://github.com/Slicer/Slicer/pull/9471) · [PR&nbsp;#9472](https://github.com/Slicer/Slicer/pull/9472) · [PR&nbsp;#9473](https://github.com/Slicer/Slicer/pull/9473) · [PR&nbsp;#9474](https://github.com/Slicer/Slicer/pull/9474) · [PR&nbsp;#9475](https://github.com/Slicer/Slicer/pull/9475) · [PR&nbsp;#9476](https://github.com/Slicer/Slicer/pull/9476) · [PR&nbsp;#9477](https://github.com/Slicer/Slicer/pull/9477) |
-| **[anolis](https://github.com/anolishq/anolis)**<br>**Open, unmerged:** correct Influx telemetry field and tag documentation; align example YAML with simulator build presets; update runtime HTTP fixtures to current provider-sim function IDs.<br>[PR&nbsp;#725](https://github.com/anolishq/anolis/pull/725) · [PR&nbsp;#726](https://github.com/anolishq/anolis/pull/726) · [PR&nbsp;#727](https://github.com/anolishq/anolis/pull/727) |
+| **[anolis](https://github.com/anolishq/anolis)**<br>**Closed without merge (November 2, 2026):** corrections to Influx telemetry field and tag documentation, example YAML simulator build presets, and runtime HTTP fixture function IDs.<br>[PR&nbsp;#725](https://github.com/anolishq/anolis/pull/725) · [PR&nbsp;#726](https://github.com/anolishq/anolis/pull/726) · [PR&nbsp;#727](https://github.com/anolishq/anolis/pull/727) |
 | **[ANTsPy](https://github.com/ANTsX/ANTsPy)**<br>Proposed NumPy scalar levels in `mask_image` and component-layout preservation during image reconstruction and serialization. PR #935 closed without merge.<br>[PR&nbsp;#935](https://github.com/ANTsX/ANTsPy/pull/935) · [PR&nbsp;#938](https://github.com/ANTsX/ANTsPy/pull/938) |
 | **[BrainIAK](https://github.com/brainiak/brainiak)**<br>Parse noise dictionaries as literals rather than executable expressions.<br>[PR&nbsp;#616](https://github.com/brainiak/brainiak/pull/616) |
 | **[charset_normalizer](https://github.com/jawah/charset_normalizer)**<br>Proposed rejection of NaN CLI thresholds. PR #826 closed without merge.<br>[PR&nbsp;#826](https://github.com/jawah/charset_normalizer/pull/826) |
@@ -167,7 +167,7 @@ Other proposals, documentation, issue reports, and fork work; inclusion does not
 | **[Numcodecs](https://github.com/zarr-developers/numcodecs)**<br>Native Linux ARM64 CI for the pinned Zarr integration case.<br>[PR&nbsp;#877](https://github.com/zarr-developers/numcodecs/pull/877) · [Issue&nbsp;#876](https://github.com/zarr-developers/numcodecs/issues/876) |
 | **[ome-zarr-models-py](https://github.com/ome-zarr-py/ome-zarr-models-py)**<br>Native Linux ARM64 CI for metadata and coordinate-transformation tests.<br>[PR&nbsp;#484](https://github.com/ome-zarr-py/ome-zarr-models-py/pull/484) |
 | **[OpenJPEG](https://github.com/uclouvain/openjpeg)**<br>Executable-relative library lookup for relocated macOS command-line tools.<br>[PR&nbsp;#1677](https://github.com/uclouvain/openjpeg/pull/1677) |
-| **[OpenScribe](https://github.com/Fasterious/openscribe)**<br>**Open, unmerged:** test stable serialization and cache-ID invariants; validate provider-catalog URLs and setup links.<br>[PR&nbsp;#14](https://github.com/Fasterious/openscribe/pull/14) · [PR&nbsp;#15](https://github.com/Fasterious/openscribe/pull/15) |
+| **[OpenScribe](https://github.com/Fasterious/openscribe)**<br>**Unavailable (GitHub 404, November 3, 2026):** historical proposals to test stable serialization and cache-ID invariants and validate provider-catalog URLs and setup links; current PR status cannot be verified.<br>[PR&nbsp;#14](https://github.com/Fasterious/openscribe/pull/14) · [PR&nbsp;#15](https://github.com/Fasterious/openscribe/pull/15) |
 | **[Outlook Assistant](https://github.com/littlebearapps/outlook-assistant)**<br>**Open, unmerged:** identify only missing session-limit or recipient-allowlist safeguards in auth guidance, with regression tests.<br>[PR&nbsp;#379](https://github.com/littlebearapps/outlook-assistant/pull/379) |
 | **[Papaya](https://github.com/rii-mango/Papaya)**<br>Literal rendering of image title labels.<br>[PR&nbsp;#244](https://github.com/rii-mango/Papaya/pull/244) |
 | **[PaperBanana](https://github.com/dwzhu-pku/PaperBanana)**<br>Proposed native macOS interfaces, reference examples, and removal of hosted credential-editing controls.<br>[PR&nbsp;#70](https://github.com/dwzhu-pku/PaperBanana/pull/70) · [PR&nbsp;#68](https://github.com/dwzhu-pku/PaperBanana/pull/68) · [PR&nbsp;#72](https://github.com/dwzhu-pku/PaperBanana/pull/72) · [PR&nbsp;#75](https://github.com/dwzhu-pku/PaperBanana/pull/75) |
@@ -187,7 +187,7 @@ Other proposals, documentation, issue reports, and fork work; inclusion does not
 | **[Semgrep](https://github.com/semgrep/semgrep)**<br>Scope registration for untyped object-destructured parameters.<br>[PR&nbsp;#11991](https://github.com/semgrep/semgrep/pull/11991) |
 | **[Semgrep Rules](https://github.com/semgrep/semgrep-rules)**<br>C# authorization-rule false-positive fixes, Terraform S3 versioning detection/guidance, and proposed duplicate browser-rule retirement.<br>[PR&nbsp;#4085](https://github.com/semgrep/semgrep-rules/pull/4085) · [PR&nbsp;#4087](https://github.com/semgrep/semgrep-rules/pull/4087) · [PR&nbsp;#4096](https://github.com/semgrep/semgrep-rules/pull/4096) · [PR&nbsp;#4097](https://github.com/semgrep/semgrep-rules/pull/4097) |
 | **[ShipLean docs](https://github.com/ShipLean/docs)**<br>**Open, unmerged:** document holiday and theme settings; explain MCP `content` and `structuredContent` result envelopes; describe public-origin attachment refusals and fallbacks.<br>[PR&nbsp;#18](https://github.com/ShipLean/docs/pull/18) · [PR&nbsp;#19](https://github.com/ShipLean/docs/pull/19) · [PR&nbsp;#20](https://github.com/ShipLean/docs/pull/20) |
-| **[silx](https://github.com/silx-kit/silx)**<br>Native Linux ARM64 tests; proposed minimum Qt 6 checks for PySide6/PyQt6 and Snip cache-comparison fixes when data lengths change.<br>[PR&nbsp;#4742](https://github.com/silx-kit/silx/pull/4742) · [Issue&nbsp;#4741](https://github.com/silx-kit/silx/issues/4741) · [PR&nbsp;#4750](https://github.com/silx-kit/silx/pull/4750) · [PR&nbsp;#4751](https://github.com/silx-kit/silx/pull/4751) |
+| **[silx](https://github.com/silx-kit/silx)**<br>**Closed without merge:** native Linux ARM64 test coverage ([PR&nbsp;#4742](https://github.com/silx-kit/silx/pull/4742)). **Open, unmerged:** minimum Qt 6 runtime-version checks for PySide6/PyQt6 ([PR&nbsp;#4750](https://github.com/silx-kit/silx/pull/4750)); related [Issue&nbsp;#4741](https://github.com/silx-kit/silx/issues/4741). |
 | **[SimpleITK](https://github.com/SimpleITK/SimpleITK)**<br>Proposed SHA-256 manifest for release assets, including macOS wheels and Java archives; supports integrity checks without publisher authentication.<br>[PR&nbsp;#2765](https://github.com/SimpleITK/SimpleITK/pull/2765) |
 | **[Sotto](https://github.com/getsotto/sotto)**<br>Proposed documenting separate API and web URL overrides for self-hosted CLI login and share links.<br>[PR&nbsp;#718](https://github.com/getsotto/sotto/pull/718) |
 | **[sparse](https://github.com/pydata/sparse)**<br>Proposed preservation of one-shot axis iterables in normalization and reductions.<br>[PR&nbsp;#1002](https://github.com/pydata/sparse/pull/1002) |
