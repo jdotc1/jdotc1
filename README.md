@@ -4,7 +4,7 @@ I identify and patch security and data-integrity defects in medical imaging soft
 
 ## Medical imaging hardening
 
-[**134 PRs merged** across **72 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, and platform engineering.
+[**135 PRs merged** across **72 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, and platform engineering.
 
 ### Selected security & privacy contributions
 
@@ -40,7 +40,7 @@ I identify and patch security and data-integrity defects in medical imaging soft
 
 ### Open medical-imaging security proposals
 
-These proposals remain **open and unmerged**; they are separate from the 134 merged PRs.
+These proposals remain **open and unmerged**; they are separate from the 135 merged PRs.
 
 | Open hardening proposals |
 | :--- |
@@ -70,6 +70,7 @@ I develop macOS applications, data-integrity tools, and reusable libraries. Each
 | :--- |
 | **Array type and view integrity**<br>[PyTables #1387](https://github.com/PyTables/PyTables/pull/1387): preserve coordinate views and read-only indices.<br>[PyTables #1388](https://github.com/PyTables/PyTables/pull/1388): reject non-integer Atom dimensions before coercion. |
 | **Scientific array correctness**<br>[batchgenerators #144](https://github.com/MIC-DKFZ/batchgenerators/pull/144): retain requested subunit scale bounds in spatial augmentation.<br>[xarray #11793](https://github.com/pydata/xarray/pull/11793): handle variable-width string arrays in `str.extract`. |
+| **Scientific fitting-cache integrity**<br>[silx #4751](https://github.com/silx-kit/silx/pull/4751): compare cached fitting data safely when input lengths change, avoiding broadcasting errors and false cache hits. |
 | **Atomic download publication**<br>[BrainStat #385](https://github.com/MICA-MNI/BrainStat/pull/385): publish downloads atomically after successful copying, preserving existing files on failure. |
 | **Imaging data and geometry integrity**<br>[highdicom #486](https://github.com/ImagingDataCommons/highdicom/pull/486): prevent integer overflow during volume normalization.<br>[highdicom #487](https://github.com/ImagingDataCommons/highdicom/pull/487): preserve DICOM structured-report temporal-coordinate sequence types.<br>[highdicom #488](https://github.com/ImagingDataCommons/highdicom/pull/488): preserve root/non-SR context in content-item queries and insertion.<br>[highdicom #489](https://github.com/ImagingDataCommons/highdicom/pull/489): correctly decode maximum-length LUTs and prevent unintended mutation of caller Datasets.<br>[PyVista #9454](https://github.com/pyvista/pyvista/pull/9454): compare structured-data extents to distinguish cell layouts and shifted offsets. |
 | **Metadata path integrity**<br>[ANTsPy #931](https://github.com/ANTsX/ANTsPy/pull/931): replace only the terminal `.npy` suffix to keep JSON sidecars beside NumPy images; document legacy-path migration. |
@@ -91,7 +92,7 @@ I develop macOS applications, data-integrity tools, and reusable libraries. Each
 | **Offline example verification**<br>[recusal #149](https://github.com/philpaz/recusal/pull/149): add subprocess smoke tests for documented offline examples.<br>[recusal #150](https://github.com/philpaz/recusal/pull/150): index cookbook and framework examples with documentation-coverage regression tests. |
 | **Test suite reliability**<br>[ITK #7004](https://github.com/InsightSoftwareConsortium/ITK/pull/7004): install xarray in macOS/Windows CI and mark its test skipped when the dependency is absent.<br>[Nilearn #6664](https://github.com/nilearn/nilearn/pull/6664): stabilize plotting-test parameter order for parallel collection.<br>[xarray #11780](https://github.com/pydata/xarray/pull/11780): skip the DataArray-to-Dask-DataFrame test when PyArrow is absent.<br>[silx #4745](https://github.com/silx-kit/silx/pull/4745): support Qt 6.12 drag-event constructors and older Qt versions. |
 
-Across **154 external repositories**, I have submitted **289 PRs**: **134 merged**, **118 open**, and **37 closed without merge** (November 2, 2026). The **[full contribution index](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md)** records each external PR, plus documentation, issue reports, and fork work.
+I have **287 currently verifiable external PRs** across **153 repositories**: **135 merged**, **112 open**, and **40 closed without merge** (November 3, 2026). Two previously indexed OpenScribe PRs are now inaccessible on GitHub (404); the **[full contribution index](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md)** retains them as historical records alongside documentation, issue reports, and fork work.
 
 ## Research & engineering practice
 
