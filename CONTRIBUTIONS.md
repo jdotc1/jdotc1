@@ -10,9 +10,9 @@
 
 ## Merged upstream contributions
 
-**135 authored PRs** merged across **72 external repositories**.
+**136 authored PRs** merged across **72 external repositories**.
 
-**Currently verifiable external PRs:** **287 authored PRs** across **153 repositories** — **135 merged**, **112 open**, and **40 closed without merge** (verified November 3, 2026). Two previously indexed OpenScribe PRs are currently inaccessible (GitHub 404); their historical entries remain below but are excluded from these live counts.
+**Currently verifiable external PRs:** **287 authored PRs** across **153 repositories** — **136 merged**, **111 open**, and **40 closed without merge** (verified November 3, 2026). Two previously indexed OpenScribe PRs are currently inaccessible (GitHub 404); their historical entries remain below but are excluded from these live counts.
 
 | Merged contributions |
 | :--- |
@@ -43,7 +43,7 @@
 | **[gookit/color](https://github.com/gookit/color)**<br>Widen RGB channel sums before averaging to prevent `uint8` overflow in ANSI color selection; cover foreground, background, and aliases with regression colors.<br>[PR&nbsp;#127](https://github.com/gookit/color/pull/127) |
 | **[highdicom](https://github.com/ImagingDataCommons/highdicom)**<br>Reject undefined encapsulated pixel-fragment lengths before reading payloads;<br>preserve DICOM structured-report temporal-coordinate sequence types;<br>prevent overflow in integer volume normalization;<br>preserve root/non-SR context in content-item queries and insertion;<br>decode maximum-length LUTs and avoid unintended mutation of input Datasets.<br>[PR&nbsp;#471](https://github.com/ImagingDataCommons/highdicom/pull/471) · [PR&nbsp;#486](https://github.com/ImagingDataCommons/highdicom/pull/486) · [PR&nbsp;#487](https://github.com/ImagingDataCommons/highdicom/pull/487) · [PR&nbsp;#488](https://github.com/ImagingDataCommons/highdicom/pull/488) · [PR&nbsp;#489](https://github.com/ImagingDataCommons/highdicom/pull/489) |
 | **[higher-kinded-j](https://github.com/higher-kinded-j/higher-kinded-j)**<br>Require a test class for each selected Monad; remove the architecture-test rule's global factory bypass.<br>[PR&nbsp;#1230](https://github.com/higher-kinded-j/higher-kinded-j/pull/1230) |
-| **[ITK](https://github.com/InsightSoftwareConsortium/ITK)**<br>Derive FFTW SIMD defaults from the requested macOS architecture;<br>preserve nonzero origins on singleton xarray axes;<br>handle empty VectorContainer-to-NumPy conversions;<br>suppress warnings only for generated wrappers;<br>remove a retired ExternalData mirror;<br>reject transform parameter counts exceeding the metric limit;<br>install xarray in macOS/Windows CI and mark its test skipped when the dependency is absent.<br>[PR&nbsp;#6947](https://github.com/InsightSoftwareConsortium/ITK/pull/6947) · [PR&nbsp;#6970](https://github.com/InsightSoftwareConsortium/ITK/pull/6970) · [PR&nbsp;#6986](https://github.com/InsightSoftwareConsortium/ITK/pull/6986) · [PR&nbsp;#6987](https://github.com/InsightSoftwareConsortium/ITK/pull/6987) · [PR&nbsp;#6991](https://github.com/InsightSoftwareConsortium/ITK/pull/6991) · [PR&nbsp;#6993](https://github.com/InsightSoftwareConsortium/ITK/pull/6993) · [PR&nbsp;#7004](https://github.com/InsightSoftwareConsortium/ITK/pull/7004) |
+| **[ITK](https://github.com/InsightSoftwareConsortium/ITK)**<br>Derive FFTW SIMD defaults from the requested macOS architecture;<br>preserve nonzero origins on singleton xarray axes;<br>handle empty VectorContainer-to-NumPy conversions;<br>suppress warnings only for generated wrappers;<br>validate Bruker geometry-array cardinalities before indexing;<br>remove a retired ExternalData mirror;<br>reject transform parameter counts exceeding the metric limit;<br>install xarray in macOS/Windows CI and mark its test skipped when the dependency is absent.<br>[PR&nbsp;#6947](https://github.com/InsightSoftwareConsortium/ITK/pull/6947) · [PR&nbsp;#6970](https://github.com/InsightSoftwareConsortium/ITK/pull/6970) · [PR&nbsp;#6986](https://github.com/InsightSoftwareConsortium/ITK/pull/6986) · [PR&nbsp;#6987](https://github.com/InsightSoftwareConsortium/ITK/pull/6987) · [PR&nbsp;#6990](https://github.com/InsightSoftwareConsortium/ITK/pull/6990) · [PR&nbsp;#6991](https://github.com/InsightSoftwareConsortium/ITK/pull/6991) · [PR&nbsp;#6993](https://github.com/InsightSoftwareConsortium/ITK/pull/6993) · [PR&nbsp;#7004](https://github.com/InsightSoftwareConsortium/ITK/pull/7004) |
 | **[ITK-SNAP](https://github.com/pyushkevich/itksnap)**<br>Quote application paths in the macOS launcher.<br>[PR&nbsp;#280](https://github.com/pyushkevich/itksnap/pull/280) |
 | **[JSON5](https://github.com/json5/json5)**<br>Read serialization hooks once.<br>[PR&nbsp;#413](https://github.com/json5/json5/pull/413) |
 | **[launcher](https://github.com/anyplaynet/launcher)**<br>Document all six workspace crates.<br>[PR&nbsp;#149](https://github.com/anyplaynet/launcher/pull/149) |
@@ -91,7 +91,7 @@
 
 ## Changes incorporated through maintainer pull requests
 
-Three contributions were adapted into merged maintainer-authored PRs that credit my work. My original PRs closed without merge; these follow-ups are excluded from the 135 authored merges above.
+Three contributions were adapted into merged maintainer-authored PRs that credit my work. My original PRs closed without merge; these follow-ups are excluded from the 136 authored merges above.
 
 | Incorporated contributions |
 | :--- |
@@ -135,7 +135,7 @@ Other proposals, documentation, issue reports, and fork work; inclusion does not
 | **[highdicom](https://github.com/ImagingDataCommons/highdicom)**<br>Reported undefined pixel-fragment lengths, addressed by merged PR #471 above.<br>[Issue&nbsp;#470](https://github.com/ImagingDataCommons/highdicom/issues/470) |
 | **[ImageIO](https://github.com/imageio/imageio)**<br>Debug logging for FreeImage loader failures.<br>[PR&nbsp;#1240](https://github.com/imageio/imageio/pull/1240) |
 | **[InVesalius](https://github.com/invesalius/invesalius3)**<br>TLS verification and bounded update-discovery requests.<br>[PR&nbsp;#1514](https://github.com/invesalius/invesalius3/pull/1514) |
-| **[ITK](https://github.com/InsightSoftwareConsortium/ITK)**<br>Proposed fixes for Bruker geometry cardinalities and invalid work regions in empty or tiny narrow bands.<br>[PR&nbsp;#6990](https://github.com/InsightSoftwareConsortium/ITK/pull/6990) · [PR&nbsp;#6992](https://github.com/InsightSoftwareConsortium/ITK/pull/6992) |
+| **[ITK](https://github.com/InsightSoftwareConsortium/ITK)**<br>**Closed without merge:** proposed handling for invalid work regions in empty or tiny narrow bands.<br>[PR&nbsp;#6992](https://github.com/InsightSoftwareConsortium/ITK/pull/6992) |
 | **[koanf](https://github.com/knadh/koanf)**<br>Proposed preserving later Parameter Store entries after a filtered value; returning an empty map for missing Consul keys; and keeping file-watcher goroutines bound to their original watcher during restarts.<br>[PR&nbsp;#469](https://github.com/knadh/koanf/pull/469) · [PR&nbsp;#470](https://github.com/knadh/koanf/pull/470) · [PR&nbsp;#471](https://github.com/knadh/koanf/pull/471) |
 | **[lsd](https://github.com/lsd-rs/lsd)**<br>Proposed correction of the README icon-customization section anchor.<br>[PR&nbsp;#1249](https://github.com/lsd-rs/lsd/pull/1249) |
 | **[mdBook](https://github.com/rust-lang/mdBook)**<br>Proposed updating the contributor guide's link to the relocated highlight.js source.<br>[PR&nbsp;#3247](https://github.com/rust-lang/mdBook/pull/3247) |
