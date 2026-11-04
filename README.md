@@ -4,7 +4,7 @@ I identify and patch security and data-integrity defects in medical imaging soft
 
 ## Medical imaging hardening
 
-[**136 PRs merged** across **72 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, and platform engineering.
+[**139 PRs merged** across **73 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, and platform engineering.
 
 ### Selected security & privacy contributions
 
@@ -78,6 +78,7 @@ I develop macOS applications, data-integrity tools, and reusable libraries. Each
 | **Session capability reporting**<br>[REA #5763](https://github.com/morluto/rea/pull/5763): align session-discovery capabilities with supported target operations. |
 | **SBOM parser resilience**<br>[CycloneDX Core Java #957](https://github.com/CycloneDX/cyclonedx-core-java/pull/957): recognize JSON/XML SBOMs with leading whitespace. |
 | **Security notification fidelity**<br>[Dependency-Track #7704](https://github.com/DependencyTrack/dependency-track/pull/7704): expose latest-version status in notification subjects. |
+| **MCP and gateway documentation**<br>[ShipLean docs #18](https://github.com/ShipLean/docs/pull/18), [#19](https://github.com/ShipLean/docs/pull/19), and [#20](https://github.com/ShipLean/docs/pull/20): document configuration flags, MCP result envelopes, and attachment-transfer safeguards and fallbacks. |
 
 ### Imaging, research, and ARM64 support
 
@@ -93,7 +94,7 @@ I develop macOS applications, data-integrity tools, and reusable libraries. Each
 | **Offline example verification**<br>[recusal #149](https://github.com/philpaz/recusal/pull/149): add subprocess smoke tests for documented offline examples.<br>[recusal #150](https://github.com/philpaz/recusal/pull/150): index cookbook and framework examples with documentation-coverage regression tests. |
 | **Test suite reliability**<br>[ITK #7004](https://github.com/InsightSoftwareConsortium/ITK/pull/7004): install xarray in macOS/Windows CI and mark its test skipped when the dependency is absent.<br>[Nilearn #6664](https://github.com/nilearn/nilearn/pull/6664): stabilize plotting-test parameter order for parallel collection.<br>[xarray #11780](https://github.com/pydata/xarray/pull/11780): skip the DataArray-to-Dask-DataFrame test when PyArrow is absent.<br>[silx #4745](https://github.com/silx-kit/silx/pull/4745): support Qt 6.12 drag-event constructors and older Qt versions. |
 
-I have **287 currently verifiable external PRs** across **153 repositories**: **136 merged**, **111 open**, and **40 closed without merge** (November 3, 2026). Two previously indexed OpenScribe PRs are now inaccessible on GitHub (404); the **[full contribution index](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md)** retains them as historical records alongside documentation, issue reports, and fork work.
+I have **287 currently verifiable external PRs** across **153 repositories**: **139 merged**, **108 open**, and **40 closed without merge** (November 4, 2026). These totals include my three original PRs later incorporated through maintainer-authored merges as closed without merge, but exclude an own-fork PR and two inaccessible OpenScribe PRs. The **[full contribution index](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md)** retains those historical records alongside documentation and issue reports.
 
 ## Research & engineering practice
 
