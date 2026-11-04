@@ -4,7 +4,7 @@ I identify and patch security and data-integrity defects in medical imaging soft
 
 ## Medical imaging hardening
 
-[**135 PRs merged** across **72 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, and platform engineering.
+[**136 PRs merged** across **72 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, and platform engineering.
 
 ### Selected security & privacy contributions
 
@@ -13,6 +13,7 @@ I identify and patch security and data-integrity defects in medical imaging soft
 | Merged contributions |
 | :--- |
 | **Imaging parser hardening**<br>[NiBabel #1568](https://github.com/nipy/nibabel/pull/1568) and [NIFTI-Reader-JS #58](https://github.com/rii-mango/NIFTI-Reader-JS/pull/58): reject undersized NIfTI extensions before reading payloads.<br>[highdicom #471](https://github.com/ImagingDataCommons/highdicom/pull/471): reject undefined DICOM encapsulated pixel-fragment lengths before reading their payloads. |
+| **Bruker MRI input validation**<br>[ITK #6990](https://github.com/InsightSoftwareConsortium/ITK/pull/6990): validate geometry-array cardinalities before indexed access; addresses one part of a broader upstream security issue. |
 | **NRRD input validation**<br>[pynrrd #173](https://github.com/mhe/pynrrd/pull/173): reject nonpositive dimensions and axis sizes before reading NRRD data or accessing detached files. |
 | **Private model-download staging**<br>[nnU-Net #3078](https://github.com/MIC-DKFZ/nnUNet/pull/3078): use a unique private temporary directory for model download archives and clean up after use. |
 | **DICOM receive-path safety**<br>[DICOM-rs #845](https://github.com/Enet4/dicom-rs/pull/845): reject unsafe SOP Instance UIDs before storing received DICOM files. |
@@ -40,7 +41,7 @@ I identify and patch security and data-integrity defects in medical imaging soft
 
 ### Open medical-imaging security proposals
 
-These proposals remain **open and unmerged**; they are separate from the 135 merged PRs.
+These proposals remain **open and unmerged**; they are separate from the 136 merged PRs.
 
 | Open hardening proposals |
 | :--- |
@@ -92,7 +93,7 @@ I develop macOS applications, data-integrity tools, and reusable libraries. Each
 | **Offline example verification**<br>[recusal #149](https://github.com/philpaz/recusal/pull/149): add subprocess smoke tests for documented offline examples.<br>[recusal #150](https://github.com/philpaz/recusal/pull/150): index cookbook and framework examples with documentation-coverage regression tests. |
 | **Test suite reliability**<br>[ITK #7004](https://github.com/InsightSoftwareConsortium/ITK/pull/7004): install xarray in macOS/Windows CI and mark its test skipped when the dependency is absent.<br>[Nilearn #6664](https://github.com/nilearn/nilearn/pull/6664): stabilize plotting-test parameter order for parallel collection.<br>[xarray #11780](https://github.com/pydata/xarray/pull/11780): skip the DataArray-to-Dask-DataFrame test when PyArrow is absent.<br>[silx #4745](https://github.com/silx-kit/silx/pull/4745): support Qt 6.12 drag-event constructors and older Qt versions. |
 
-I have **287 currently verifiable external PRs** across **153 repositories**: **135 merged**, **112 open**, and **40 closed without merge** (November 3, 2026). Two previously indexed OpenScribe PRs are now inaccessible on GitHub (404); the **[full contribution index](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md)** retains them as historical records alongside documentation, issue reports, and fork work.
+I have **287 currently verifiable external PRs** across **153 repositories**: **136 merged**, **111 open**, and **40 closed without merge** (November 3, 2026). Two previously indexed OpenScribe PRs are now inaccessible on GitHub (404); the **[full contribution index](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md)** retains them as historical records alongside documentation, issue reports, and fork work.
 
 ## Research & engineering practice
 
