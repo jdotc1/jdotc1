@@ -10,9 +10,9 @@
 
 ## Merged upstream contributions
 
-**136 authored PRs** merged across **72 external repositories**.
+**139 authored PRs** merged across **73 external repositories**.
 
-**Currently verifiable external PRs:** **287 authored PRs** across **153 repositories** — **136 merged**, **111 open**, and **40 closed without merge** (verified November 3, 2026). Two previously indexed OpenScribe PRs are currently inaccessible (GitHub 404); their historical entries remain below but are excluded from these live counts.
+**Currently verifiable external PRs:** **287 authored PRs** across **153 repositories** — **139 merged**, **108 open**, and **40 closed without merge** (verified November 4, 2026). The three original PRs listed as incorporated through maintainer-authored follow-ups are counted as closed without merge; the NiftyNet fork PR and two inaccessible OpenScribe PRs remain historical records excluded from these external counts.
 
 | Merged contributions |
 | :--- |
@@ -77,6 +77,7 @@
 | **[RSNA Anonymizer](https://github.com/RSNA/anonymizer)**<br>Isolate each process's compiled macOS documentation helper in a private temporary directory.<br>[PR&nbsp;#41](https://github.com/RSNA/anonymizer/pull/41) |
 | **[s3fs](https://github.com/fsspec/s3fs)**<br>Forward delete safeguards, including expected bucket owner and MFA; honor exclusive-create conditions, ACLs, and metadata for zero-byte writes.<br>[PR&nbsp;#1067](https://github.com/fsspec/s3fs/pull/1067) · [PR&nbsp;#1068](https://github.com/fsspec/s3fs/pull/1068) |
 | **[scikit-image](https://github.com/scikit-image/scikit-image)**<br>Native Linux ARM64 build and test coverage.<br>[PR&nbsp;#8359](https://github.com/scikit-image/scikit-image/pull/8359) |
+| **[ShipLean docs](https://github.com/ShipLean/docs)**<br>Document holiday API and retrospective-theme configuration; explain MCP `content` and `structuredContent` result envelopes; clarify attachment-transfer refusals and inline base64 fallback when no public origin is available.<br>[PR&nbsp;#18](https://github.com/ShipLean/docs/pull/18) · [PR&nbsp;#19](https://github.com/ShipLean/docs/pull/19) · [PR&nbsp;#20](https://github.com/ShipLean/docs/pull/20) |
 | **[silx](https://github.com/silx-kit/silx)**<br>Support Qt 6.12 drag-event constructors and older Qt versions in tests;<br>avoid Snip fitting-cache comparison errors and stale cache hits when data lengths change.<br>[PR&nbsp;#4745](https://github.com/silx-kit/silx/pull/4745) · [PR&nbsp;#4751](https://github.com/silx-kit/silx/pull/4751) |
 | **[Sphinx-Gallery](https://github.com/sphinx-gallery/sphinx-gallery)**<br>Preserve notebook-cell backticks and complete cell-magic payloads.<br>[PR&nbsp;#1659](https://github.com/sphinx-gallery/sphinx-gallery/pull/1659) |
 | **[svglib](https://github.com/deeplook/svglib)**<br>Read compressed SVGs directly, preserving sibling files and relative-image resolution; accept explicit arc signs and SVG transform whitespace.<br>[PR&nbsp;#518](https://github.com/deeplook/svglib/pull/518) · [PR&nbsp;#524](https://github.com/deeplook/svglib/pull/524) |
@@ -91,7 +92,7 @@
 
 ## Changes incorporated through maintainer pull requests
 
-Three contributions were adapted into merged maintainer-authored PRs that credit my work. My original PRs closed without merge; these follow-ups are excluded from the 136 authored merges above.
+Three proposals were adapted into merged maintainer-authored PRs that credit my work. My original PRs are included among the 40 authored PRs closed without merge; the three maintainer-authored merges are excluded from the 139 authored merges above.
 
 | Incorporated contributions |
 | :--- |
@@ -186,7 +187,6 @@ Other proposals, documentation, issue reports, and fork work; inclusion does not
 | **[RustSec / cargo-audit](https://github.com/rustsec/rustsec)**<br>Documentation for target-platform value discovery.<br>[PR&nbsp;#1726](https://github.com/rustsec/rustsec/pull/1726) |
 | **[Semgrep](https://github.com/semgrep/semgrep)**<br>Scope registration for untyped object-destructured parameters.<br>[PR&nbsp;#11991](https://github.com/semgrep/semgrep/pull/11991) |
 | **[Semgrep Rules](https://github.com/semgrep/semgrep-rules)**<br>C# authorization-rule false-positive fixes, Terraform S3 versioning detection/guidance, and proposed duplicate browser-rule retirement.<br>[PR&nbsp;#4085](https://github.com/semgrep/semgrep-rules/pull/4085) · [PR&nbsp;#4087](https://github.com/semgrep/semgrep-rules/pull/4087) · [PR&nbsp;#4096](https://github.com/semgrep/semgrep-rules/pull/4096) · [PR&nbsp;#4097](https://github.com/semgrep/semgrep-rules/pull/4097) |
-| **[ShipLean docs](https://github.com/ShipLean/docs)**<br>**Open, unmerged:** document holiday and theme settings; explain MCP `content` and `structuredContent` result envelopes; describe public-origin attachment refusals and fallbacks.<br>[PR&nbsp;#18](https://github.com/ShipLean/docs/pull/18) · [PR&nbsp;#19](https://github.com/ShipLean/docs/pull/19) · [PR&nbsp;#20](https://github.com/ShipLean/docs/pull/20) |
 | **[silx](https://github.com/silx-kit/silx)**<br>**Closed without merge:** native Linux ARM64 test coverage ([PR&nbsp;#4742](https://github.com/silx-kit/silx/pull/4742)). **Open, unmerged:** minimum Qt 6 runtime-version checks for PySide6/PyQt6 ([PR&nbsp;#4750](https://github.com/silx-kit/silx/pull/4750)); related [Issue&nbsp;#4741](https://github.com/silx-kit/silx/issues/4741). |
 | **[SimpleITK](https://github.com/SimpleITK/SimpleITK)**<br>Proposed SHA-256 manifest for release assets, including macOS wheels and Java archives; supports integrity checks without publisher authentication.<br>[PR&nbsp;#2765](https://github.com/SimpleITK/SimpleITK/pull/2765) |
 | **[Sotto](https://github.com/getsotto/sotto)**<br>Proposed documenting separate API and web URL overrides for self-hosted CLI login and share links.<br>[PR&nbsp;#718](https://github.com/getsotto/sotto/pull/718) |
