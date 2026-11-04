@@ -41,7 +41,7 @@ I identify and patch security and data-integrity defects in medical imaging soft
 
 ### Open medical-imaging security proposals
 
-These proposals remain **open and unmerged**; they are separate from the 136 merged PRs.
+These proposals remain **open and unmerged**; they are separate from the 139 merged PRs.
 
 | Open hardening proposals |
 | :--- |
