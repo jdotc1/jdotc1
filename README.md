@@ -37,16 +37,6 @@ I identify and patch security and data-integrity defects in medical imaging soft
 | **Permission-scoped CI**<br>[XCP-D #1640](https://github.com/PennLINC/xcp_d/pull/1640): validate fork lockfiles with read-only permissions while restricting write access to same-repository updates. |
 | **Code-signature evidence integrity**<br>[REA #5765](https://github.com/morluto/rea/pull/5765): preserve partial Mach-O signature observations and explicitly flag incomplete per-architecture coverage.<br>[REA #5778](https://github.com/morluto/rea/pull/5778): reject mixed native dyld diagnostics instead of misclassifying them as known refusals. |
 
-### Open medical-imaging security proposals
-
-These proposals remain **open and unmerged**; they are separate from the 142 merged PRs.
-
-| Open hardening proposals |
-| :--- |
-| **Output-path containment**<br>[dicomweb-client #130](https://github.com/ImagingDataCommons/dicomweb-client/pull/130): propose constraining UID-derived CLI output paths to the selected directory. |
-| **Credential redaction**<br>[MRIQC #1451](https://github.com/nipreps/mriqc/pull/1451): propose redacting NITRC credentials from failed-download diagnostics. |
-| **Literal data parsing**<br>[HeuDiConv #880](https://github.com/nipy/heudiconv/pull/880): propose parsing cached conversion tables as data rather than executing expressions. |
-
 ## My projects
 
 I develop macOS applications, data-integrity tools, and reusable libraries. Each repository documents its own licensing and distribution terms.
@@ -61,7 +51,7 @@ I develop macOS applications, data-integrity tools, and reusable libraries. Each
 | <img src="https://raw.githubusercontent.com/jdotc1/MacScope-app/main/Docs/brand/app-icon-light.png" width="52" alt="MacScope icon"><br>**[MacScope public workspace](https://github.com/jdotc1/MacScope-app)** | Explore the architecture and source of the native macOS binary-analysis workspace, including coordinated disassembly, graph, pseudocode and hex views and isolated workers. |
 | **[Prism Native MCP](https://github.com/jdotc1/prism-native-mcp)** | Use a local MCP server to build native GraphPad Prism tables, descriptive analyses, editable graphs and layouts from supplied observations. |
 
-## Additional merged contributions
+## Additional contributions
 
 ### Scientific data integrity and security tooling
 
