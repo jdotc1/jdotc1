@@ -53,7 +53,7 @@ I develop macOS applications, data-integrity tools, and reusable libraries. Each
 
 ## Additional contributions
 
-### Scientific security tooling
+### Biomedical security tooling
 
 | Merged contributions |
 | :--- |
