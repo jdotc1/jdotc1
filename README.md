@@ -4,9 +4,9 @@ I identify and patch security and data-integrity defects in medical imaging soft
 
 [**142 PRs merged** across **75 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, and platform engineering.
 
-### Selected security & privacy contributions
+### Selected security and privacy contributions
 
-#### Medical imaging & privacy
+#### Medical imaging
 
 | Merged contributions |
 | :--- |
@@ -25,7 +25,7 @@ I identify and patch security and data-integrity defects in medical imaging soft
 | **Supply chain reproducibility**<br>[dcm2niix #1046](https://github.com/rordenlab/dcm2niix/pull/1046): pin optional Cloudflare zlib to a source commit. |
 | **Archive checksum enforcement**<br>[PyMedPhys #2394](https://github.com/pymedphys/pymedphys/pull/2394): enforce TRF archive checksums under Python `-O`; retain incoming logfiles when verification fails. |
 
-#### Broader security & data-integrity engineering
+#### Data-integrity engineering
 
 | Merged contributions |
 | :--- |
@@ -41,7 +41,7 @@ I identify and patch security and data-integrity defects in medical imaging soft
 
 I develop macOS applications, data-integrity tools, and reusable libraries. Each repository documents its own licensing and distribution terms.
 
-| Project | What it helps you do |
+| Project | Function |
 | :--- | :--- |
 | **[DICOM Anonymizer](https://github.com/jdotc1/dicom-anonymizer)** | Locally pseudonymize MR, CT and RTSTRUCT metadata, including reference-consistent UID remapping, output audits and interruption recovery. Source files are preserved; pixels and contours are not scrubbed. [Preview releases](https://github.com/jdotc1/dicom-anonymizer/releases). |
 | <img src="https://raw.githubusercontent.com/jdotc1/AIRS/main/resources/AIRS-icon.png" width="52" alt="AIRS icon"><br>**[AIRS](https://github.com/jdotc1/AIRS)** | Review ARM64 Mach-O unwind and structural evidence without executing inspected binaries, with explicit coverage and saved reports. [Preview releases](https://github.com/jdotc1/AIRS/releases). |
@@ -53,7 +53,7 @@ I develop macOS applications, data-integrity tools, and reusable libraries. Each
 
 ## Additional contributions
 
-### Scientific data integrity and security tooling
+### Scientific security tooling
 
 | Merged contributions |
 | :--- |
@@ -68,7 +68,7 @@ I develop macOS applications, data-integrity tools, and reusable libraries. Each
 | **Security notification fidelity**<br>[Dependency-Track #7704](https://github.com/DependencyTrack/dependency-track/pull/7704): expose latest-version status in notification subjects. |
 | **MCP and gateway documentation**<br>[ShipLean docs #18](https://github.com/ShipLean/docs/pull/18), [#19](https://github.com/ShipLean/docs/pull/19), and [#20](https://github.com/ShipLean/docs/pull/20): document configuration flags, MCP result envelopes, and attachment-transfer safeguards and fallbacks. |
 
-### Imaging, research, and ARM64 support
+### ARM64 biomedical imaging support
 
 | Merged contributions |
 | :--- |
@@ -81,14 +81,6 @@ I develop macOS applications, data-integrity tools, and reusable libraries. Each
 | **Linux ARM64 integration testing**<br>[libjxl #5039](https://github.com/libjxl/libjxl/pull/5039): publish native Linux AArch64 static release tools.<br>[libjxl #5040](https://github.com/libjxl/libjxl/pull/5040): document a GCC/Highway ARM64 build workaround.<br>Cover JPEG/JPEG 2000 plugins and pydicom integration in [pylibjpeg-libjpeg #91](https://github.com/pydicom/pylibjpeg-libjpeg/pull/91) and [pylibjpeg-openjpeg #129](https://github.com/pydicom/pylibjpeg-openjpeg/pull/129).<br>Test the latest-Dask configuration in [OME-Zarr #704](https://github.com/ome/ome-zarr-py/pull/704).<br>Extend coverage to [zarrs #490](https://github.com/zarrs/zarrs/pull/490), [zarrs-python #199](https://github.com/zarrs/zarrs-python/pull/199), [connected-components-3d #153](https://github.com/seung-lab/connected-components-3d/pull/153), [fastremap #60](https://github.com/seung-lab/fastremap/pull/60), and [FabIO #675](https://github.com/silx-kit/fabio/pull/675). |
 | **Offline example verification**<br>[recusal #149](https://github.com/philpaz/recusal/pull/149): add subprocess smoke tests for documented offline examples.<br>[recusal #150](https://github.com/philpaz/recusal/pull/150): index cookbook and framework examples with documentation-coverage regression tests. |
 | **Test suite reliability**<br>[ITK #7004](https://github.com/InsightSoftwareConsortium/ITK/pull/7004): install xarray in macOS/Windows CI and mark its test skipped when the dependency is absent.<br>[Nilearn #6664](https://github.com/nilearn/nilearn/pull/6664): stabilize plotting-test parameter order for parallel collection.<br>[xarray #11780](https://github.com/pydata/xarray/pull/11780): skip the DataArray-to-Dask-DataFrame test when PyArrow is absent.<br>[silx #4745](https://github.com/silx-kit/silx/pull/4745): support Qt 6.12 drag-event constructors and older Qt versions. |
-
-I have **296 currently verifiable external PRs** across **158 repositories**: **142 merged**, **114 open**, and **40 closed without merge** (November 5, 2026). These totals include my three original PRs later incorporated through maintainer-authored merges as closed without merge, but exclude an own-fork PR and two inaccessible OpenScribe PRs. The **[full contribution index](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md)** retains those historical records alongside documentation and issue reports.
-
-## Research & engineering practice
-
-I use source review, static binary analysis, and focused regression tests to produce small, reviewable patches with reproducible evidence. My [AIRS](https://github.com/jdotc1/AIRS) project applies these principles to ARM64 Mach-O inspection, emphasizing bounded analysis, explicit coverage, and transparent reporting of unresolved findings. My [DICOM Anonymizer](https://github.com/jdotc1/dicom-anonymizer) documents a [private security-reporting process](https://github.com/jdotc1/dicom-anonymizer/blob/main/SECURITY.md) and guidance for synthetic reproductions.
-
-In imaging and radiomics, I prioritize numerical fidelity, units, acquisition metadata, and source lineage, and distinguish declared configuration from observed behavior.
 
 ## Connect
 
