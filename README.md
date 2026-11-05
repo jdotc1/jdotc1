@@ -6,7 +6,7 @@ I identify and patch security and data-integrity defects in medical imaging soft
 
 ### Selected security and privacy contributions
 
-#### Medical imaging
+#### Biomedical imaging
 
 | Merged contributions |
 | :--- |
