@@ -2,8 +2,6 @@
 
 I identify and patch security and data-integrity defects in medical imaging software, focusing on defensive DICOM/NIfTI parsing, de-identification integrity, archive containment, and filesystem safeguards. I extend this work to scientific infrastructure and develop open-source privacy, binary-inspection, and research tools for Apple Silicon (ARM64), informed by my background in radiation oncology, MR imaging, and radiomics.
 
-## Medical imaging hardening
-
 [**142 PRs merged** across **75 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, and platform engineering.
 
 ### Selected security & privacy contributions
