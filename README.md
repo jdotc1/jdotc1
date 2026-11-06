@@ -2,7 +2,7 @@
 
 I identify and patch security and data-integrity defects in medical imaging software, focusing on defensive DICOM/NIfTI parsing, de-identification integrity, archive containment, and filesystem safeguards. I extend this work to scientific infrastructure and develop open-source privacy, binary-inspection, and research tools for Apple Silicon (ARM64), informed by my background in radiation oncology, MR imaging, and radiomics.
 
-[**142 PRs merged** across **75 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, and platform engineering.
+[**143 authored PRs merged across 76 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, privacy, and platform engineering. Overall, **302 external PRs across 164 repositories**: 143 merged, 117 open, and 42 closed without merge (verified November 6, 2026).
 
 ### Selected security and privacy contributions
 
@@ -35,6 +35,7 @@ I identify and patch security and data-integrity defects in medical imaging soft
 | **Array index bounds enforcement**<br>[PyTables #1389](https://github.com/PyTables/PyTables/pull/1389) and [#1393](https://github.com/PyTables/PyTables/pull/1393): reject invalid indices before data access, preventing unintended reads and writes. |
 | **SFTP directory permissions**<br>[fsspec #2358](https://github.com/fsspec/filesystem_spec/pull/2358): honor requested permissions when creating parent directories. |
 | **Permission-scoped CI**<br>[XCP-D #1640](https://github.com/PennLINC/xcp_d/pull/1640): validate fork lockfiles with read-only permissions while restricting write access to same-repository updates. |
+| **Cross-tenant memory privacy**<br>[ContextFirewall #64](https://github.com/himanshu748/ContextFirewall/pull/64): avoid revealing foreign-namespace memory existence or ownership through unauthorized forget requests. |
 | **Code-signature evidence integrity**<br>[REA #5765](https://github.com/morluto/rea/pull/5765): preserve partial Mach-O signature observations and explicitly flag incomplete per-architecture coverage.<br>[REA #5778](https://github.com/morluto/rea/pull/5778): reject mixed native dyld diagnostics instead of misclassifying them as known refusals. |
 
 ## My projects
