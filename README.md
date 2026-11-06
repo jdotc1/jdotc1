@@ -68,7 +68,7 @@ I develop macOS applications, data-integrity tools, and reusable libraries. Each
 | **Security notification fidelity**<br>[Dependency-Track #7704](https://github.com/DependencyTrack/dependency-track/pull/7704): expose latest-version status in notification subjects. |
 | **MCP and gateway documentation**<br>[ShipLean docs #18](https://github.com/ShipLean/docs/pull/18), [#19](https://github.com/ShipLean/docs/pull/19), and [#20](https://github.com/ShipLean/docs/pull/20): document configuration flags, MCP result envelopes, and attachment-transfer safeguards and fallbacks. |
 
-### ARM64 biomedical imaging support
+### ARM64 biomedical imaging integrity
 
 | Merged contributions |
 | :--- |
