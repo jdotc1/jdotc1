@@ -2,7 +2,7 @@
 
 I identify and patch security and data-integrity defects in medical imaging software, focusing on defensive DICOM/NIfTI parsing, de-identification integrity, archive containment, and filesystem safeguards. I extend this work to scientific infrastructure and develop open-source privacy, binary-inspection, and research tools for Apple Silicon (ARM64), informed by my background in radiation oncology, MR imaging, and radiomics.
 
-[**143 authored PRs merged across 76 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, privacy, and platform engineering. Overall, **302 external PRs across 164 repositories**: 143 merged, 117 open, and 42 closed without merge (verified November 6, 2026).
+[**150 authored PRs merged across 81 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, privacy, and platform engineering. Overall, **302 external PRs across 164 repositories**: 150 merged, 110 open, and 42 closed without merge (verified November 6, 2026).
 
 ### Selected security and privacy contributions
 
@@ -16,6 +16,7 @@ I identify and patch security and data-integrity defects in medical imaging soft
 | **Private model-download staging**<br>[nnU-Net #3078](https://github.com/MIC-DKFZ/nnUNet/pull/3078): use a unique private temporary directory for model download archives and clean up after use. |
 | **DICOM receive-path safety**<br>[DICOM-rs #845](https://github.com/Enet4/dicom-rs/pull/845): reject unsafe SOP Instance UIDs before storing received DICOM files. |
 | **Archive extraction containment**<br>[Nilearn #6654](https://github.com/nilearn/nilearn/pull/6654): validate extraction destinations by path components to prevent sibling-prefix confusion in containment checks. |
+| **OpenNeuro download containment**<br>[nitrain #125](https://github.com/nitrain/nitrain/pull/125): keep downloaded dataset paths within the intended data root. |
 | **De-identification policy integrity**<br>[deid #305](https://github.com/pydicom/deid/pull/305): parse inline comments without breaking `func:`/`var:` lookups or quoted hashes.<br>[deid #306](https://github.com/pydicom/deid/pull/306): preserve earlier named filter rules so later recipes cannot silently replace them.<br>[deid #307](https://github.com/pydicom/deid/pull/307): refresh DICOM field lookups and apply KEEP rules to current fields, including newly added ones. |
 | **Validation-state isolation**<br>[dicom-validator #303](https://github.com/pydicom/dicom-validator/pull/303): restore pydicom's process-wide reading-validation mode after success or failure so permissive settings do not persist. |
 | **Medical imaging output permissions**<br>[deid #304](https://github.com/pydicom/deid/pull/304): default new pixel-cleaner output directories to owner-only permissions. |
@@ -36,6 +37,9 @@ I identify and patch security and data-integrity defects in medical imaging soft
 | **SFTP directory permissions**<br>[fsspec #2358](https://github.com/fsspec/filesystem_spec/pull/2358): honor requested permissions when creating parent directories. |
 | **Permission-scoped CI**<br>[XCP-D #1640](https://github.com/PennLINC/xcp_d/pull/1640): validate fork lockfiles with read-only permissions while restricting write access to same-repository updates. |
 | **Cross-tenant memory privacy**<br>[ContextFirewall #64](https://github.com/himanshu748/ContextFirewall/pull/64): avoid revealing foreign-namespace memory existence or ownership through unauthorized forget requests. |
+| **MCP loopback request validation**<br>[tessera #246](https://github.com/iamsaquib8/tessera/pull/246): reject DNS-rebinding attempts through Host validation on loopback HTTP endpoints, including health checks. |
+| **Error-message credential protection**<br>[stockwise #230](https://github.com/iamsaquib8/stockwise/pull/230): redact Yahoo session crumb URLs from failed-request diagnostics. |
+| **Example service isolation**<br>[a2a-hub #60](https://github.com/oscarbol09/a2a-hub/pull/60): avoid publishing example agent ports to host interfaces in Docker Compose. |
 | **Code-signature evidence integrity**<br>[REA #5765](https://github.com/morluto/rea/pull/5765): preserve partial Mach-O signature observations and explicitly flag incomplete per-architecture coverage.<br>[REA #5778](https://github.com/morluto/rea/pull/5778): reject mixed native dyld diagnostics instead of misclassifying them as known refusals. |
 
 ## My projects
