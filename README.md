@@ -2,7 +2,7 @@
 
 I identify and patch security and data-integrity defects in medical imaging software, focusing on defensive DICOM/NIfTI parsing, de-identification integrity, archive containment, and filesystem safeguards. I extend this work to scientific infrastructure and develop open-source privacy, binary-inspection, and research tools for Apple Silicon (ARM64), informed by my background in radiation oncology, MR imaging, and radiomics.
 
-[**150 authored PRs merged across 81 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, privacy, and platform engineering. Overall, **302 external PRs across 164 repositories**: 150 merged, 110 open, and 42 closed without merge (verified November 6, 2026).
+[**150 authored PRs merged across 81 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, privacy, and platform engineering. Overall, **311 external PRs across 173 repositories**: 150 merged, 119 open, and 42 closed without merge (verified November 7, 2026).
 
 ### Selected security and privacy contributions
 
