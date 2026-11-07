@@ -2,7 +2,7 @@
 
 I identify and patch security and data-integrity defects in medical imaging software, focusing on defensive DICOM/NIfTI parsing, de-identification integrity, archive containment, and filesystem safeguards. I extend this work to scientific infrastructure and develop open-source privacy, binary-inspection, and research tools for Apple Silicon (ARM64), informed by my background in radiation oncology, MR imaging, and radiomics.
 
-[**150 authored PRs merged across 81 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, privacy, and platform engineering. Overall, **311 external PRs across 173 repositories**: 150 merged, 119 open, and 42 closed without merge (verified November 7, 2026).
+[**153 authored PRs merged across 84 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, privacy, and platform engineering. Overall, **311 external PRs across 173 repositories**: 153 merged, 116 open, and 42 closed without merge (verified November 7, 2026).
 
 ### Selected security and privacy contributions
 
@@ -36,6 +36,7 @@ I identify and patch security and data-integrity defects in medical imaging soft
 | **Array index bounds enforcement**<br>[PyTables #1389](https://github.com/PyTables/PyTables/pull/1389) and [#1393](https://github.com/PyTables/PyTables/pull/1393): reject invalid indices before data access, preventing unintended reads and writes. |
 | **SFTP directory permissions**<br>[fsspec #2358](https://github.com/fsspec/filesystem_spec/pull/2358): honor requested permissions when creating parent directories. |
 | **Permission-scoped CI**<br>[XCP-D #1640](https://github.com/PennLINC/xcp_d/pull/1640): validate fork lockfiles with read-only permissions while restricting write access to same-repository updates. |
+| **CI supply-chain integrity**<br>[provlift #89](https://github.com/provlift/provlift/pull/89): pin 36 third-party GitHub Actions references in workflows and examples to immutable commits, with documented version annotations and regression checks. |
 | **Cross-tenant memory privacy**<br>[ContextFirewall #64](https://github.com/himanshu748/ContextFirewall/pull/64): avoid revealing foreign-namespace memory existence or ownership through unauthorized forget requests. |
 | **MCP loopback request validation**<br>[tessera #246](https://github.com/iamsaquib8/tessera/pull/246): reject DNS-rebinding attempts through Host validation on loopback HTTP endpoints, including health checks. |
 | **Error-message credential protection**<br>[stockwise #230](https://github.com/iamsaquib8/stockwise/pull/230): redact Yahoo session crumb URLs from failed-request diagnostics. |
@@ -71,6 +72,7 @@ I develop macOS applications, data-integrity tools, and reusable libraries. Each
 | **Session capability reporting**<br>[REA #5763](https://github.com/morluto/rea/pull/5763): align session-discovery capabilities with supported target operations. |
 | **SBOM parser resilience**<br>[CycloneDX Core Java #957](https://github.com/CycloneDX/cyclonedx-core-java/pull/957): recognize JSON/XML SBOMs with leading whitespace. |
 | **Security notification fidelity**<br>[Dependency-Track #7704](https://github.com/DependencyTrack/dependency-track/pull/7704): expose latest-version status in notification subjects. |
+| **Developer tooling and documentation**<br>[Meerkat #238](https://github.com/meerkat-lang/meerkat/pull/238): resolve bare-filename server entrypoints from the current directory for local source retrieval.<br>[avenx-js #1680](https://github.com/Avenx-JS/avenx-js/pull/1680): align defer-loading documentation with compiled and fallback runtime behavior. |
 | **MCP and gateway documentation**<br>[ShipLean docs #18](https://github.com/ShipLean/docs/pull/18), [#19](https://github.com/ShipLean/docs/pull/19), and [#20](https://github.com/ShipLean/docs/pull/20): document configuration flags, MCP result envelopes, and attachment-transfer safeguards and fallbacks. |
 
 ### ARM64 biomedical imaging integrity
