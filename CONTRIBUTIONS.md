@@ -10,15 +10,16 @@
 
 ## Merged upstream contributions
 
-**150 authored PRs** merged across **81 external repositories**.
+**153 authored PRs** merged across **84 external repositories**.
 
-**Currently verifiable external PRs:** **311 authored PRs** across **173 repositories** — **150 merged**, **119 open**, and **42 closed without merge** (verified November 7, 2026). The three original PRs listed as incorporated through maintainer-authored follow-ups are counted as closed without merge; the NiftyNet fork PR and two inaccessible OpenScribe PRs remain historical records excluded from these external counts.
+**Currently verifiable external PRs:** **311 authored PRs** across **173 repositories** — **153 merged**, **116 open**, and **42 closed without merge** (verified November 7, 2026). The three original PRs listed as incorporated through maintainer-authored follow-ups are counted as closed without merge; the NiftyNet fork PR and two inaccessible OpenScribe PRs remain historical records excluded from these external counts.
 
 | Merged contributions |
 | :--- |
 | **[a2a-hub](https://github.com/oscarbol09/a2a-hub)**<br>Keep example weather and calculator agents within their Docker Compose network instead of exposing ports on the host.<br>[PR&nbsp;#60](https://github.com/oscarbol09/a2a-hub/pull/60) |
 | **[ANTsPy](https://github.com/ANTsX/ANTsPy)**<br>Reject failed HTTP responses before caching test data;<br>correct NumPy sidecar paths and document migration;<br>return displacement-field transforms correctly;<br>join sample filenames to the cache directory.<br>[PR&nbsp;#924](https://github.com/ANTsX/ANTsPy/pull/924) · [PR&nbsp;#931](https://github.com/ANTsX/ANTsPy/pull/931) · [PR&nbsp;#933](https://github.com/ANTsX/ANTsPy/pull/933) · [PR&nbsp;#934](https://github.com/ANTsX/ANTsPy/pull/934) |
 | **[arkdraw](https://github.com/gabe-santana/arkdraw)**<br>Align connector-shadow filter bounds with the default arrowhead size and add a regression test.<br>[PR&nbsp;#29](https://github.com/gabe-santana/arkdraw/pull/29) |
+| **[avenx-JS](https://github.com/Avenx-JS/avenx-js)**<br>Clarify `<@loading>` placeholder behavior, `<@placeholder>` precedence, and differences between the compiled defer runtime and fallback manager.<br>[PR&nbsp;#1680](https://github.com/Avenx-JS/avenx-js/pull/1680) |
 | **[Babel](https://github.com/python-babel/babel)**<br>Resolve deprecated short unit identifiers through their replacement names during unit lookup.<br>[PR&nbsp;#1408](https://github.com/python-babel/babel/pull/1408) |
 | **[batchgenerators](https://github.com/MIC-DKFZ/batchgenerators)**<br>Keep spatial-augmentation scale factors within requested intervals below one, in isotropic and per-axis cases.<br>[PR&nbsp;#144](https://github.com/MIC-DKFZ/batchgenerators/pull/144) |
 | **[BIDScoin](https://github.com/Donders-Institute/bidscoin)**<br>Quote image, output, and mask paths in local SynthStrip commands.<br>[PR&nbsp;#302](https://github.com/Donders-Institute/bidscoin/pull/302) |
@@ -51,6 +52,7 @@
 | **[launcher](https://github.com/anyplaynet/launcher)**<br>Document all six workspace crates.<br>[PR&nbsp;#149](https://github.com/anyplaynet/launcher/pull/149) |
 | **[libjxl](https://github.com/libjxl/libjxl)**<br>Publish native Linux AArch64 static release archives;<br>document the GCC 16.1/Highway ARM64 build workaround.<br>[PR&nbsp;#5039](https://github.com/libjxl/libjxl/pull/5039) · [PR&nbsp;#5040](https://github.com/libjxl/libjxl/pull/5040) |
 | **[Mattermost](https://github.com/mattermost/mattermost)**<br>Correct the v12 changelog overview link.<br>[PR&nbsp;#39409](https://github.com/mattermost/mattermost/pull/39409) |
+| **[Meerkat](https://github.com/meerkat-lang/meerkat)**<br>Resolve bare-filename server entrypoints from the current directory so local source files can be served, while preserving existing path-escape protections.<br>[PR&nbsp;#238](https://github.com/meerkat-lang/meerkat/pull/238) |
 | **[Meshtastic device-ui](https://github.com/meshtastic/device-ui)**<br>Correct Ericsson ringtone names; preserve stored identifiers and selection behavior.<br>[PR&nbsp;#437](https://github.com/meshtastic/device-ui/pull/437) |
 | **[minc-toolkit-v2](https://github.com/BIC-MNI/minc-toolkit-v2)**<br>Forward macOS architecture, SDK, and deployment targets to HDF5; preserve architecture lists and paths containing spaces.<br>[PR&nbsp;#255](https://github.com/BIC-MNI/minc-toolkit-v2/pull/255) |
 | **[napwake](https://github.com/napwake/napwake)**<br>Document EKS Fargate resource values.<br>[PR&nbsp;#92](https://github.com/napwake/napwake/pull/92) |
@@ -64,6 +66,7 @@
 | **[Pillow](https://github.com/python-pillow/Pillow)**<br>Avoid division by zero for zero-width images in `ImageOps.cover()`; preserve palettes and transparency in zero-dimension `ImageOps` results.<br>[PR&nbsp;#10271](https://github.com/python-pillow/Pillow/pull/10271) · [PR&nbsp;#10299](https://github.com/python-pillow/Pillow/pull/10299) |
 | **[pipx](https://github.com/pypa/pipx)**<br>Report missing pip index-option values without a traceback, including structured JSON error output.<br>[PR&nbsp;#2182](https://github.com/pypa/pipx/pull/2182) |
 | **[premailer](https://github.com/premailer/premailer)**<br>Send skipped-link diagnostics to stderr so verbose CLI output does not contaminate generated HTML.<br>[PR&nbsp;#489](https://github.com/premailer/premailer/pull/489) |
+| **[provlift](https://github.com/provlift/provlift)**<br>Pin 36 third-party GitHub Actions references across CI and example workflows to immutable commit SHAs; document version annotations and add regression checks.<br>[PR&nbsp;#89](https://github.com/provlift/provlift/pull/89) |
 | **[PunctuationToggle](https://github.com/Sh1n1230/PunctuationToggle)**<br>Correct the pull-request template's contributor-guide link;<br>handle Python-converter Ctrl+C without a traceback;<br>test UTF-8 BOM and CR-only line-ending preservation across converters.<br>[PR&nbsp;#119](https://github.com/Sh1n1230/PunctuationToggle/pull/119) · [PR&nbsp;#120](https://github.com/Sh1n1230/PunctuationToggle/pull/120) · [PR&nbsp;#121](https://github.com/Sh1n1230/PunctuationToggle/pull/121) |
 | **[pydantic-zarr](https://github.com/zarr-developers/pydantic-zarr)**<br>Add native Linux ARM64 metadata test coverage.<br>[PR&nbsp;#182](https://github.com/zarr-developers/pydantic-zarr/pull/182) |
 | **[pylibjpeg-libjpeg](https://github.com/pydicom/pylibjpeg-libjpeg)**<br>Native Linux ARM64 CI for the JPEG plugin and its pydicom integration.<br>[PR&nbsp;#91](https://github.com/pydicom/pylibjpeg-libjpeg/pull/91) |
@@ -100,7 +103,7 @@
 
 ## Changes incorporated through maintainer pull requests
 
-Three proposals were adapted into merged maintainer-authored PRs that credit my work. My original PRs are included among the 42 authored PRs closed without merge; the three maintainer-authored merges are excluded from the 143 authored merges above.
+Three proposals were adapted into merged maintainer-authored PRs that credit my work. My original PRs are included among the 42 authored PRs closed without merge; the three maintainer-authored merges are excluded from the 153 authored merges above.
 
 | Incorporated contributions |
 | :--- |
@@ -120,7 +123,6 @@ Other proposals, documentation, issue reports, and fork work; inclusion does not
 | **[ANTsPy](https://github.com/ANTsX/ANTsPy)**<br>Proposed NumPy scalar levels in `mask_image` and component-layout preservation during image reconstruction and serialization. PR #935 closed without merge; PR #938 remains open and unmerged.<br>[PR&nbsp;#935](https://github.com/ANTsX/ANTsPy/pull/935) · [PR&nbsp;#938](https://github.com/ANTsX/ANTsPy/pull/938) |
 | **[argus](https://github.com/WretchedDade/argus)**<br>**Open, unmerged:** proposed containment of static asset reads with `path.relative`, while preserving the SPA fallback and testing traversal cases.<br>[PR&nbsp;#142](https://github.com/WretchedDade/argus/pull/142) |
 | **[AutoGIS](https://github.com/0bnoxide/AutoGIS)**<br>**Open, unmerged:** accept UTF-8 BOMs in checkpoint and control CSV inputs while preserving plain UTF-8 behavior.<br>[PR&nbsp;#604](https://github.com/0bnoxide/AutoGIS/pull/604) |
-| **[avenx-js](https://github.com/Avenx-JS/avenx-js)**<br>**Open, unmerged:** clarify `<@loading>` behavior, `<@placeholder>` precedence, and differences between the compiled defer runtime and fallback manager.<br>[PR&nbsp;#1680](https://github.com/Avenx-JS/avenx-js/pull/1680) |
 | **[BrainIAK](https://github.com/brainiak/brainiak)**<br>Parse noise dictionaries as literals rather than executable expressions.<br>[PR&nbsp;#616](https://github.com/brainiak/brainiak/pull/616) |
 | **[charset_normalizer](https://github.com/jawah/charset_normalizer)**<br>Proposed rejection of NaN CLI thresholds. PR #826 closed without merge.<br>[PR&nbsp;#826](https://github.com/jawah/charset_normalizer/pull/826) |
 | **[Clinica](https://github.com/aramis-lab/clinica)**<br>Literal FreeSurfer atlas paths in subprocess arguments.<br>[PR&nbsp;#1741](https://github.com/aramis-lab/clinica/pull/1741) |
@@ -156,7 +158,6 @@ Other proposals, documentation, issue reports, and fork work; inclusion does not
 | **[mdBook](https://github.com/rust-lang/mdBook)**<br>Proposed updating the contributor guide's link to the relocated highlight.js source.<br>[PR&nbsp;#3247](https://github.com/rust-lang/mdBook/pull/3247) |
 | **[medicaldetectiontoolkit](https://github.com/MIC-DKFZ/medicaldetectiontoolkit)**<br>Literal checkpoint paths for cleanup.<br>[PR&nbsp;#151](https://github.com/MIC-DKFZ/medicaldetectiontoolkit/pull/151) |
 | **[MedPy](https://github.com/loli/medpy)**<br>Version-specific Boost.Python library selection on macOS.<br>[PR&nbsp;#140](https://github.com/loli/medpy/pull/140) |
-| **[Meerkat](https://github.com/meerkat-lang/meerkat)**<br>**Open, unmerged:** resolve bare-filename server entrypoints from the current directory for served code and imports.<br>[PR&nbsp;#238](https://github.com/meerkat-lang/meerkat/pull/238) |
 | **[meson-python](https://github.com/mesonbuild/meson-python)**<br>Proposed preservation of ImportError for empty editable-build logs. PR #921 closed without merge.<br>[PR&nbsp;#921](https://github.com/mesonbuild/meson-python/pull/921) |
 | **[MINC Toolkit](https://github.com/BIC-MNI/minc-toolkit-v2)**<br>Proposed contributor instructions and a repository-work checklist covering build prerequisites and configuration-dependent tests.<br>[PR&nbsp;#256](https://github.com/BIC-MNI/minc-toolkit-v2/pull/256) |
 | **[MIRTK](https://github.com/BioMedIA/MIRTK)**<br>Apple silicon MATLAB MEX extension fallback.<br>[PR&nbsp;#793](https://github.com/BioMedIA/MIRTK/pull/793) |
@@ -192,7 +193,6 @@ Other proposals, documentation, issue reports, and fork work; inclusion does not
 | **[Plainspoken](https://github.com/littlebearapps/plainspoken)**<br>**Open, unmerged:** distinguish short-piece lint from full-check routes and clarify truthful completion notices, with regression cases.<br>[PR&nbsp;#211](https://github.com/littlebearapps/plainspoken/pull/211) |
 | **[PlatiPy](https://github.com/pyplati/platipy)**<br>Download safeguards, credential and service-log protections, upload/UID validation, DICOM receive isolation, and process/task failure handling.<br>[PR&nbsp;#316](https://github.com/pyplati/platipy/pull/316) · [PR&nbsp;#317](https://github.com/pyplati/platipy/pull/317) · [PR&nbsp;#318](https://github.com/pyplati/platipy/pull/318) · [PR&nbsp;#319](https://github.com/pyplati/platipy/pull/319) · [PR&nbsp;#320](https://github.com/pyplati/platipy/pull/320) · [PR&nbsp;#321](https://github.com/pyplati/platipy/pull/321) · [PR&nbsp;#322](https://github.com/pyplati/platipy/pull/322) · [PR&nbsp;#323](https://github.com/pyplati/platipy/pull/323) · [PR&nbsp;#324](https://github.com/pyplati/platipy/pull/324) · [PR&nbsp;#325](https://github.com/pyplati/platipy/pull/325) · [PR&nbsp;#326](https://github.com/pyplati/platipy/pull/326) · [PR&nbsp;#327](https://github.com/pyplati/platipy/pull/327) · [PR&nbsp;#328](https://github.com/pyplati/platipy/pull/328) · [PR&nbsp;#329](https://github.com/pyplati/platipy/pull/329) · [PR&nbsp;#330](https://github.com/pyplati/platipy/pull/330) |
 | **[PrettyTable](https://github.com/prettytable/prettytable)**<br>Proposed retaining HTML table-count validation when Python assertions are disabled with `-O`.<br>[PR&nbsp;#527](https://github.com/prettytable/prettytable/pull/527) |
-| **[provlift](https://github.com/provlift/provlift)**<br>**Open, unmerged:** pin third-party GitHub Actions to immutable commit SHAs across workflows and examples, document the pinning convention, and add regression checks.<br>[PR&nbsp;#89](https://github.com/provlift/provlift/pull/89) |
 | **[pydicom](https://github.com/pydicom/pydicom)**<br>HTTP status checks before writing downloaded data.<br>[PR&nbsp;#2390](https://github.com/pydicom/pydicom/pull/2390) |
 | **[pylibjpeg-rle](https://github.com/pydicom/pylibjpeg-rle)**<br>Native Linux ARM64 CI for the RLE codec.<br>[PR&nbsp;#62](https://github.com/pydicom/pylibjpeg-rle/pull/62) |
 | **[pynetdicom](https://github.com/pydicom/pynetdicom)**<br>Password redaction in standard DICOM association logs.<br>[PR&nbsp;#1099](https://github.com/pydicom/pynetdicom/pull/1099) · [Issue&nbsp;#1098](https://github.com/pydicom/pynetdicom/issues/1098) |
