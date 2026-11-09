@@ -1,8 +1,8 @@
-### medical imaging security · radiation oncology
+### Cyber defender · medical imaging security · radiation oncology
 
-I identify and patch security and data-integrity defects in medical imaging software, focusing on defensive DICOM/NIfTI parsing, de-identification integrity, archive containment, and filesystem safeguards. I also work on API and authentication defenses, agent/MCP security boundaries, and CI supply-chain controls, alongside scientific infrastructure and open-source privacy, binary-inspection, and research tools for Apple Silicon (ARM64). This work draws on my background in radiation oncology, MR imaging, and radiomics.
+I am a cyber defender and radiation oncologist focused on finding and fixing security and data-integrity weaknesses in medical imaging and open-source infrastructure. My upstream contributions strengthen DICOM/NIfTI parsing, de-identification integrity, archive and filesystem safeguards, authentication and API boundaries, safe executable handling, and CI supply-chain controls. I also develop native Apple Silicon (ARM64) privacy and binary-analysis tools, drawing on clinical experience in MR imaging and radiomics.
 
-[**166 authored PRs merged across 91 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, privacy, and platform engineering.
+[**174 authored PRs merged across 93 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, privacy, and platform engineering.
 
 ### Selected security and privacy contributions
 
@@ -30,6 +30,11 @@ I identify and patch security and data-integrity defects in medical imaging soft
 
 | Merged contributions |
 | :--- |
+| **Untrusted executable execution prevention**<br>[tessera #369](https://github.com/iamsaquib8/tessera/pull/369): prevent read-only status checks from executing alternate binaries discovered through `PATH`; exclude unsafe path entries and separate CLI discovery from MCP/UI status handling. |
+| **Authentication abuse controls and OAuth route assurance**<br>[ContribIQ #61](https://github.com/nooriegarg/ContribIQ/pull/61): enforce configurable per-client-IP login throttling with 429 responses and regression tests.<br>[ContribIQ #62](https://github.com/nooriegarg/ContribIQ/pull/62): stabilize GitHub OAuth route verification using public FastAPI reverse routing. |
+| **CI shell-injection prevention**<br>[provlift #102](https://github.com/provlift/provlift/pull/102): move workflow expressions out of executable Bash source into step environment variables; add metacharacter-injection regression tests. |
+| **Broker diagnostic redaction and loopback threat modeling**<br>[stockwise #428](https://github.com/iamsaquib8/stockwise/pull/428): mask broker client, app, and login identifiers in diagnostic output.<br>[stockwise #429](https://github.com/iamsaquib8/stockwise/pull/429): explain shared-machine exposure of unauthenticated loopback HTTP/MCP endpoints and recommend bearer tokens. |
+| **Immutable release workflows and dependency updates**<br>[Islet #186](https://github.com/goprocker/Islet/pull/186): pin four release-critical GitHub Actions to immutable commits and enable scheduled action updates.<br>[Islet #185](https://github.com/goprocker/Islet/pull/185): activate weekly Dependabot npm dependency checks. |
 | **Authentication-secret and API response hardening**<br>[tachyoncms #61](https://github.com/tachyon-cms/tachyoncms/pull/61): add `Cache-Control: no-store` to successful login and API-key issue/rotation responses carrying secrets.<br>[tachyoncms #60](https://github.com/tachyon-cms/tachyoncms/pull/60): apply anti-sniffing, anti-framing, and no-referrer HTTP headers to normal, 404, and recovered 500 responses. |
 | **SQL-injection trust-boundary**<br>[tachyoncms #191](https://github.com/tachyon-cms/tachyoncms/pull/191): clarify that collection-index identifiers originate from validated schema fields and IDs, while request-supplied values remain bound parameters. |
 | **Prompt-injection detection regression coverage**<br>[moodle-mcp #31](https://github.com/matheussilvano/moodle-mcp/pull/31): test English and Brazilian Portuguese injection-like and benign inputs; explicitly retain two known heuristic bypasses as expected failures. The detection remains advisory, not a security boundary. |
