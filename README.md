@@ -77,8 +77,8 @@ I develop macOS applications, data-integrity tools, and reusable libraries. Each
 | **Session capability reporting**<br>[REA #5763](https://github.com/morluto/rea/pull/5763): align session-discovery capabilities with supported target operations. |
 | **SBOM parser resilience**<br>[CycloneDX Core Java #957](https://github.com/CycloneDX/cyclonedx-core-java/pull/957): recognize JSON/XML SBOMs with leading whitespace. |
 | **Security notification fidelity**<br>[Dependency-Track #7704](https://github.com/DependencyTrack/dependency-track/pull/7704): expose latest-version status in notification subjects. |
-| **Developer tooling and documentation**<br>[Meerkat #238](https://github.com/meerkat-lang/meerkat/pull/238): resolve bare-filename server entrypoints from the current directory for local source retrieval.<br>[avenx-js #1680](https://github.com/Avenx-JS/avenx-js/pull/1680): align defer-loading documentation with compiled and fallback runtime behavior. |
-| **MCP and gateway documentation**<br>[ShipLean docs #18](https://github.com/ShipLean/docs/pull/18), [#19](https://github.com/ShipLean/docs/pull/19), and [#20](https://github.com/ShipLean/docs/pull/20): document configuration flags, MCP result envelopes, and attachment-transfer safeguards and fallbacks. |
+| **Developer tooling**<br>[Meerkat #238](https://github.com/meerkat-lang/meerkat/pull/238): resolve bare-filename server entrypoints from the current directory for local source retrieval.<br>[avenx-js #1680](https://github.com/Avenx-JS/avenx-js/pull/1680): align defer-loading documentation with compiled and fallback runtime behavior. |
+| **MCP hardening**<br>[ShipLean docs #18](https://github.com/ShipLean/docs/pull/18), [#19](https://github.com/ShipLean/docs/pull/19), and [#20](https://github.com/ShipLean/docs/pull/20): document configuration flags, MCP result envelopes, and attachment-transfer safeguards and fallbacks. |
 
 ### ARM64 biomedical imaging integrity
 
