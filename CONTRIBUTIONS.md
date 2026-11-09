@@ -8,11 +8,11 @@
 
 ## Merged upstream contributions
 
-**165 authored PRs** merged across **91 external repositories**.
+**166 authored PRs** merged across **91 external repositories**.
 
 Only PRs authored by me and merged into external repositories are included in this index (verified November 8, 2026). Open, closed-unmerged, and self-owned repository PRs are excluded.
 
-**Security focus:** Entries identify merged work on defensive medical-image parsing, de-identification, credential/response handling, agent/MCP boundaries, CI supply-chain integrity, and trusted executable precedence. Security documentation and regression-only changes are identified as such; no exploitability is implied.
+**Security focus:** Entries identify merged work on defensive medical-image parsing, de-identification, SQL-injection trust boundaries, credential/response handling, agent/MCP boundaries, CI supply-chain integrity, and trusted executable precedence. Security documentation and regression-only changes are identified as such; no exploitability is implied.
 
 | Merged contributions |
 | :--- |
@@ -97,7 +97,7 @@ Only PRs authored by me and merged into external repositories are included in th
 | **[stockwise](https://github.com/iamsaquib8/stockwise)**<br>**Credential-leakage prevention:** redact Yahoo session crumb URLs from exhausted-retry diagnostics, with regression tests;<br>**security policy documentation:** clarify broker credential storage, live-order safeguards, loopback HTTP/MCP exposure, plugin isolation, and private reporting (documentation only).<br>[PR&nbsp;#230](https://github.com/iamsaquib8/stockwise/pull/230) · [PR&nbsp;#411](https://github.com/iamsaquib8/stockwise/pull/411) |
 | **[svglib](https://github.com/deeplook/svglib)**<br>Read compressed SVGs directly, preserving sibling files and relative-image resolution; accept explicit arc signs and SVG transform whitespace.<br>[PR&nbsp;#518](https://github.com/deeplook/svglib/pull/518) · [PR&nbsp;#524](https://github.com/deeplook/svglib/pull/524) |
 | **[surfa](https://github.com/freesurfer/surfa)**<br>Quote FreeView subtitles as literal shell arguments, preserving embedded quotes and substitutions as text.<br>[PR&nbsp;#86](https://github.com/freesurfer/surfa/pull/86) |
-| **[tachyoncms](https://github.com/tachyon-cms/tachyoncms)**<br>**Authentication and HTTP-response security:** prevent caching of login responses and newly issued or rotated API-key secrets with `Cache-Control: no-store`;<br>apply anti-sniffing, anti-framing, and no-referrer headers to success, not-found, and recovered-error responses.<br>[PR&nbsp;#60](https://github.com/tachyon-cms/tachyoncms/pull/60) · [PR&nbsp;#61](https://github.com/tachyon-cms/tachyoncms/pull/61) |
+| **[tachyoncms](https://github.com/tachyon-cms/tachyoncms)**<br>**Authentication and HTTP-response security:** prevent caching of login responses and newly issued or rotated API-key secrets with `Cache-Control: no-store`;<br>apply anti-sniffing, anti-framing, and no-referrer headers to success, not-found, and recovered-error responses;<br>**SQL-injection trust-boundary:** clarify that collection-index identifiers derive from validated schema fields and IDs while request-supplied values remain bound parameters.<br>[PR&nbsp;#60](https://github.com/tachyon-cms/tachyoncms/pull/60) · [PR&nbsp;#61](https://github.com/tachyon-cms/tachyoncms/pull/61) · [PR&nbsp;#191](https://github.com/tachyon-cms/tachyoncms/pull/191) |
 | **[tessera](https://github.com/iamsaquib8/tessera)**<br>Validate loopback MCP HTTP Host headers before routing, including health checks, to reject DNS-rebinding attempts.<br>[PR&nbsp;#246](https://github.com/iamsaquib8/tessera/pull/246) |
 | **[Textpattern](https://github.com/textpattern/textpattern)**<br>Specify a User-Agent for clean-URL setup and diagnostic probes, and remove obsolete error suppression.<br>[PR&nbsp;#2099](https://github.com/textpattern/textpattern/pull/2099) |
 | **[VS Code documentation](https://github.com/microsoft/vscode-docs)**<br>Document IPyKernel prerequisites for local Python notebooks, correct container-debugging JSON, and quote terminal decoration settings.<br>[PR&nbsp;#10535](https://github.com/microsoft/vscode-docs/pull/10535) · [PR&nbsp;#10536](https://github.com/microsoft/vscode-docs/pull/10536) · [PR&nbsp;#10537](https://github.com/microsoft/vscode-docs/pull/10537) |
