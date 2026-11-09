@@ -2,7 +2,7 @@
 
 I identify and patch security and data-integrity defects in medical imaging software, focusing on defensive DICOM/NIfTI parsing, de-identification integrity, archive containment, and filesystem safeguards. I also work on API and authentication defenses, agent/MCP security boundaries, and CI supply-chain controls, alongside scientific infrastructure and open-source privacy, binary-inspection, and research tools for Apple Silicon (ARM64). This work draws on my background in radiation oncology, MR imaging, and radiomics.
 
-[**165 authored PRs merged across 91 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, privacy, and platform engineering.
+[**166 authored PRs merged across 91 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, privacy, and platform engineering.
 
 ### Selected security and privacy contributions
 
@@ -31,6 +31,7 @@ I identify and patch security and data-integrity defects in medical imaging soft
 | Merged contributions |
 | :--- |
 | **Authentication-secret and API response hardening**<br>[tachyoncms #61](https://github.com/tachyon-cms/tachyoncms/pull/61): add `Cache-Control: no-store` to successful login and API-key issue/rotation responses carrying secrets.<br>[tachyoncms #60](https://github.com/tachyon-cms/tachyoncms/pull/60): apply anti-sniffing, anti-framing, and no-referrer HTTP headers to normal, 404, and recovered 500 responses. |
+| **SQL-injection trust-boundary**<br>[tachyoncms #191](https://github.com/tachyon-cms/tachyoncms/pull/191): clarify that collection-index identifiers originate from validated schema fields and IDs, while request-supplied values remain bound parameters. |
 | **Prompt-injection detection regression coverage**<br>[moodle-mcp #31](https://github.com/matheussilvano/moodle-mcp/pull/31): test English and Brazilian Portuguese injection-like and benign inputs; explicitly retain two known heuristic bypasses as expected failures. The detection remains advisory, not a security boundary. |
 | **Trusted infrastructure executable selection**<br>[provlift #90](https://github.com/provlift/provlift/pull/90): prioritize the operator-provided Terraform/OpenTofu binary over repository configuration, with precedence regression tests. |
 | **Security-policy accuracy and disclosure guidance**<br>[stockwise #411](https://github.com/iamsaquib8/stockwise/pull/411): document credential storage, broker/live-order safeguards, loopback HTTP/MCP exposure, CSP, plugin isolation, and private reporting. Documentation only; no runtime security change. |
