@@ -1,8 +1,8 @@
 ### medical imaging security · radiation oncology
 
-I identify and patch security and data-integrity defects in medical imaging software, focusing on defensive DICOM/NIfTI parsing, de-identification integrity, archive containment, and filesystem safeguards. I extend this work to scientific infrastructure and develop open-source privacy, binary-inspection, and research tools for Apple Silicon (ARM64), informed by my background in radiation oncology, MR imaging, and radiomics.
+I identify and patch security and data-integrity defects in medical imaging software, focusing on defensive DICOM/NIfTI parsing, de-identification integrity, archive containment, and filesystem safeguards. I also work on API and authentication defenses, agent/MCP security boundaries, and CI supply-chain controls, alongside scientific infrastructure and open-source privacy, binary-inspection, and research tools for Apple Silicon (ARM64). This work draws on my background in radiation oncology, MR imaging, and radiomics.
 
-[**157 authored PRs merged across 88 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, privacy, and platform engineering.
+[**165 authored PRs merged across 91 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, privacy, and platform engineering.
 
 ### Selected security and privacy contributions
 
@@ -26,17 +26,21 @@ I identify and patch security and data-integrity defects in medical imaging soft
 | **Supply chain reproducibility**<br>[dcm2niix #1046](https://github.com/rordenlab/dcm2niix/pull/1046): pin optional Cloudflare zlib to a source commit. |
 | **Archive checksum enforcement**<br>[PyMedPhys #2394](https://github.com/pymedphys/pymedphys/pull/2394): enforce TRF archive checksums under Python `-O`; retain incoming logfiles when verification fails. |
 
-#### Data-integrity engineering
+#### Security, privacy, and data-integrity engineering
 
 | Merged contributions |
 | :--- |
+| **Authentication-secret and API response hardening**<br>[tachyoncms #61](https://github.com/tachyon-cms/tachyoncms/pull/61): add `Cache-Control: no-store` to successful login and API-key issue/rotation responses carrying secrets.<br>[tachyoncms #60](https://github.com/tachyon-cms/tachyoncms/pull/60): apply anti-sniffing, anti-framing, and no-referrer HTTP headers to normal, 404, and recovered 500 responses. |
+| **Prompt-injection detection regression coverage**<br>[moodle-mcp #31](https://github.com/matheussilvano/moodle-mcp/pull/31): test English and Brazilian Portuguese injection-like and benign inputs; explicitly retain two known heuristic bypasses as expected failures. The detection remains advisory, not a security boundary. |
+| **Trusted infrastructure executable selection**<br>[provlift #90](https://github.com/provlift/provlift/pull/90): prioritize the operator-provided Terraform/OpenTofu binary over repository configuration, with precedence regression tests. |
+| **Security-policy accuracy and disclosure guidance**<br>[stockwise #411](https://github.com/iamsaquib8/stockwise/pull/411): document credential storage, broker/live-order safeguards, loopback HTTP/MCP exposure, CSP, plugin isolation, and private reporting. Documentation only; no runtime security change. |
 | **Unintended file overwrite prevention**<br>[fonttools #4342](https://github.com/fonttools/fonttools/pull/4342): protect unrelated ZIP archives during file generation.<br>[svglib #518](https://github.com/deeplook/svglib/pull/518): parse compressed SVGs without overwriting sibling files. |
 | **Build frontend error integrity**<br>[pyproject-api #329](https://github.com/tox-dev/pyproject-api/pull/329): preserve backend paths ending in spaces.<br>[pyproject-api #337](https://github.com/tox-dev/pyproject-api/pull/337): preserve failed-backend diagnostics across process boundaries. |
 | **S3 request integrity**<br>[s3fs #1067](https://github.com/fsspec/s3fs/pull/1067): forward delete safeguards, including expected bucket owner and MFA parameters.<br>[s3fs #1068](https://github.com/fsspec/s3fs/pull/1068): honor exclusive-create conditions, ACLs, and metadata for zero-byte writes. |
 | **Array index bounds enforcement**<br>[PyTables #1389](https://github.com/PyTables/PyTables/pull/1389) and [#1393](https://github.com/PyTables/PyTables/pull/1393): reject invalid indices before data access, preventing unintended reads and writes. |
 | **SFTP directory permissions**<br>[fsspec #2358](https://github.com/fsspec/filesystem_spec/pull/2358): honor requested permissions when creating parent directories. |
 | **Permission-scoped CI**<br>[XCP-D #1640](https://github.com/PennLINC/xcp_d/pull/1640): validate fork lockfiles with read-only permissions while restricting write access to same-repository updates. |
-| **CI supply-chain integrity**<br>[provlift #89](https://github.com/provlift/provlift/pull/89): pin 36 third-party GitHub Actions references in workflows and examples to immutable commits, with documented version annotations and regression checks. |
+| **CI supply-chain integrity**<br>[provlift #89](https://github.com/provlift/provlift/pull/89): pin 36 third-party GitHub Actions references in workflows and examples to immutable commits, with documented version annotations and regression checks.<br>[dot #64](https://github.com/dhananjay6561/dot/pull/64): pin five build-workflow actions to immutable commits. |
 | **Cross-tenant memory privacy**<br>[ContextFirewall #64](https://github.com/himanshu748/ContextFirewall/pull/64): avoid revealing foreign-namespace memory existence or ownership through unauthorized forget requests. |
 | **MCP loopback request validation**<br>[tessera #246](https://github.com/iamsaquib8/tessera/pull/246): reject DNS-rebinding attempts through Host validation on loopback HTTP endpoints, including health checks. |
 | **Error-message credential protection**<br>[stockwise #230](https://github.com/iamsaquib8/stockwise/pull/230): redact Yahoo session crumb URLs from failed-request diagnostics. |
