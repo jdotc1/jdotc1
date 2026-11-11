@@ -2,7 +2,7 @@
 
 I focus on hardening and maintaining open-source medical imaging and research software. My upstream contributions strengthen DICOM/NIfTI parsing, de-identification integrity, archive and filesystem safeguards, authentication and API boundaries, safe executable handling, and CI supply-chain controls. I also develop native Apple Silicon (ARM64) privacy and binary-analysis tools, drawing on clinical experience in MR imaging and radiomics.
 
-[**216 authored PRs merged across 105 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, privacy, and platform engineering.
+[**222 authored PRs merged across 108 external repositories**](https://github.com/jdotc1/jdotc1/blob/main/CONTRIBUTIONS.md), spanning medical imaging, scientific data integrity, privacy, and platform engineering.
 
 ### Selected security and privacy contributions
 
